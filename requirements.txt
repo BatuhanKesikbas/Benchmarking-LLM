@@ -1,0 +1,16 @@
+openai>=1.6.0
+#anthropic>=0.25.0
+#google-generativeai>=0.7.2
+pandas
+#numpy
+tqdm
+#bert-score
+#rouge-score
+#sacrebleu
+#PyPDF2
+pymupdf
+#groq
+python-dotenv
+requests
+matplotlib
+seaborn

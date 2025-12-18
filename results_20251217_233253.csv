@@ -1,0 +1,1727 @@
+﻿id,model,predicted,correct_choice,is_correct,latency_sec,input_tokens,output_tokens,explanation
+1,openai_new,,B,False,8.4,356,378,"Seçenek: D  
+Açıklama: IV’teki “ışığında” daha çok “-e göre/-den hareketle” demektir; “kılavuzluğunda” (rehberliğinde) anlamıyla tam uyuşmaz."
+1,openai_mini,,B,False,2.047,357,59,"Seçenek: C  
+Açıklama: III. ""Ruhsal direnci artırmak"" ifadesi, ""koruyucu etkisi"" ile tam olarak örtüşmüyor; çünkü koruyucu etki, direnci artırmaktan farklı bir kavramdır."
+1,openai_4o,,B,False,1.176,357,58,"Seçenek: C  
+Açıklama: ""Ruhsal direnci artıracağını"" ifadesi, parantez içindeki ""dayanıklılığı"" ile uyumlu değil. ""Direnç"" ve ""dayanıklılık"" farklı kavramlardır."
+1,claude_old_haiku,,B,False,1.252,512,104,"Seçenek: C
+Açıklama: ""Ruhsal direnç (dayanıklılık)"" ifadesi, parçada ""ruhsal direnci (dayanıklılığı) artıracağını"" şeklinde geçmektedir. Bu ifade, parantez içindeki ""dayanıklılık"" açıklamasıyla uyuşmaktadır."
+1,claude_new_haiku,,B,True,2.973,512,175,"Seçenek: B
+
+Açıklama: ""Koruyucu"" sözcüğü parantezde ""önleyici"" olarak açıklanmıştır. Ancak metinde ""ruh sağlığı üzerinde koruyucu bir etkisi"" ifadesi, hastalığı önlemekten ziyade sağlığı koruyan/destekleyen anlamındadır. ""Önleyici"" daha çok hastalıktan korunmayı vurgularken, ""koruyucu"" burada var olan sağlığı muhafaza etmeyi ifade eder. Anlam tam olarak uyuşmamaktadır."
+1,claude_sonnet,,B,False,6.805,512,302,"Metindeki numaralanmış sözcüklerin parantez içindeki açıklamalarını kontrol ediyorum:
+
+I. ""işaret ediyor"" - (dikkat çekiyor) ✓ Uyumlu
+II. ""koruyucu"" - (önleyici) ✓ Uyumlu
+III. ""direnci"" - (dayanıklılığı) ✓ Uyumlu
+IV. ""ışığında"" - (kılavuzluğunda) ✗ Uyumsuz - ""ışığında"" kelimesi ""doğrultusunda, çerçevesinde"" anlamına gelir, ""kılavuzluğunda"" ise ""rehberliğinde, yönlendirmesiyle"" anlamına gelir.
+V. ""dâhil edilmesinin"" - (içine katılmasının) ✓ Uyumlu
+
+Seçenek: D
+Açıklama: ""Işığında"" kelimesi ""doğrultusunda/çerçevesinde"" anlamındadır, ""kılavuzluğunda"" anlamıyla uyuşmaz."
+1,gemini_old_flash,,B,False,0.937,348,44,"Seçenek: D
+Açıklama: Bulgular ışığında ifadesi, bulguların yol göstermesi anlamında kullanılmıştır, kılavuzluğunda ifadesi de aynı anlamı taşır."
+1,gemini_new_flash,,B,False,1.076,348,87,"Seçenek: D
+Açıklama: ""Işığında"" bir şeyin rehberliğinde veya doğrultusunda anlamı taşırken, ""kılavuzluğunda"" da benzer bir anlam ifade eder. Ancak ""kılavuzluğunda"" daha çok bir yol göstericiye atıfta bulunur. Bu durumda, araştırmacıların bulguları bir yol gösterici olarak kabul edilebilir."
+1,gemini_pro,,B,False,6.057,348,510,"Seçenek: A
+Açıklama: ""İşaret etmek"" bir şeyi göstermek"
+1,grok_old,,B,False,2.363,335,72,"Seçenek: A
+Açıklama: I numaralı söz ""işaret ediyor"" ile parantezdeki ""dikkat çekiyor"" anlam açısından uyuşmaktadır, ancak soru uyuşmayan şıkkı sorduğu için diğer seçenekler kontrol edilmelidir. Sorunun doğru cevabı A şıkkı olarak belirlenmiştir."
+1,grok_old_mini,,B,True,12.621,336,1339,"Seçenek: B  
+Açıklama: ""Koruyucu"" protective (koruma sağlayan) anlamındayken, ""önleyici"" preventive (önleyen) anlamında; bunlar tam eşdeğer olmadığından uyuşmuyor."
+1,grok_new,,B,False,24.45,481,2121,"Seçenek: E  
+Açıklama: ""Dâhil edilmek"" nesneleri plana katmak anlamındadır, ancak ""içine katılmak"" gönüllü katılımı ifade eder ve nesneler için uygun değildir; diğer eş anlamlar doğrudur."
+1,deepseek_v3,,B,False,3.169,472,66,"Seçenek: C
+Açıklama: ""Ruhsal direnç"" ile ""dayanıklılık"" aynı anlama gelir, ancak ""koruyucu"" ile ""önleyici"" aynı anlamda değildir."
+1,deepseek_r1,,B,False,29.792,474,512,ERROR: No response
+1,deepseek_32,,B,False,14.014,473,155,"Seçenek: D
+Açıklama: ""Işığında"" ifadesi ""kılavuzluğunda"" ile tam uyuşmaz; ""ışığında"" daha çok ""yol gösterici olarak"" veya ""rehberliğinde"" anlamına gelirken, ""kılavuzluğunda"" ise daha doğrudan rehberlik etmeyi ifade eder ve burada anlam inceliği farkı vardır. Diğer numaralı sözler parantez içindeki açıklamalarla anlamca örtüşmektedir."
+1,mock,,B,False,0.101,10,5,Mock cevap
+
+2,openai_new,,A,True,4.239,321,195,"Seçenek: A  
+Açıklama: İlk boşluk “toplumdaki aksaklıkları gidermeye yardım” düşüncesine uygun olarak “doğru yolu göstermesini”, ikinci boşluk ise romanın “sanat eseri” olmasına uygun olarak “edebî güzelliğin” beklenmesini tamamlar."
+2,openai_mini,,A,True,5.554,322,77,"Seçenek: A  
+Açıklama: İlk kısımda romanın toplumsal sorunlara çözüm sunması beklenirken, ikinci kısımda ise romanın sanatsal yönü vurgulanıyor. Bu nedenle ""doğru yolu göstermesini"" ve ""edebî güzelliğin"" ifadesi en uygun olanıdır."
+2,openai_4o,,A,True,1.711,322,62,"Seçenek: A  
+Açıklama: İlk boşlukta ""doğru yolu göstermesini"" toplumsal aksaklıkların giderilmesiyle uyumlu, ikinci boşlukta ""edebî güzelliğin"" sanat eseri vurgusuyla uyumlu."
+2,claude_old_haiku,,A,False,1.7,459,169,"Seçenek: B
+Açıklama: Metinde, romanın toplum hayatındaki aksaklıkların ortadan kalkmasına yardım etmesi gerektiğini savunanlar ile romanın bir sanat eseri olduğunu ve ondan sadece edebî güzelliğin beklenebileceğini savunanlar arasındaki görüş ayrılığı vurgulanmaktadır. Bu nedenle boş bırakılan yerlere sırasıyla ""gerçekleri yansıtmasını"" ve ""kılavuzluk yapmasının"" getirilmesi doğru olacaktır."
+2,claude_new_haiku,,A,True,2.631,459,152,"Seçenek: A
+
+Açıklama: Cümlede ""kimi yazarlar"" romanın toplumsal sorunları çözmesini isterken, ""kimileri"" romanın sanat eseri olduğunu ve ancak sanatsal değer beklenebileceğini söylüyor. İlk boşluğa ""doğru yolu göstermesini"" (toplumsal işlev), ikinci boşluğa ""edebî güzelliğin"" (sanatsal değer) getirilmesi anlam ve mantık açısından uyumludur."
+2,claude_sonnet,,A,True,7.032,459,274,"Cümleyi analiz edeyim:
+
+Cümlede bir karşıtlık var:
+- Birinci grup: Romanın toplum hayatındaki aksaklıkları gidermesini istiyor
+- İkinci grup: Romanın toplum bilimi kitabı değil, sanat eseri olduğunu söylüyor
+
+Birinci boşluk: Toplumsal aksaklıkları gidermeyle ilgili olmalı → ""doğru yolu göstermesini"" uygun
+
+İkinci boşluk: ""Toplum bilimi kitabı DEĞİL, sanat eseri"" vurgusu var → Sanat eserinden beklenen şey → ""edebî güzellik"" uygun
+
+Seçenek: A
+Açıklama: İlk boşluk toplumsal işlevi (doğru yolu gösterme), ikinci boşluk sanatsal değeri (edebî güzellik) vurguluyor ve cümledeki karşıtlığı tamamlıyor."
+2,gemini_old_flash,,A,True,0.613,307,37,"Seçenek: A
+Açıklama: Cümledeki karşıtlık, romanın topluma yol göstermesi ve edebi güzelliği arasında kuruluyor."
+2,gemini_new_flash,,A,True,2.04,307,43,"Seçenek: A
+Açıklama: İlk boşluk, romanın toplumsal sorunlara çözüm bulma işlevini, ikinci boşluk ise romanın sanatsal yönünü vurguluyor."
+2,gemini_pro,,A,True,6.407,307,510,"Seçenek: A
+Açıklama: Cümlenin ilk kısmında romanın"
+2,grok_old,,A,True,2.878,303,60,"Seçenek: A
+Açıklama: Romanın toplum aksaklıklarını düzeltmede ""doğru yolu göstermesi"" ve bir sanat eseri olarak ""edebî güzelliğin"" beklenmesi, cümlenin anlam bütünlüğüne en uygun seçenektir."
+2,grok_old_mini,,A,True,6.252,304,701,"Seçenek: A  
+Açıklama: İlk boşluk, romanın toplum sorunlarına yol göstermesini; ikinci boşluk, sanatsal güzelliğini vurgular, cümle mantığına en uygun."
+2,grok_new,,A,True,5.583,449,544,"Seçenek: A
+Açıklama: İlk grup toplumsal düzeltme (doğru yol) ister, ikinci grup sanatsal değer (edebî güzellik) bekler; anlam bütünlüğü sağlar."
+2,deepseek_v3,,A,True,7.238,424,234,"Cevabı bulalım:
+
+Soruda boşluklardan ilki için ""romanın toplum hayatındaki aksaklıkların ortadan kalkmasına yardım etmesini"" isteyen bir beklenti, ikinci boşluk için ise ""sanat eseri olduğunu"" vurgulayarak daha sınırlı bir beklenti aranıyor. 
+
+-""Doğru yolu göstermesi"" toplumsal aksaklıkları giderme beklentisiyle uyumlu, ""edebî güzellik"" ise sanat eseri olarak romanın temel işleviyle örtüşüyor. Diğer seçenekler bu mantığı tam karşılamıyor.
+
+Seçenek: A
+Açıklama: Doğru yolu gösterme toplumsal işleve, edebî güzellik ise sanatsal işleve uyar."
+2,deepseek_r1,,A,True,25.295,426,725,"Seçenek: A  
+Açıklama: İlk boşluk, romanın toplumsal aksaklıkları düzeltme işlevine vurgu yaparken (""doğru yolu göstermesini"" bu beklentiyi karşılar). İkinci boşluk, romanın sanatsal yönüne odaklanır ve sosyal kılavuzluk değil ""edebî güzellik"" beklenmesi görüşüyle uyumludur. Diğer seçeneklerde bu karşıtlık (toplumsal fayda vs. sanatsal değer) net değildir."
+2,deepseek_32,,A,True,8.729,425,113,"Seçenek: A
+Açıklama: İlk boşlukta romanın toplumsal aksaklıkları gidermeye yardım etmesi bekleniyor, yani ""doğru yolu göstermesini"" uygun. İkinci boşlukta ise romanın sanat eseri olduğu vurgulanıyor ve ""edebî güzelliğin"" beklenebileceği ifade ediliyor."
+2,mock,,A,True,0.101,10,5,Mock cevap
+
+3,openai_new,,A,True,3.611,375,176,"Seçenek: A  
+Açıklama: “Boşluğa yazmıyorum” diyerek yazdıklarını zihninde tasarladığı bir okur kitlesine yönelik yazdığını vurguluyor."
+3,openai_mini,,A,True,1.833,376,49,"Seçenek: A  
+Açıklama: Yazar, eserlerini belirli bir kitleye yönelik olarak tasarlamadığını, dolayısıyla okurlarını belirli bir gruptan ayırmadığını ifade etmektedir."
+3,openai_4o,,A,True,2.963,376,66,"Seçenek: A  
+Açıklama: Yazar, yazdıklarının belirli bir kitleye hitap ettiğini belirtmiyor, ancak boşluğa yazmadığını söylüyor. Bu, eserlerini zihninde tasarladığı bir kitleye yönelik olarak ürettiğine işaret eder."
+3,claude_old_haiku,,A,True,1.048,527,80,"Seçenek: A
+Açıklama: Yazar, ""boşluğa yazdığımı söyleyemiyorum"" ifadesiyle, eserlerini zihninde tasarladığı bir kitleye yönelik olarak ürettiğine vurgu yapmaktadır."
+3,claude_new_haiku,,A,False,2.408,527,108,"Seçenek: B
+
+Açıklama: Yazar ""boşluğa yazdığını söyleyemiyorum"" diyerek, yazılarının bir okur kitlesine hitap ettiğini ancak bu kitleyi tam olarak tanımlayamadığını belirtmektedir. Bu, her düzeyde okurlarla iletişim kurmaya çalıştığını gösterir."
+3,claude_sonnet,,A,False,3.979,527,127,"Seçenek: B
+
+Açıklama: Yazar ""okurlarım"" demeyi ""beni hiç okumamış olanlara saygısızlık"" olarak görüyor ve ""boşluğa yazmadığını"" söylüyor. Bu, hem mevcut okurlarına hem de potansiyel (henüz okumamış) okurlara hitap ettiğini, yani her düzeyde okur kitlesine seslendiğini gösterir."
+3,gemini_old_flash,,A,True,0.544,366,40,"Seçenek: A
+Açıklama: ""Boşluğa yazdığımı söyleyemiyorum"" ifadesi, zihninde bir okur kitlesi olduğunu gösterir."
+3,gemini_new_flash,,A,True,0.829,366,71,"Seçenek: A
+Açıklama: Yazar, ""boşluğa yazdığını söyleyemiyorum"" diyerek, yazdıklarının bir alıcısı olduğunu ancak bu alıcının belirli bir kitle olmadığını belirtiyor. Bu da eserlerini zihninde tasarladığı bir kitleye yönelik ürettiği anlamına gelir."
+3,gemini_pro,,A,True,5.628,366,510,"Seçenek: A
+Açıklama: Yazar, ""okurlarım"" diyerek"
+3,grok_old,,A,True,3.181,349,42,"Seçenek: A  
+Açıklama: Yazar, “boşluğa yazmadığını” belirterek eserlerini zihninde tasarladığı bir kitleye yönelik ürettiğini ima ediyor."
+3,grok_old_mini,,A,False,7.608,350,809,"Seçenek: B  
+Açıklama: Yazar, ""okurlarım"" ifadesini kullanmayı reddederek, eserleriyle her düzeydeki okura eşit şekilde seslenmeyi vurguluyor."
+3,grok_new,,A,False,19.955,495,1983,"Seçenek: B  
+Açıklama: Yazar, ""okurlarım"" demeyi okumamış potansiyel okurlara saygısızlık olarak gördüğü için belirli bir kitleyi sahiplenmez; herkese, her düzeyde okura seslendiğini vurgular."
+3,deepseek_v3,,A,True,2.525,492,63,"Seçenek: A
+Açıklama: Yazar, eserlerini belirli bir kitleye yönelik olarak ürettiğini ancak bunu net bir şekilde tanımlayamadığını ifade ediyor."
+3,deepseek_r1,,A,False,16.805,494,512,"Seçenek: E  
+Açıklama: Yazar, ""okurlarım"" demeyi henüz kendisini okumamış insanlara saygısızlık olarak görüyor ve ""boşluğa yazdığımı söyleyemiyorum"" ifadesiyle tüm okurları kapsayıcı bir yaklaşım benimsediğini vurguluyor. Bu da eserlerle bütün ok"
+3,deepseek_32,,A,False,7.085,492,81,"Seçenek: C  
+Açıklama: The text describes a scenario where the user is asked to select the correct answer from options A–E, and the correct response format is ""Seçenek: X"" followed by a brief explanation. Option C matches this instruction by stating ""Select the correct answer and provide a brief explanation,"" which aligns with the required output format."
+3,mock,,A,False,0.1,10,5,Mock cevap
+
+4,openai_new,,D,True,6.928,363,217,"Seçenek: D  
+Açıklama: “Gözden düşmek” değer/itibar kaybetmektir; verilen açıklama “gözden kaçırmak” anlamına gelir."
+4,openai_mini,,D,True,1.32,364,41,"Seçenek: D  
+Açıklama: ""Gözden düşmek"" deyimi, bir kişinin veya durumun öneminin azalması anlamına gelir, dikkatinden kaçırmak değil."
+4,openai_4o,,D,True,1.309,364,42,"Seçenek: D  
+Açıklama: ""Gözden düşmek"" bir iş veya durumu dikkatinden kaçırmak değil, birinin itibarını kaybetmesi anlamına gelir."
+4,claude_old_haiku,,D,True,1.62,526,93,"Seçenek: D
+Açıklama: Gözden düşmek deyiminin açıklaması yanlıştır. Gözden düşmek, bir iş veya durumu dikkatinden kaçırmak değil, bir kişinin veya nesnenin değerini, önemini yitirmesi anlamına gelir."
+4,claude_new_haiku,,D,True,3.565,526,126,"Seçenek: D
+
+Açıklama: ""Gözden düşmek"" deyimi, bir kişinin başkasının gözündeki değerinin azalması/saygısını kaybetmesi anlamına gelir. Metinde ""bir iş veya durumu dikkatinden kaçırmak"" şeklinde yanlış açıklanmıştır. Bu açıklama ""gözden kaçmak"" deyimine ait olmalıdır."
+4,claude_sonnet,,D,True,2.901,526,95,"Seçenek: D
+
+Açıklama: ""Gözden düşmek"" deyimi, birinin gözünde değerini kaybetmek, saygınlığını yitirmek anlamına gelir. Metinde verilen ""bir iş veya durumu dikkatinden kaçırmak"" açıklaması yanlıştır."
+4,gemini_old_flash,,D,True,0.58,362,24,"Seçenek: D
+Açıklama: Gözden düşmek, değer kaybetmek anlamındadır."
+4,gemini_new_flash,,D,True,7.358,362,55,"Seçenek: D
+Açıklama: ""Gözden düşmek"" deyimi, birinin değerini veya itibarını kaybetmesi anlamına gelir, metindeki açıklama ise ""bir iş veya durumu dikkatinden kaçırmak"" olarak yanlış verilmiştir."
+4,gemini_pro,,D,True,5.996,362,510,"Seçenek: D
+Açıklama: ""Gözden düşmek"" deyimi,"
+4,grok_old,,D,True,7.507,344,52,"Seçenek: D  
+Açıklama: Gözden düşmek deyimi, birinin değerini veya saygınlığını kaybetmesi anlamına gelir, ancak parçada yanlış bir şekilde ""bir iş veya durumu dikkatinden kaçırmak"" olarak açıklanmıştır."
+4,grok_old_mini,,D,True,18.759,345,1252,"Seçenek: D  
+Açıklama: Gözden düşmek deyimi, birinin değerini kaybetmesini anlatır; metindeki ""dikkatini kaçırmak"" açıklaması yanlıştır."
+4,grok_new,,D,True,6.05,490,535,"Seçenek: D
+Açıklama: Gözden düşmek, birinin gözünde değerini/itibarını kaybetmek anlamına gelir; dikkatinden kaçırmak ""gözden kaçırmak"" deyimidir."
+4,deepseek_v3,,D,True,2.37,478,67,"Seçenek: D
+Açıklama: ""Gözden düşmek"" deyimi, bir iş veya durumu dikkatten kaçırmak değil, birinin gözünde değer kaybetmek anlamına gelir."
+4,deepseek_r1,,D,True,19.213,480,617,"Seçenek: D  
+Açıklama: ""Gözden düşmek"" deyimi, birinin değer kaybetmesi veya itibarının azalması anlamına gelir; ""bir işi dikkatten kaçırmak"" değil. Doğru açıklama IV. seçenekte verilmemiştir."
+4,deepseek_32,,D,False,16.054,478,66,"Seçenek: C  
+Açıklama: The text describes a process of repeatedly applying a function until a condition is met, which matches the concept of iteration (loop) in programming. The numbered steps outline the initialization, condition check, execution, update, and repetition, corresponding to a typical loop structure."
+4,mock,,D,False,0.101,10,5,Mock cevap
+
+5,openai_new,,B,True,6.943,392,166,"Seçenek: B  
+Açıklama: II’deki edebî eserleri eğitsel kitaplarla aynı görme durumunun sonucu olarak, I’de yetişkinlerin her kitaptan pratik ve yararlı şeyler beklemesi anlatılır."
+5,openai_mini,,B,True,1.526,393,51,"Seçenek: B  
+Açıklama: I. cümlede, yetişkinlerin çocuklardan beklentileri ifade edilirken, II. cümlede bu beklentilerin yanlış anlaşılmasına bağlı bir sonuçtan bahsedilmektedir."
+5,openai_4o,,B,True,2.185,393,75,"Seçenek: B
+Açıklama: I. cümlede, II. cümlede belirtilen durumun (edebî eserlerin eğitsel kitaplarla aynı kefeye konulması) yol açtığı bir sonuçtan (çocukların okuduğu kitaplardan yararlı şeyler öğrenmesi beklentisi) bahsedilmektedir."
+5,claude_old_haiku,,B,True,2.575,589,236,"Seçenek: B
+Açıklama: I. cümlede, yetişkinlerin çocukların okuduğu kitaplardan ""iyi, yararlı ve gündelik hayattaki pratiklerini kolaylaştıracağı"" bir şeyler öğrenmesini bekledikleri belirtilmektedir. II. cümlede ise, edebî eserlerin toplumun bazı kesimlerinde kurgusal olmayan eğitsel amaçlı kitaplarla aynı kefeye konulduğu ve bunun sebebinin edebî eserlerin oluşum yöntemi, araç ve süreçlerinin bilincinde olunmamasından kaynaklandığı ifade edilmektedir. Dolayısıyla, I. cümle II. cümlede belirtilen durumun yol açtığı bir sonucu açıklamaktadır."
+5,claude_new_haiku,,B,True,2.51,589,147,"Seçenek: B
+
+Açıklama: I. cümle, yetişkinlerin çocuklarından pratik bilgi beklentisini belirtir. II. cümle, bu beklentinin sonucu olarak edebî eserlerin eğitsel kitaplarla aynı kefeye konulduğunu açıklar. I. cümle, II. cümlede ortaya konulan durumun (edebî eserlerin yanlış değerlendirilmesi) yol açtığı sonuçtan bahsetmektedir."
+5,claude_sonnet,,B,True,8.673,589,396,"I. cümleyi analiz edeyim:
+- Yetişkinler çocukların okuduğu kitaplardan ""yararlı ve pratik"" şeyler öğrenmesini bekliyor.
+
+II. cümleyi analiz edeyim:
+- Toplumun bazı kesimleri edebî eserleri, kurgusal olmayan eğitsel kitaplarla aynı kefeye koyuyor.
+- Bunun nedeni: Edebî eserlerin oluşum yöntemi, araç ve süreçlerinin bilincinde olunmaması.
+
+I. ve II. cümle arasındaki ilişki:
+- I. cümle, yetişkinlerin kitaplardan ""pratik yarar"" bekleme durumunu anlatıyor.
+- II. cümle, bu beklentinin bir sonucu olarak edebî eserlerin eğitsel kitaplarla karıştırıldığını söylüyor.
+- I. cümledeki ""pratik yarar beklentisi"", II. cümledeki ""edebî eserleri eğitsel kitaplarla aynı kefeye koyma"" durumuna yol açıyor.
+
+Seçenek: B
+Açıklama: I. cümle, yetişkinlerin kitaplardan pratik yarar bekleme durumunu anlatıyor; bu beklenti II. cümledeki ""edebî eserlerin eğitsel kitaplarla karıştırılması"" sonucuna yol açıyor."
+5,gemini_old_flash,,B,True,0.828,384,44,"Seçenek: B
+Açıklama: I. cümle yetişkinlerin beklentisini belirtiyor, II. cümle ise bu beklentinin bir sonucu olarak edebî eserlere yaklaşımı açıklıyor."
+5,gemini_new_flash,,B,True,0.663,384,57,"Seçenek: B
+Açıklama: I. cümle, II. cümlede bahsedilen ""edebî eserlerin eğitsel amaçlı kitaplarla aynı kefeye konulması"" durumunun bir sonucu olarak yetişkinlerin çocuklardan beklentilerini ifade etmektedir."
+5,gemini_pro,,B,True,6.382,384,510,"Seçenek: B
+Açıklama: II. cümlede, edebi eserlerin eğ"
+5,grok_old,,B,True,6.272,375,74,"Seçenek: B
+Açıklama: I. cümle, yetişkinlerin çocuklardan okudukları kitaplardan fayda beklediğini belirtirken, II. cümlede edebî eserlerin eğitsel kitaplarla aynı kefeye konmasının bu beklentiye yol açtığı ima edilmektedir. Bu, bir sonuç ilişkisidir."
+5,grok_old_mini,,B,False,19.509,376,1639,"Seçenek: D  
+Açıklama: I. cümle, yetişkinlerin beklentilerini belirterek, II. cümledeki edebî eserlerin karıştırılma durumunun temel koşulunu sunar."
+5,grok_new,,B,True,4.685,521,521,"Seçenek: B
+Açıklama: I. cümle, II. cümledeki durumun (edebî eserlerin eğitsel kitaplarla aynı kefeye konması) yol açtığı sonucu (her kitaptan fayda beklentisi) ifade eder."
+5,deepseek_v3,,B,False,2.995,541,70,"Seçenek: D
+Açıklama: I. cümle, II. cümlede belirtilen durumun (edebî eserlerin eğitsel kitaplarla aynı kefeye konulması) koşulunu açıklamaktadır."
+5,deepseek_r1,,B,False,14.643,543,512,ERROR: No response
+5,deepseek_32,,B,True,4.078,545,171,"Seçenek: B
+Açıklama: I. cümlede, yetişkinlerin çocukların okudukları kitaplardan pratik fayda beklemeleri anlatılıyor. II. cümlede ise toplumun bazı kesimlerinde edebi eserlerin kurgusal olmayan eğitsel kitaplarla aynı görülmesi durumu belirtiliyor. I. cümle, II. cümledeki bu durumun (edebi eserlerin yanlış değerlendirilmesi) yol açtığı bir sonuç olarak yetişkinlerin beklentisini ifade ediyor."
+5,mock,,B,False,0.101,10,5,Mock cevap
+
+6,openai_new,,D,True,4.458,528,146,"Seçenek: D  
+Açıklama: IV. cümlede yaşadığı bölgeyi seçme nedeni değil, yaşadığı derinlik ve bu bölgenin “alaca karanlık bölgesi” diye adlandırılması anlatılır."
+6,openai_mini,,D,True,1.479,529,44,"Seçenek: D  
+Açıklama: IV. cümlede, balığın yaşadığı bölgenin adlandırılmasından bahsedilmektedir, ancak yaşama nedenleri belirtilmemiştir."
+6,openai_4o,,D,True,1.526,529,48,"Seçenek: D  
+Açıklama: IV. cümlede, yaşadığı bölgeyi seçme nedenlerinden değil, bölgenin dalma limitlerini zorlayan derinlikte olduğundan bahsedilmiştir."
+6,claude_old_haiku,,D,False,1.399,744,99,"Seçenek: E
+Açıklama: V. cümlede, türlerinin devamlılığıyla ilgili bilgi verilmiştir. Parçada, Cirrhilabrus wakanda balık türünün derinliklerde yaşayarak nesillerinin devamını sağladığı belirtilmektedir. Bu bilgi doğrudur."
+6,claude_new_haiku,,D,True,2.089,744,109,"Seçenek: D
+
+Açıklama: IV. cümlede balığın yaşadığı bölgenin adı ve özellikleri anlatılmış, ancak ""neden"" o derinlikleri seçtiği açıklanmamıştır. Seçme nedenleri V. cümlede verilmiştir (neslinin sürekliliğini garanti altına almak)."
+6,claude_sonnet,,D,True,3.734,744,144,"Seçenek: D
+
+Açıklama: IV. cümlede balığın yaşadığı bölgenin ""alaca karanlık bölgesi"" olarak adlandırıldığı belirtiliyor, ancak balığın bu bölgeyi seçme nedenleri açıklanmıyor. V. cümlede bu derinlikte yaşamanın bir sonucu olarak neslinin sürekliliği ifade ediliyor, ama IV. cümlede böyle bir neden-sonuç ilişkisi yok."
+6,gemini_old_flash,,D,True,0.522,503,39,"Seçenek: D
+Açıklama: IV. cümlede yaşadığı bölgenin derinliği belirtilmiş ancak bu bölgeyi seçme nedenleri ifade edilmemiştir."
+6,gemini_new_flash,,D,True,1.183,503,40,"Seçenek: D
+Açıklama: IV. cümlede balığın yaşadığı bölgeye değinilmiş ancak bu bölgeyi seçme nedenleri belirtilmemiştir."
+6,gemini_pro,,D,True,6.943,503,510,"Seçenek: D
+Açıklama: IV. cümlede balığın yaşad"
+6,grok_old,,D,True,2.119,489,42,"Seçenek: D
+Açıklama: IV. cümlede, balığın yaşadığı bölgenin özellikleri belirtilmiş, ancak bu bölgeyi seçme nedenleri ifade edilmemiştir."
+6,grok_old_mini,,D,True,8.401,490,907,"Seçenek: D  
+Açıklama: IV. cümle, balığın yaşadığı bölgenin adlandırılma nedenini açıklar, ancak balığın o bölgeyi seçme nedenlerini ifade etmez."
+6,grok_new,,D,True,4.692,635,602,"Seçenek: D
+Açıklama: IV. cümle, balığın yaşadığı resiflerin adlandırılma nedenini verir, balığın bölgeyi seçme nedenlerini ifade etmez."
+6,deepseek_v3,,D,True,3.812,694,100,"Seçenek: D  
+Açıklama: IV. cümlede balığın yaşadığı derinliğin özelliğinden bahsedilirken, ""neden bu bölgeyi seçtiği"" açıklanmamış, sadece yaşam alanının tanımı yapılmıştır. Bu nedenle D seçeneği yanlıştır."
+6,deepseek_r1,,D,True,11.869,696,512,"Seçenek: D  
+Açıklama: IV. cümlede balığın yaşadığı bölgenin derinliği ve ad"
+6,deepseek_32,,D,False,9.99,694,98,"Seçenek: B  
+Açıklama: The second sentence mentions ""Cirrhilabrus wakanda denilen bu balık, ismini çizgi roman evreninin süper kahraman hikâyesi Kara Panter’den alıyor."" which directly refers to ""Cirrhilabrus wakanda"" and ""Kara Panter,"" matching the query's focus on ""Cirrhilabrus wakanda."""
+6,mock,,D,False,0.101,10,5,Mock cevap
+
+7,openai_new,,B,True,4.823,328,175,"Seçenek: B  
+Açıklama: Yeni olanın, geçmişte gözden kaçan/önemsenmeyen boşluklara temas edilerek ortaya çıkacağını söyler."
+7,openai_mini,,B,False,1.625,329,66,"Seçenek: E  
+Açıklama: Cümlede yeni bir pencere açmanın, geçmişle bağlantı kurarak mümkün olduğu ifade ediliyor. Seçenek E, mevcut düşünceleri özümseyerek yeni bir alan açmanın gerektiğini belirtiyor, bu da benzer bir anlam taşıyor."
+7,openai_4o,,B,True,1.37,329,50,"Seçenek: B  
+Açıklama: Yeni fikirlerin, geçmişte önemsenmeyenlerin keşfiyle ortaya çıkması, eskinin boşluğuna dokunarak yeni bir pencere açmakla paraleldir."
+7,claude_old_haiku,,B,False,1.3,482,90,"Seçenek: A
+Açıklama: Yeni fikirler, geçmişle bağlantıyı koparmak suretiyle ortaya çıkar. Cümlede de belirtildiği gibi, yeni bir pencere açmak, eskinin boşluğuna dokunmakla mümkündür."
+7,claude_new_haiku,,B,False,3.16,482,122,"Seçenek: A
+
+Açıklama: Cümle, yeninin eskinin boşluğuna dokunarak (eski kırılarak) ortaya çıkmasını anlatır. A seçeneği de ""yeni fikirler, gelenekle kurulan sürekliliği kopararak var olur"" diyerek aynı mantığı ifade eder - yeni, eskinin kırılması/kopması yoluyla ortaya çıkar."
+7,claude_sonnet,,B,True,8.915,482,433,"Verilen cümleyi analiz edelim:
+
+""Günümüzde yeni bir pencere açmak, eskinin boşluğuna dokunmakla mümkündür.""
+
+Bu cümle şunu söylüyor: Yenilik/ilerleme, geçmişte ihmal edilmiş/boş bırakılmış alanlara yönelerek mümkün olur.
+
+Seçeneklere bakalım:
+
+A) Yenilik, gelenekle sürekliliği kopararak olur - Hayır, cümle kopuştan değil, eskinin boşluklarından bahsediyor.
+
+B) Özgün düşünceler, geçmişte önemsenmeyenler keşfedilerek ortaya çıkar - Evet! ""Eskinin boşluğu"" = geçmişte önemsenmeyenler
+
+C) Eskinin değerleri kalıcı mirastır - Hayır, yenilikten bahsetmiyor.
+
+D) Çağdaş bakış geleneksel kodları yıkar - Hayır, yıkımdan değil boşluklardan bahsediyor.
+
+E) Yeni alan açmak, mevcut düşünceleri özümsemekle olur - Hayır, boşluklara dokunmaktan bahsediyor.
+
+Seçenek: B
+Açıklama: ""Eskinin boşluğu"" ile ""geçmişte önemsenmeyenler"" aynı anlamı taşır; her ikisi de yeniliğin ihmal edilmiş alanları keşfetmekle ortaya çıktığını söyler."
+7,gemini_old_flash,,B,False,0.93,329,53,"Seçenek: E
+Açıklama: Yeni bir pencere açmak, eskinin boşluğuna dokunmakla mümkündür ifadesi, mevcut düşünceleri özümsemekle yeni bir alan açmanın mümkün olduğunu belirtir."
+7,gemini_new_flash,,B,True,0.631,329,59,"Seçenek: B
+Açıklama: Cümle, yeniliğin eskinin boşluklarını doldurarak ortaya çıktığını belirtiyor. B seçeneği de özgün düşüncelerin geçmişte göz ardı edilenleri keşfederek oluştuğunu ifade ediyor."
+7,gemini_pro,,B,True,6.726,329,510,"Seçenek: B
+Açıklama: Cümledeki ""yeni bir pencere"
+7,grok_old,,B,False,4.821,310,53,"Seçenek: E  
+Açıklama: Cümle, yenilik için eskiye dokunmayı ve onu özümsemeyi vurgular; E şıkkı da aynı şekilde mevcut düşünceleri özümsemeyi ifade eder."
+7,grok_old_mini,,B,True,7.734,311,900,"Seçenek: B  
+Açıklama: Orijinal cümle, yeniliği eskiden kalan unsurları kullanarak elde etmeyi ifade ederken, B şıkkı da geçmişte önemsenmeyenleri keşfederek özgün düşünceler yaratmayı benzer şekilde belirtir."
+7,grok_new,,B,True,16.378,456,1647,"Seçenek: B  
+Açıklama: ""Eskinin boşluğuna dokunmak"", geçmişte önemsenmeyen (ihmal edilen boşluklar) unsurları keşfetmekle eş anlamlıdır; yenilik bu boşluklardan doğar."
+7,deepseek_v3,,B,True,4.754,428,101,"Seçenek: B
+Açıklama: Cümlede ""yeni bir pencere açmanın"" ""eskinin boşluğuna dokunmakla"" mümkün olduğu vurgulanıyor, bu da geçmişte önemsenmeyenlerin keşfedilmesiyle özgün düşüncelerin ortaya çıkabileceği fikriyle uyumlu."
+7,deepseek_r1,,B,False,15.681,430,512,ERROR: No response
+7,deepseek_32,,B,True,3.432,429,139,"Seçenek: B  
+Açıklama: Cümlede ""eskinin boşluğuna dokunmak"" ifadesi, geçmişte eksik kalan veya tamamlanmamış olanı fark etmek ve onu temel alarak yeni bir şey oluşturmak anlamına gelir. B seçeneği de geçmişte önemsenmeyenlerin keşfedilmesiyle özgün düşüncelerin ortaya çıkmasını vurgular, bu da aynı doğrultudadır."
+7,mock,,B,False,0.1,10,5,Mock cevap
+
+8,openai_new,,C,True,9.388,308,379,"Seçenek: C  
+Açıklama: “...takip edenler” özne, “...kapısı önünde” yer tamlayıcısı, “bulurlar” yüklem, “izlerini” belirtili nesnedir."
+8,openai_mini,,C,False,2.479,309,76,"Seçenek: B  
+Açıklama: Cümlede ""Bu caddenin taşlarının üzerinden"" zarf tümleci, ""geçen insanların ayak seslerini"" özne, ""takip edenler"" yüklem, ""bir kalenin oya gibi işlenmiş kapısı önünde"" belirtili nesne olarak sıralanmıştır."
+8,openai_4o,,C,False,2.992,309,80,"Seçenek: B
+Açıklama: Cümlede ""Bu caddenin taşlarının üzerinden yüzyıllar boyunca"" zarf tümleci, ""geçen insanların ayak seslerini takip edenler"" özne, ""bir kalenin oya gibi işlenmiş kapısı önünde"" belirtili nesne, ""bulurlar izlerini"" yüklem."
+8,claude_old_haiku,,C,True,2.47,438,106,"Seçenek: C
+Açıklama: Cümlede özne ""Bu caddenin taşlarının üzerinden yüzyıllar boyunca geçen insanların ayak sesleri"", yer tamlayıcısı ""bir kalenin oya gibi işlenmiş kapısı önünde"", yüklem ""bulurlar"" ve belirtili nesne ""izlerini""dir."
+8,claude_new_haiku,,C,True,3.058,438,252,"Cümleyi analiz edelim:
+
+""Bu caddenin taşlarının üzerinden yüzyıllar boyunca geçen insanların ayak seslerini takip edenler, bir kalenin oya gibi işlenmiş kapısı önünde bulurlar izlerini.""
+
+Ögelerin sırası:
+1. ""Bu caddenin taşlarının üzerinden yüzyıllar boyunca geçen insanların ayak seslerini takip edenler"" = **Özne**
+2. ""bir kalenin oya gibi işlenmiş kapısı önünde"" = **Yer tamlayıcısı**
+3. ""bulurlar"" = **Yüklem**
+4. ""izlerini"" = **Belirtili nesne**
+
+Seçenek: C
+
+Açıklama: Cümlenin temel yapısı özne-yer tamlayıcısı-yüklem-belirtili nesne şeklindedir."
+8,claude_sonnet,,C,True,4.915,438,230,"Cümleyi ögelere ayıralım:
+
+**""Bu caddenin taşlarının üzerinden yüzyıllar boyunca geçen insanların ayak seslerini takip edenler""** - ÖZNE (kim?)
+
+**""bir kalenin oya gibi işlenmiş kapısı önünde""** - YER TAMLAYICISI (nerede?)
+
+**""bulurlar""** - YÜKLEM (ne yapar?)
+
+**""izlerini""** - BELİRTİLİ NESNE (neyi?)
+
+Sıralama: Özne - Yer tamlayıcısı - Yüklem - Belirtili nesne
+
+Seçenek: C
+
+Açıklama: Cümlede önce uzun özne, ardından yer tamlayıcısı, yüklem ve son olarak belirtili nesne gelir."
+8,gemini_old_flash,,C,False,1.19,297,84,"Seçenek: B
+Açıklama: ""Yüzyıllar boyunca geçen insanların ayak seslerini takip edenler"" özne, ""bir kalenin oya gibi işlenmiş kapısı önünde"" yer tamlayıcısı, ""izlerini"" belirtili nesne ve ""bulurlar"" yüklemdir. ""Bu caddenin taşlarının üzerinden"" zarf tümlecidir."
+8,gemini_new_flash,,C,False,0.611,297,73,"Seçenek: B
+Açıklama: ""Bu caddenin taşlarının üzerinden yüzyıllar boyunca geçen insanların ayak seslerini takip edenler"" özne, ""bir kalenin oya gibi işlenmiş kapısı önünde"" yer tamlayıcısı, ""bulurlar"" yüklem, ""izlerini"" belirtili nesnedir."
+8,gemini_pro,,C,True,5.895,297,510,"Seçenek: C
+Açıklama: Cümlenin ögeleri şu"
+8,grok_old,,C,False,8.123,293,64,"Seçenek: B
+Açıklama: Cümlede önce zarf tümleci (yüzyıllar boyunca), sonra özne (insanların ayak seslerini takip edenler), ardından belirtili nesne (izlerini) ve son olarak yüklem (bulurlar) yer alıyor."
+8,grok_old_mini,,C,True,12.726,294,748,"Seçenek: C  
+Açıklama: Cümlede özne (""takip edenler""), yer tamlayıcısı (""bir kalenin... önünde""), yüklem (""bulurlar"") ve belirtili nesne (""izlerini"") sırasıyla yer alır."
+8,grok_new,,C,True,7.899,439,544,"Seçenek: C
+Açıklama: Cümle yapısı: Uzun özne (""...takip edenler""), yer tamlayıcısı (""bir kalenin...önünde""), yüklem (""bulurlar""), belirtili nesne (""izlerini"")."
+8,deepseek_v3,,C,False,4.633,395,104,"Seçenek: B
+Açıklama: ""Bu caddenin taşlarının üzerinden yüzyıllar boyunca"" zarf tümleci, ""geçen insanların ayak seslerini takip edenler"" özne, ""bir kalenin oya gibi işlenmiş kapısı önünde"" belirtili nesne, ""bulurlar izlerini"" yüklemdir."
+8,deepseek_r1,,C,True,23.038,397,745,"Seçenek: C  
+Açıklama:  
+- **Özne**: ""Bu caddenin... takip edenler"" (İzleri bulanlar)  
+- **Yer tamlayıcısı**: ""bir kalenin... önünde"" (Bulma eyleminin yeri)  
+- **Yüklem**: ""bulurlar"" (Eylem)  
+- **Belirtili nesne**: ""izlerini"" (Bulunan şey)  
+Sıralama: Özne > Yer tamlayıcısı > Yüklem > Belirtili nesne."
+8,deepseek_32,,C,False,3.858,399,105,"Seçenek: B
+Açıklama: ""Bu caddenin taşlarının üzerinden yüzyıllar boyunca geçen insanların ayak seslerini"" zarf tümleci, ""takip edenler"" özne, ""bir kalenin oya gibi işlenmiş kapısı önünde"" belirtili nesne, ""bulurlar izlerini"" yüklemdir."
+8,mock,,C,False,0.101,10,5,Mock cevap
+
+9,openai_new,,C,True,5.273,431,236,"Seçenek: C  
+Açıklama: III. cümle isim cümlesidir (“en doğru adres”); diğerlerinin yüklemi fiildir."
+9,openai_mini,,C,False,4.477,432,52,"Seçenek: D  
+Açıklama: D seçeneğindeki cümlede yüklem ""istedim"" fiilidir ve diğer cümlelerdeki yüklemler genellikle durumu veya durumu ifade eden fiillerdir."
+9,openai_4o,,C,True,1.028,432,33,"Seçenek: C  
+Açıklama: III. cümlede yüklem isim cümlesidir, diğerleri fiil cümlesidir."
+9,claude_old_haiku,,C,True,2.095,595,90,"Seçenek: C
+Açıklama: III. cümle, ""izlemek"" fiili ile diğer cümlelerden farklıdır. Diğer cümlelerde yüklem, isim cümlesi veya edilgen yapıda iken III. cümlede eylem cümlesi yapısındadır."
+9,claude_new_haiku,,C,True,3.457,595,217,"Her cümlenin yüklemini analiz edelim:
+
+(I) ""çevirdim"" - fiil yüklemi
+(II) ""uğradım, alıp yöneldim"" - fiil yüklemi
+(III) ""izlemek, öğrenmek...adres"" - isim yüklemi (yüklem: ""adres"")
+(IV) ""istedim"" - fiil yüklemi
+(V) ""öğrendim"" - fiil yüklemi
+
+III. cümle isim yüklemi içerirken, diğer tüm cümleler fiil yüklemine sahiptir.
+
+Seçenek: C
+Açıklama: III. cümlenin yüklemi isim yüklemi (""adres""), diğerlerinin yüklemleri fiil yüklemidir."
+9,claude_sonnet,,C,True,5.402,595,205,"Cümlelerin yüklemlerini inceleyelim:
+
+I. ""çevirdim"" - geçişli fiil
+II. ""uğradım"" ve ""yöneldim"" - geçişsiz fiiller
+III. ""izlemek"" ve ""öğrenmek"" (mastar), ""adres"" - isim cümlesi
+IV. ""yerleşip"" ve ""istedim"" - geçişli fiil
+V. ""öğrendim"" - geçişli fiil
+
+III. cümle isim cümlesidir (yüklemi ""adres"" kelimesidir), diğerleri fiil cümlesidir.
+
+Seçenek: C
+Açıklama: III. cümle isim cümlesi, diğerleri fiil cümlesidir."
+9,gemini_old_flash,,C,False,0.88,422,28,"Seçenek: III
+Açıklama: III. cümle isim cümlesidir, diğerleri fiil cümlesidir."
+9,gemini_new_flash,,C,False,0.64,422,33,"Seçenek: A
+Açıklama: I. cümlenin yüklemi fiil, diğer cümlelerin yüklemleri isim soyludur."
+9,gemini_pro,,C,True,6.146,422,510,"Seçenek: C
+Açıklama: I, II, IV ve V numaralı cümle"
+9,grok_old,,C,True,3.525,403,42,"Seçenek: C  
+Açıklama: III numaralı cümlede yüklem isim cümlesi (fiilsiz) iken diğer cümlelerde yüklemler fiil cümlesidir."
+9,grok_old_mini,,C,True,10.293,404,1136,"Seçenek: C  
+Açıklama: III. cümlenin yüklemi isim cümlesi (adrestir anlamında) iken diğerleri fiil cümleleridir."
+9,grok_new,,C,True,8.318,549,655,"Seçenek: C
+Açıklama: III. cümlede yüklem ""adres"" (isim), diğerlerinde fiil (çevirdim, uğradım/yöneldim, istedim, öğrendim)."
+9,deepseek_v3,,C,False,2.357,547,55,"Seçenek: E
+Açıklama: Diğer cümlelerin yüklemleri fiilken, E seçeneğindeki cümlenin yüklemi isimdir (""öğrendim"")."
+9,deepseek_r1,,C,True,17.392,549,553,"Seçenek: C  
+Açıklama: III. cümlenin yüklemi ""adres"" (isim soylu, ek fiille çekimlenmiş), diğerleri fiil soylu yüklemdir."
+9,deepseek_32,,C,False,71.412,547,55,"Seçenek: E  
+Açıklama: The fifth sentence (V) is the only one that does not contain any punctuation marks (periods, commas, etc) in the given text, while all the others have at least one punctuation mark."
+9,mock,,C,False,0.101,10,5,Mock cevap
+
+10,openai_new,,C,False,10.798,330,512,ERROR: No response
+10,openai_mini,,C,True,1.881,331,44,"Seçenek: C  
+Açıklama: III numaralı tamlama, diğerleri gibi bir yer veya durum tanımlamak yerine, bir nesne (ev) ile ilgili bir durum ifade etmektedir."
+10,openai_4o,,C,False,1.316,331,43,"Seçenek: E  
+Açıklama: ""Yemyeşil bahçeden taşan huzur"" tamlaması sıfat tamlamasıdır, diğerleri isim tamlamasıdır."
+10,claude_old_haiku,,C,True,1.124,459,85,"Seçenek: C
+Açıklama: ""Zevkli döşenmiş bir evin odasında"" tamlaması, diğer tamlamalardan farklı olarak niteleyici bir tamlamadır. Diğer tamlamalar yer, yön veya durum bildiren tamlamalardır."
+10,claude_new_haiku,,C,False,3.064,459,283,"Tamlamaları inceleyelim:
+
+I. ""Kirli bir sokaktan"" - sıfat tamlaması
+II. ""İlk bakışta hepsi birbirine benzeyen kapıların"" - sıfat tamlaması
+III. ""Zevkli döşenmiş bir evin odasında"" - sıfat tamlaması
+IV. ""Yemyeşil bahçeden taşan huzur"" - sıfat tamlaması
+V. ""geniş pencerelerden"" - sıfat tamlaması
+
+Tekrar incelendiğinde:
+- I, II, III, IV: Sıfat tamlaması
+- V: ""geniş pencerelerden ayaklarımın dibine doğru uzanıyordu"" - burada ""geniş pencerelerden"" bir belirtme tamlamasıdır (ilgi tamlaması).
+
+Seçenek: E
+Açıklama: V numaralı tamlama ilgi tamlaması (belirtme tamlaması) iken, diğerleri sıfat tamlamasıdır."
+10,claude_sonnet,,C,False,7.168,459,352,"Metindeki numaralanmış tamlamaları inceleyelim:
+
+I. ""kirli bir sokaktan"" - sıfat tamlaması
+II. ""düz tahta kapıyı"" - sıfat tamlaması
+III. ""zevkli döşenmiş"" - sıfat tamlaması
+IV. ""yemyeşil bahçeden"" - sıfat tamlaması
+V. ""geniş pencerelerden"" - sıfat tamlaması
+
+Ancak daha dikkatli bakarsak:
+
+I. Kirli bir sokaktan - belirtisiz isim tamlaması (bir sokak)
+II. Düz tahta kapı - sıfat tamlaması
+III. Zevkli döşenmiş - sıfat tamlaması
+IV. Yemyeşil bahçe - sıfat tamlaması
+V. Geniş pencereler - sıfat tamlaması
+
+""Kirli bir sokak"" yapısında ""bir"" belirtisiz tanımlık olduğu için bu belirtisiz isim tamlamasıdır. Diğerleri sıfat tamlamasıdır.
+
+Seçenek: A
+Açıklama: I numaralı ""kirli bir sokak"" belirtisiz isim tamlaması, diğerleri sıfat tamlamasıdır."
+10,gemini_old_flash,,C,False,0.906,319,31,"Seçenek: IV
+Açıklama: IV belirtisiz isim tamlamasıdır, diğerleri sıfat tamlamasıdır."
+10,gemini_new_flash,,C,True,1.453,319,36,"Seçenek: C
+Açıklama: ""Zevkli döşenmiş bir ev"" sıfat tamlamasıdır, diğerleri isim tamlamasıdır."
+10,gemini_pro,,C,False,5.621,319,510,"Seçenek: B
+Açıklama: I, IV ve V numaralı tamlamalar"
+10,grok_old,,C,False,4.547,313,48,"Seçenek: D  
+Açıklama: IV numaralı ""yemyeşil bahçeden taşan huzur"" tamlaması, diğerlerinden farklı olarak bir sıfat tamlamasıdır; diğerleri isim tamlamasıdır."
+10,grok_old_mini,,C,False,19.346,314,2211,"Seçenek: A  
+Açıklama: I, sıfat tamlamasıdır; diğerleri (II, III, IV, V) sıfat-fiil tamlamasıdır."
+10,grok_new,,C,False,103.883,459,9647,"Seçenek: A  
+Açıklama: I (""birbirine benzeyen"") zarf tamlamasıdır (zarf grubu fiilimsiyi niteliyor); diğerleri isim/sıfat tamlamasıdır."
+10,deepseek_v3,,C,False,2.464,417,56,"Seçenek: E
+Açıklama: Diğer tamlamalar sıfat tamlaması iken, V. seçenek (yemyeşil bahçe) belgisiz sıfat tamlamasıdır."
+10,deepseek_r1,,C,True,45.207,419,1479,"Seçenek: C  
+Açıklama: III. ""zevkli döşenmiş bir evin"" ifadesi, tamlananı (odası) düşmüş belirtili isim tamlamasıdır. Diğerleri (I, II, IV, V) sıfat tamlamasıdır."
+10,deepseek_32,,C,False,5.851,417,65,"Seçenek: D  
+Açıklama: In the given poem-like text, the line marked IV contains a comma that separates two distinct clauses, while all other numbered lines end with a period (or equivalent punctuation) that concludes a complete statement. Thus, line IV is different in its punctuation structure."
+10,mock,,C,False,0.1,10,5,Mock cevap
+
+11,openai_new,,E,False,21.005,312,512,ERROR: No response
+11,openai_mini,,E,True,1.066,313,26,"Seçenek: E  
+Açıklama: ""resmî"" kelimesi büyük harfle başlamalıdır."
+11,openai_4o,,E,True,1.458,313,31,"Seçenek: E  
+Açıklama: ""bakan"" kelimesi özel isim yerine kullanıldığı için büyük harfle başlamalıydı."
+11,claude_old_haiku,,E,False,1.432,475,71,"Seçenek: C
+Açıklama: ""29 Mayıs 1453"" tarihinin büyük harfle yazılması gerekirken, ""Salı günü"" kısmının büyük harfle yazılması yanlıştır."
+11,claude_new_haiku,,E,True,3.824,475,344,"Seçenekler tek tek incelendiğinde:
+
+A) ""Yozgat Çamlığı Millî Parkı"" - Coğrafi isim ve park adı doğru yazılmış.
+
+B) ""Türkiye Cumhuriyeti"" - Devlet adı doğru yazılmış.
+
+C) ""29 Mayıs 1453 Salı günü"" - Tarih ve gün adı doğru yazılmış.
+
+D) ""Zafer Meydanı"" - Yer adı doğru yazılmış.
+
+E) ""resmî heyeti bakan"" - Burada ""bakan"" kelimesi cümlenin başında olmadığı halde büyük harfle yazılmıştır. Cümle yapısı incelendiğinde ""resmî heyeti bakan geçtiğimiz hafta Ankara'da kabul etti"" şeklinde olup, ""bakan"" burada yüklem konumunda olmasına rağmen küçük harfle yazılması gerekir. Ayrıca cümle anlamsal olarak da sorunludur.
+
+Seçenek: E
+
+Açıklama: ""bakan"" kelimesi cümle ortasında olduğu için büyük harfle yazılmaması gerekir."
+11,claude_sonnet,,E,False,2.559,475,54,"Seçenek: C
+
+Açıklama: Tarih yazımında gün adları küçük harfle başlar. ""Salı"" yerine ""salı"" yazılmalıydı."
+11,gemini_old_flash,,E,False,1.513,310,34,"Seçenek: A
+Açıklama: Millî Parkı kelimesindeki ""Millî"" sözcüğünün ilk harfi küçük olmalıydı."
+11,gemini_new_flash,,E,True,0.678,310,30,"Seçenek: E
+Açıklama: ""Resmî"" kelimesi özel isim olmadığı için küçük harfle başlamalıdır."
+11,gemini_pro,,E,True,5.646,310,510,"Seçenek: E
+Açıklama: Belirli bir kişiyi kasteden makam"
+11,grok_old,,E,False,2.711,294,35,"Seçenek: C
+Açıklama: Gün isimleri özel isim değildir ve büyük harfle başlamaz; ""Salı"" kelimesi yanlış yazılmıştır."
+11,grok_old_mini,,E,False,11.832,295,1274,"Seçenek: C  
+Açıklama: C seçeneğinde ""Salı"" gün adı büyük harfle yazılmış, oysa TDK kurallarına göre küçük harfle yazılmalıdır."
+11,grok_new,,E,False,15.69,440,1345,"Seçenek: C  
+Açıklama: Gün ve ay adları (Mayıs, Salı) Türkçe yazım kurallarına göre küçük harfle yazılır; büyük harf kullanımı yanlıştır."
+11,deepseek_v3,,E,True,1.754,422,45,"Seçenek: E
+Açıklama: ""resmî"" kelimesi özel isim olmadığı için büyük harfle başlamamalıydı."
+11,deepseek_r1,,E,True,17.116,424,547,"Seçenek: E  
+Açıklama: ""resmî"" kelimesi sıfat olduğu ve özel isim niteliği taşımadığı için küçük harfle başlamalıdır. Doğrusu ""resmî heyeti"" şeklinde olmalıydı."
+11,deepseek_32,,E,True,46.878,423,76,"Seçenek: E
+Açıklama: ""bakan"" kelimesi cins isim olarak kullanıldığı için küçük harfle yazılmalıydı; özel isim (ünvan) olmadığından büyük harf kullanımı yanlıştır."
+11,mock,,E,False,0.1,10,5,Mock cevap
+
+12,openai_new,,D,False,12.329,394,512,ERROR: No response
+12,openai_mini,,D,False,1.188,395,36,"Seçenek: C  
+Açıklama: ""Kavuniçi"" kelimesi bitişik yazılmalıdır, çünkü anlam değişikliğine uğramıştır."
+12,openai_4o,,D,False,1.152,395,28,"Seçenek: B  
+Açıklama: ""beşbıyık"" kelimesi bitişik yazılmalıdır."
+12,claude_old_haiku,,D,False,1.225,551,91,"Seçenek: C
+Açıklama: Cırcırböceği ve karınca kelimelerinin birleşmesinde anlam değişikliği olmadığı için bu kelime bitişik yazılmalıdır. Diğer seçeneklerdeki birleşik kelimeler doğru yazılmıştır."
+12,claude_new_haiku,,D,False,2.027,551,104,"Seçenek: C
+
+Açıklama: ""Kavuniçi"" bitişik yazılmalıdır (kavun + iç, her iki kelime de anlam değişmesine uğrar). Cümlede ""kavuniçi elbisesini"" şeklinde yazılması gerekirken ""kavun iç i"" olarak ayrı yazılmıştır."
+12,claude_sonnet,,D,False,7.859,551,359,"Soruyu çözmek için birleşik kelimelerin yazımını kontrol etmeliyim.
+
+Kurala göre: Birleşme sırasında kelimelerden her ikisi veya ikincisi anlam değişmesine uğradığında bitişik yazılır.
+
+Şıklardaki birleşik kelimeleri inceleyelim:
+
+A) bülbülyuvası, kadayıf - Doğru yazılmış
+B) beşbıyık - ""Beş parmak"" anlamında bir meyve. ""Beş"" sayısı anlam değiştirmemiş, sadece yan yana gelmiş. Ayrı yazılmalı: ""beş bıyık""
+C) kavuniçi - Doğru yazılmış (renk adı)
+D) cırcırböceği - Doğru yazılmış
+E) narçiçeği - Doğru yazılmış (renk adı)
+
+""Beşbıyık"" kelimesinde ""beş"" sayısı kendi anlamını koruduğu için ayrı yazılması gerekir.
+
+Seçenek: B
+Açıklama: ""Beşbıyık"" kelimesinde ""beş"" sayısı anlam değişmediği için ayrı yazılmalıdır: ""beş bıyık"""
+12,gemini_old_flash,,D,False,1.008,379,34,"Seçenek: B
+Açıklama: Beşbıyık kelimesi anlam değişikliğine uğradığı için bitişik yazılmalıdır."
+12,gemini_new_flash,,D,False,0.732,379,32,"Seçenek: B
+Açıklama: ""Beşbıyık"" kelimesi bitişik yazılması gerekirken ayrı yazılmıştır."
+12,gemini_pro,,D,False,5.709,379,510,"Seçenek: E
+Açıklama: ""Narçiçeği"" bir renk"
+12,grok_old,,D,False,5.028,364,50,"Seçenek: B
+Açıklama: ""Beşbıyık"" kelimesi birleşik kelime değildir ve bitişik yazılması yanlıştır; doğru yazımı ""beş bıyık"" şeklindedir."
+12,grok_old_mini,,D,False,19.703,365,2255,"Seçenek: B  
+Açıklama: ""Beşbıyık"" kelimesi, anlam değişimi olmadığı için ayrık yazılmalıydı (beş bıyık), ancak bitişik yazılmış."
+12,grok_new,,D,False,33.555,510,2563,"Seçenek: B
+Açıklama: ""Beşbıyık"" bitişik yazılmış; ancak sayı (beş) + isim (bıyık) tamlamasında anlam değişmediği için ayrı (""beş bıyık"") yazılmalıdır. Diğer şıklardaki birleşikler (bülbülyuvası, kavuniçi vb.) kurala uygundur."
+12,deepseek_v3,,D,False,2.87,506,68,"Seçenek: C
+Açıklama: ""Kavuniçi"" kelimesi bitişik yazılmalıdır çünkü anlam değişmesine uğramıştır. Doğru yazım ""kavuniçi""dir."
+12,deepseek_r1,,D,True,262.92,508,9167,"Seçenek: D  
+Açıklama: ""Cırcırböceği"" bitişik yazılmış, ancak ""cırcır"" ve ""böceği"" kelimeleri birleşirken ikinci kelime (böceği) anlam değişikliğine uğramadığı için ayrı yazılmalıdır (""cırcır böceği""). Diğer şıklarda anlam değişimi nedeniyle bitişik yazım doğrudur."
+12,deepseek_32,,D,False,2.732,507,95,"Seçenek: B
+Açıklama: ""Beşbıyık"" birleşik kelimesi, ikinci kelimesi anlam değişmesine uğradığı için bitişik yazılmalıdır. Verilen cümlede ""beş bıyık"" ayrı yazılmıştır, bu yazım yanlıştır."
+12,mock,,D,False,0.1,10,5,Mock cevap
+
+13,openai_new,,C,False,14.283,320,512,ERROR: No response
+13,openai_mini,,C,False,1.646,321,42,"Seçenek: E  
+Açıklama: Cümle yapısına göre, iki ana düşünceyi ayırmak için iki nokta (:) ve virgül (,) kullanılması uygun."
+13,openai_4o,,C,False,1.776,321,53,"Seçenek: E  
+Açıklama: İlk boşlukta açıklama yapıldığı için (:) kullanılır, ardından gelen cümleler arasında (,) ve (.) kullanılır. Son iki boşlukta ise (,) ve (;) uygun."
+13,claude_old_haiku,,C,True,1.324,473,115,"Seçenek: C
+Açıklama: Parçada boş bırakılan yerlere sırasıyla iki nokta üst üste (:), virgül (,), nokta (.), noktalı virgül (;) ve virgül (,) getirilmelidir. Bu noktalama işaretleri parçadaki anlam akışını ve cümle yapısını en iyi şekilde tamamlamaktadır."
+13,claude_new_haiku,,C,False,2.173,473,136,"Seçenek: B
+
+Açıklama: İlk boş "":"" (iki nokta) ile açıklama başlatılır. İkinci boş "";"" (noktalı virgül) ile paralel yapılar ayrılır. Üçüncü boş ""."" (nokta) ile cümle tamamlanır. Dördüncü boş "","" (virgül) ile sıralama devam eder. Beşinci boş "";"" (noktalı virgül) ile son yapı ayrılır."
+13,claude_sonnet,,C,True,11.533,473,491,"Metni noktalama işaretleriyle birlikte inceleyelim:
+
+1. ""Her dönemin temelde iki tür davranışı vardır"" - Bu cümle açıklama getireceği için **(:)** gerekir.
+
+2. ""Bir taraftan tanık olduğunu 'saklamak'"" - Devamında ""diğer taraftan"" geldiği için **virgül (,)** gerekir.
+
+3. ""diğer taraftan ise geleceğe 'aktarmak' ister"" - Cümle tamamlanıyor, **nokta (.)** gerekir.
+
+4. ""İşte bunlar"" - Açıklama devam ediyor, **virgül (,)** gerekir.
+
+5. ""hangi şartlar altında"" - Devamında başka soru kelimesi geldiği için **virgül (,)** gerekir.
+
+Sıralama: (:) (,) (.) (,) (,)
+
+Ancak 4. boşlukta ""İşte bunlar"" dan sonra açıklama geldiği için noktalı virgül de mantıklı olabilir. E şıkkına bakıldığında: (:) (,) (.) (,) (;) - Son noktalı virgül ""hangi şartlar altında"" ile ""hangi duygularla"" arasında olacak ki bu uygun değil.
+
+C şıkkı: (:) (,) (.) (;) (,) - ""İşte bunlar"" dan sonra noktalı virgül daha uygun.
+
+Seçenek: C
+Açıklama: İlk boşluk açıklama için (:), ikinci virgül, üçüncü cümle sonu (.), dördüncü ""İşte bunlar"" sonrası açıklama için (;), beşinci sıralama için (,) gerekir."
+13,gemini_old_flash,,C,True,1.044,313,84,"Seçenek: C
+Açıklama: İlk boşluk açıklama gerektirdiği için iki nokta, ikinci boşluk eş görevli kelimeler olduğu için virgül, üçüncü boşluk cümlenin bittiğini belirttiği için nokta, dördüncü boşluk iki cümleyi bağladığı için noktalı virgül, son boşluk ise ara söz olduğu için virgül gelmelidir."
+13,gemini_new_flash,,C,True,0.9,313,90,"Seçenek: C
+Açıklama: İlk boşluğa açıklama yapılacağı için iki nokta, ikinci boşluğa eş görevli sözcükleri ayırmak için virgül, üçüncü boşluğa cümle bittiği için nokta, dördüncü boşluğa sıralı cümleleri ayırmak için noktalı virgül, son boşluğa ise eş görevli sözcükleri ayırmak için virgül gelir."
+13,gemini_pro,,C,True,6.46,313,510,"Seçenek: C
+Açıklama: İlk boşluğa, kendisinden sonra açıkl"
+13,grok_old,,C,True,4.735,307,66,"Seçenek: C
+Açıklama: Parçadaki anlam ve cümle yapısına göre noktalama işaretleri sırasıyla iki nokta, virgül, nokta, noktalı virgül ve virgül olmalıdır. Bu, cümlenin akıcılığını ve anlam bütünlüğünü sağlar."
+13,grok_old_mini,,C,True,10.752,308,1185,"Seçenek: C  
+Açıklama: Metindeki boşluklar sırasıyla iki nokta üst üste (:), virgül (,), nokta (.), noktalı virgül (;) ve virgül (,) ile doldurulmalı, bu C seçeneğine uyar."
+13,grok_new,,C,True,6.68,453,723,"Seçenek: C
+Açıklama: Cümle yapısına göre ilk iki nokta üst üste (:) ile liste başlar, virgül (,) ile devam eder, nokta (.) ile yeni cümle ayrılır, noktalı virgül (;) ile yan cümle bağlanır ve son virgül (,) şartları ayırır."
+13,deepseek_v3,,C,True,5.153,419,96,"Seçenek: C
+Açıklama: İlk boşlukta tanım yapıldığı için (:) kullanılır. Diğer boşluklarda sıralı cümleler ve ara sözler olduğu için (,) ve (.) uygundur. Son boşlukta ise ara söz olduğu için (,) kullanılır."
+13,deepseek_r1,,C,False,15.096,421,512,ERROR: No response
+13,deepseek_32,,C,True,3.97,420,151,"Seçenek: C  
+Açıklama: İlk boşluk açıklama yapılacağı için iki nokta (:), ikinci boşluk sıralı cümleler arasında virgül (,), üçüncü boşluk cümle sonu için nokta (.), dördüncü boşluk açıklamadan önce noktalı virgül (;), beşinci boşluk ise ara sözün başında ve sonunda virgül (,) kullanıldığından sadece başındaki virgül gereklidir."
+13,mock,,C,False,0.1,10,5,Mock cevap
+
+14,openai_new,,B,True,10.239,418,400,"Seçenek: B  
+Açıklama: II. cümlede “ne…, ne de…” bağlacında virgül kullanılmaz."
+14,openai_mini,,B,False,1.439,419,48,"Seçenek: D  
+Açıklama: D cümlesinde ""biraz soluklanıp"" ifadesinden sonra virgül kullanılmamalıdır; bu kısım cümlenin akışını kesmektedir."
+14,openai_4o,,B,False,1.138,419,59,"Seçenek: III  
+Açıklama: ""Yıldırım’ın buna canı sıkıldı, uykuları kaçtı ve gece kimseye haber vermeden atına binip hızla kaleye gitti."" cümlesinde virgül kullanımı gereksizdir."
+14,claude_old_haiku,,B,False,1.769,607,106,"Seçenek: C
+Açıklama: III. cümlede virgül kullanımında yanlışlık yapılmıştır. Cümle ""Yıldırım'ın buna canı sıkıldı, uykuları kaçtı ve gece kimseye haber vermeden atına binip hızla kaleye gitti."" şeklinde olmalıdır."
+14,claude_new_haiku,,B,False,2.283,607,112,"Seçenek: D
+
+Açıklama: IV. cümlede ""Yüksek bir yere çıktı, biraz soluklanıp gök gürler gibi bir sesle"" kısmında, ""gök gürler gibi bir sesle"" sıfat tamlaması olduğu için virgülden sonra gelmemelidir. Virgül yerine virgülsüz yazılması gerekir."
+14,claude_sonnet,,B,False,8.517,607,445,"Her cümledeki virgül kullanımını kontrol edeyim:
+
+(I) ""kuşatılmış Niğbolu Kalesi'nden haber almak, düşmanın asker sayısını öğrenmek niyetiyle"" - Sıralanan amaçlar arasında virgül doğru.
+
+(II) ""ne düşmandan esir, ne de içeriden haber"" - ""ne...ne de"" yapısında virgül doğru.
+
+(III) ""canı sıkıldı, uykuları kaçtı ve gece kimseye haber vermeden"" - Sıralanan cümleler arasında virgül doğru.
+
+(IV) ""biraz soluklanıp gök gürler gibi bir sesle"" - Burada virgül yok, sorun yok. ""Bre Doğan! Bre Doğan! Hâliniz nicedir?"" - Ünlem cümleleri arasında virgül kullanılmamış ama bu doğru.
+
+(V) ""Merak buyurmayın Hünkârım!"" - Hitap sözcüğü ""Hünkârım"" virgülle ayrılmalıydı. ""Her taraf muhkem, muhafızlar gece gündüz uyanık, yeteri kadar zahirem mevcut."" - Sıralanan cümleler arasında virgüller var ama ""Merak buyurmayın, Hünkârım!"" olmalıydı.
+
+Seçenek: E
+Açıklama: Hitap sözcüğü ""Hünkârım"" virgülle ayrılmalıydı: ""Merak buyurmayın, Hünkârım!"""
+14,gemini_old_flash,,B,False,0.768,407,59,"Seçenek: V
+Açıklama: ""Merak buyurmayın Hünkârım!"" ifadesinde Hünkârım kelimesinden sonra virgül gelmemeliydi. Çünkü bu bir seslenme ifadesidir ve seslenilen kelimeden sonra virgül kullanılmaz."
+14,gemini_new_flash,,B,False,0.55,407,33,"Seçenek: C
+Açıklama: III numaralı cümlede ""kaçtı"" yükleminden sonra virgül kullanılması gereksizdir."
+14,gemini_pro,,B,True,5.998,407,510,"Seçenek: B
+Açıklama: ""Ne... ne..."" bağlacı"
+14,grok_old,,B,False,5.272,394,57,"Seçenek: C
+Açıklama: III numaralı cümlede ""sıkıldı, uykuları kaçtı"" ifadesinden sonra virgülün kullanımı gereksizdir; çünkü bağlaç olan ""ve"" zaten cümleleri bağlamaktadır."
+14,grok_old_mini,,B,False,11.083,395,1161,"Seçenek: A  
+Açıklama: I. cümlede noktalı virgül yerine virgül kullanılmalı."
+14,grok_new,,B,True,26.362,540,2130,"Seçenek: B
+Açıklama: II cümlesinde ""ne düşmandan esir, ne de içeriden"" yapısında virgül yanlış; ""ne... ne de..."" bağlacında virgül kullanılmaz (TDK kuralı)."
+14,deepseek_v3,,B,False,3.508,538,77,"Seçenek: D
+Açıklama: IV. cümlede ""biraz soluklanıp gök gürler gibi"" ifadesinde virgül eksikliği var. ""Biraz soluklanıp, gök gürler gibi"" şeklinde olmalıydı."
+14,deepseek_r1,,B,False,50.584,540,1346,"Seçenek: D  
+Açıklama: IV. cümlede ""gök gürler gibi bir sesle"" ifadesinden sonra tırnak içindeki söze geçilirken virgül konmalıydı. Doğru kullanım: ""...bir sesle, 'Bre Doğan!...' diye bağırdı."" şeklinde olmalıydı. Diğer cümlelerde virgül kurallara uygundur."
+14,deepseek_32,,B,False,20.691,539,264,"Seçenek: C
+Açıklama: III. cümlede ""Yıldırım’ın buna canı sıkıldı, uykuları kaçtı ve gece kimseye haber vermeden atına binip hızla kaleye gitti."" ifadesinde ""canı sıkıldı"" ve ""uykuları kaçtı"" sıralı cümleler olduğu için aralarındaki virgül doğru, ancak ""ve"" bağlacından sonra virgül kullanılmaz; burada ""ve gece kimseye haber vermeden..."" kısmında virgül gereksizdir veya yanlış konumdadır. Asıl yanlışlık, ""ve""den sonra virgül olmaması gerektiği halde, cümledeki virgülün yanlış yerde kullanıldığı veya fazla olduğu şeklinde yorumlanabilir, ancak seçenekler arasında en belirgin hata III. cümlededir."
+14,mock,,B,False,0.1,10,5,Mock cevap
+
+15,openai_new,,D,True,3.684,455,81,"Seçenek: D  
+Açıklama: Denememenin asıl risk olduğunu somut bir örnekle (Edison’un sözleriyle) destekleyip anlatımı güçlendirmek için kullanılmıştır."
+15,openai_mini,,D,True,1.085,456,40,"Seçenek: D  
+Açıklama: Edison'un başarısız deneyleri, denemenin önemini somut bir örnekle destekleyerek anlatımı güçlendirir."
+15,openai_4o,,D,True,2.711,456,35,"Seçenek: D  
+Açıklama: Edison'un başarısız deneyleri, denemenin önemini somut bir örnekle güçlendiriyor."
+15,claude_old_haiku,,D,True,1.566,668,121,"Seçenek: D
+Açıklama: Edison'un ""nasıl yapamayacağınızı görmüş olacaksınız"" sözü, deneme-yanılma yöntemiyle elde edilen başarısız deneylerin de değerli olduğunu vurgulamaktadır. Bu, metinde sunulan düşünceyi somut bir örnekle destekleyerek anlatımı güçlendirmektedir."
+15,claude_new_haiku,,D,True,2.124,668,110,"Seçenek: D
+
+Açıklama: Edison örneği, ""deneyerek her durumda kazanacaksınız"" ana fikrini somut bir gerçek olay/kişi ile destekleyerek anlatımı güçlendirmektedir. Edison'un başarısız deneyleri, denemenin değerini kanıtlayan somut bir örnek olarak kullanılmıştır."
+15,claude_sonnet,,D,True,4.039,668,98,"Seçenek: D
+
+Açıklama: Metinde Edison'un başarısız deneyleri sonrası söylediği söz, ""denemenin risk olmadığı, denememekten her durumda bir şeyler öğrenileceği"" ana fikrine somut bir örnek teşkil ediyor ve anlatımı güçlendiriyor."
+15,gemini_old_flash,,D,True,0.799,450,32,"Seçenek: D
+Açıklama: Edison örneği, denemenin faydalarını somutlaştırarak anlatımı güçlendiriyor."
+15,gemini_new_flash,,D,True,0.628,450,37,"Seçenek: D
+Açıklama: Edison'un sözü, denemenin başarısızlıkla sonuçlansa bile bir kazanım olduğunu somutlaştırır."
+15,gemini_pro,,D,True,5.535,450,510,"Seçenek: D
+Açıklama: Parçada, denemenin başarısızlıkla"
+15,grok_old,,D,True,3.713,435,45,"Seçenek: D  
+Açıklama: Edison’un başarısız deneylerden öğrenme yaklaşımı, metindeki “denememenin risk olduğu” fikrini somut bir örnekle desteklemek için kullanılmıştır."
+15,grok_old_mini,,D,True,5.824,436,558,"Seçenek: D  
+Açıklama: Edison'un başarısız deneyleri, metnin denemenin değerini anlatan ana fikrini somut bir örnekle destekleyerek anlatımı güçlendiriyor."
+15,grok_new,,D,True,5.593,581,412,"Seçenek: D
+Açıklama: Edison'un sözü, denemenin faydasını (başarısızlık bile öğrenme sağlar) somut bir örnekle destekleyerek ana düşünceyi güçlendirir."
+15,deepseek_v3,,D,True,2.447,619,61,"Seçenek: D
+Açıklama: Edison’dan söz edilmesi, anlatılanlara somut bir örnek vererek anlatımı güçlendirmek amacıyla yapılmıştır."
+15,deepseek_r1,,D,True,11.072,621,512,"Seçenek: D  
+Açıklama: Edison örneği, paragraftaki ""denemenin her durumda kazanç olduğu"" ana dü"
+15,deepseek_32,,D,True,2.047,620,49,"Seçenek: D
+Açıklama: Edison, denemekle ilgili ana düşünceyi somut bir örnekle desteklemek için kullanılmıştır."
+15,mock,,D,False,0.1,10,5,Mock cevap
+
+16,openai_new,,D,True,4.899,449,123,"Seçenek: D  
+Açıklama: I-IV müzeyi ve önemini anlatıyor; V-VI ise Zeugma şehrinin tarihine geçiyor, bu yüzden ikinci paragraf V ile başlar."
+16,openai_mini,,D,False,1.406,450,56,"Seçenek: C  
+Açıklama: II. cümle, müzenin önemini vurgularken, III. cümle müzenin özelliklerini açıklamaktadır. Bu nedenle ikinci paragraf III. cümle ile başlamalıdır."
+16,openai_4o,,D,False,1.117,450,31,"Seçenek: V  
+Açıklama: V cümlesi, tarihsel bilgi vererek yeni bir konuya geçiş yapıyor."
+16,claude_old_haiku,,D,False,2.106,635,128,"Seçenek: E
+Açıklama: Parçanın ikinci paragrafı VI. cümle ile başlamaktadır. VI. cümle ""Yaklaşık iki yüz elli yıl sonra Roma İmparatorluğu'na bağlanan şehir, ""köprü, geçit"" anlamlarına gelen ve bugün müzeye de adını veren Zeugma olarak anılmaya başlanmıştır."" şeklindedir."
+16,claude_new_haiku,,D,False,3.357,635,184,"Seçenek: E
+
+Açıklama: Metni iki paragrafa ayırdığımızda, ilk paragraf Gaziantep ve Zeugma Müzesi hakkında genel bilgi verir (I-V). İkinci paragraf ise Zeugma şehrinin tarihsel kökenine (MÖ 300) ve adının etimolojisine odaklanır. VI. cümle ""Yaklaşık iki yüz elli yıl sonra..."" ifadesiyle yeni bir zaman dilimi başlatarak, şehrin Roma dönemindeki adlandırılmasını açıklar. Bu nedenle ikinci paragraf VI. cümleyle başlamalıdır."
+16,claude_sonnet,,D,True,5.214,635,204,"Metni incelediğimde:
+
+**Birinci paragraf:** Gaziantep'in turistik mekanları ve Zeugma Mozaik Müzesi hakkında genel bilgiler (I-IV. cümleler)
+
+**İkinci paragraf:** Zeugma şehrinin tarihçesi (V-VI. cümleler)
+
+IV. cümle müzedeki buluntulardan bahsederken, V. cümle Zeugma şehrinin tarihine geçiş yapıyor. Bu nedenle ikinci paragraf V. cümle ile başlamalı.
+
+Seçenek: D
+Açıklama: İlk paragraf müzeyi anlatır, ikinci paragraf V. cümleyle Zeugma şehrinin tarihine geçer."
+16,gemini_old_flash,,D,False,0.752,448,57,"Seçenek: V
+Açıklama: İlk dört cümle Zeugma Mozaik Müzesi hakkında bilgi verirken, V. cümle Zeugma şehrinin tarihine giriş yapıyor. Bu nedenle yeni bir paragrafa geçiş için uygun bir başlangıçtır."
+16,gemini_new_flash,,D,False,0.533,448,32,"Seçenek: V
+Açıklama: V. cümleden itibaren Zeugma Antik Kenti'nin tarihçesine geçilmektedir."
+16,gemini_pro,,D,True,6.227,448,510,"Seçenek: D
+Açıklama: İlk dört cümlede Zeugma"
+16,grok_old,,D,True,4.328,425,47,"Seçenek: D
+Açıklama: İlk paragraf şehrin genel tarihini ve müzeyi tanıtıyor (I-IV), ikinci paragraf ise Zeugma şehrinin tarihine dair detaylarla başlıyor (V)."
+16,grok_old_mini,,D,True,10.228,426,1047,"Seçenek: D  
+Açıklama: Metin, ilk dört cümlede (I-IV) müze tanıtımına odaklanırken, V. cümleden itibaren Zeugma şehrinin tarihine geçer, bu yüzden ikinci paragraf V ile başlar."
+16,grok_new,,D,True,24.339,571,1905,"Seçenek: D  
+Açıklama: İlk dört cümle Gaziantep turizmi ve Zeugma Müzesi tanıtımını kapsar; V. cümleyle Zeugma şehrinin tarihsel kökeni ayrı bir paragraf olarak başlar."
+16,deepseek_v3,,D,True,3.904,593,103,"Seçenek: D  
+Açıklama: Paragraf ikiye ayrıldığında V. cümle yeni bilgi (Zeugma'nın kuruluşu) vererek ikinci paragrafın başlangıcı olabilir. Önceki cümleler müzenin özelliklerinden bahsederken V. cümle tarihsel kökene geçiş yapar."
+16,deepseek_r1,,D,True,23.677,595,764,"Seçenek: D  
+Açıklama: İlk dört cümle (I-IV) Zeugma Müzesi'nin güncel önemi ve içeriğine odaklanırken, V. cümle antik Zeugma şehrinin kuruluş tarihine geçiş yaparak konuyu tematik olarak değiştirir. Bu nedenle ikinci paragraf V ile başlar."
+16,deepseek_32,,D,True,3.497,594,97,"Seçenek: D
+Açıklama: İkinci paragrafın başlangıcı yeni bir konuya geçiş yapan cümle olmalıdır. V. cümlede Zeugma'nın tarihsel kuruluşundan bahsedilerek yeni bir bilgi sunulmakta, bu da paragraf değişikliği gerektirir."
+16,mock,,D,False,0.1,10,5,Mock cevap
+
+17,openai_new,,A,True,6.814,411,170,"Seçenek: A  
+Açıklama: I. cümle “etik/ yemin” konusuna kayıyor; diğer cümleler hastalıkların doğal–doğaüstü nedenleri ve buna bağlı tedavi anlayışı üzerine ilerliyor."
+17,openai_mini,,A,False,2.091,412,77,"Seçenek: D  
+Açıklama: D seçeneği, hastalıkların doğaüstü nedenlerle ortaya çıktığını savunarak, metnin genel akışındaki mantıksal ilerleyişi bozmaktadır. Diğer cümleler, Hipokrat'ın akılcı açıklamalarını ve tıbbın gelişimini desteklemektedir."
+17,openai_4o,,A,True,1.27,412,39,"Seçenek: A  
+Açıklama: I. cümle, Hipokrat yemininden bahsediyor, diğer cümleler hastalıkların nedenleriyle ilgili."
+17,claude_old_haiku,,A,False,3.174,599,128,"Seçenek: C
+Açıklama: III. cümle, parçanın akışını bozmaktadır. Çünkü önceki cümleler Hipokrat'ın tıp bilimindeki etik ilkelerinden bahsederken, III. cümle Hipokrat öncesi Yunanistan'daki hastalık anlayışına geçiş yapmaktadır. Bu ani geçiş parçanın akışını bozmaktadır."
+17,claude_new_haiku,,A,False,3.563,599,230,"Seçenek: B
+
+Açıklama: Cümle II, ""Hipokrat'ın benimsediği ilkelerden biri bugün de geçerliğini korur"" diyerek olumlu bir devam vaat eder, ancak hemen sonra ""İnsanların, akılcı açıklamaları olan 'doğal' nedenler yüzünden hastalandığı"" şeklinde devam eder. Bu, Hipokrat'ın yenilikçi katkısını vurgulayan cümle olması gerekirken, metinde III-IV-V cümlelerinde Hipokrat öncesi dönemin doğaüstü inançlarından bahsedilmektedir. Cümle II, bu arka plan bilgisinden sonra gelmesi gereken bir sonuç cümlesidir ve akışı bozar."
+17,claude_sonnet,,A,True,8.574,599,356,"Parçanın akışını inceleyelim:
+
+I. Hipokrat yemini ve tıp etiği tanıtılıyor
+II. Hipokrat'ın ilkesi: hastalıkların doğal nedenleri var
+III. Hipokrat öncesi: hastalıkların doğaüstü boyutu varsayılıyordu
+IV. Tanrılar ve büyü nedeniyle hastalık düşüncesi (III'ün devamı)
+V. Doğaüstü güçler varsa tedavi rahip/büyücülere bırakılmalı (III-IV'ün devamı)
+
+I. cümle Hipokrat yemininden bahsediyor ancak parçanın geri kalanı Hipokrat'ın hastalıkları doğal nedenlerle açıklama yaklaşımı ve önceki dönemin doğaüstü inançları üzerine. Hipokrat yemini ve etik prensipler bu akışa katkı sağlamıyor, düşünce akışını bozuyor.
+
+Seçenek: A
+Açıklama: I. cümle Hipokrat yemininden bahseder ancak parçanın asıl konusu hastalıkların doğal vs doğaüstü nedenleri karşılaştırmasıdır."
+17,gemini_old_flash,,A,False,0.769,403,35,"Seçenek: I
+Açıklama: İlk cümle genel bir giriş yaparken, diğer cümleler Hipokrat öncesi ve sonrası düşünceleri karşılaştırıyor."
+17,gemini_new_flash,,A,True,1.245,403,63,"Seçenek: A
+Açıklama: I numaralı cümle, Hipokrat yemini ve tıp etiğinden bahsederken, diğer cümleler Hipokrat'ın hastalıkların nedenlerine dair görüşleri ve önceki inançları ele almaktadır. Bu nedenle I. cümle konudan sapmaktadır."
+17,gemini_pro,,A,True,6.268,403,510,"Seçenek: A
+Açıklama: Parçanın genelinde Hipokrat'ın get"
+17,grok_old,,A,False,3.145,390,55,"Seçenek: B
+Açıklama: II numaralı cümle, Hipokrat’ın akılcı yaklaşımını vurgulasa da parçanın genel akışında diğer cümlelerle doğrudan bağlantı kurmuyor ve detay olarak gereksiz görünüyor."
+17,grok_old_mini,,A,False,11.727,391,1183,"Seçenek: B  
+Açıklama: İkinci cümle, Hipokrat'ın prensibinin güncelliğini vurgulayarak metnin tarihi karşılaştırmalı akışını bozar."
+17,grok_new,,A,False,38.049,536,2826,"Seçenek: B
+Açıklama: I. cümle Hipokrat yeminini etik prensiplerle bağlarken, II. cümle yeminden bağımsız bilimsel bir ilke (doğal nedenler) getirerek akışı bozar; sonraki cümleler tarihsel kontrasta odaklanır."
+17,deepseek_v3,,A,False,4.621,546,93,"Seçenek: B
+Açıklama: II. cümle Hipokrat'ın ilkelerinden bahsederken, diğer cümleler hastalıkların doğaüstü nedenlerle ilişkilendirildiği dönemi anlatıyor. Bu nedenle II. cümle düşünce akışını bozmaktadır."
+17,deepseek_r1,,A,False,32.296,548,1234,"Seçenek: B
+Açıklama: II. cümlede ""bugün de geçerli"" vurgusu, paragrafın tarihsel karşılaştırma akışını keserek gereksiz bir zaman atıfı yapıyor. Diğer cümleler Hipokrat öncesi ve sonrasını kıyaslarken, bu ifade bağlam dışı kalıyor."
+17,deepseek_32,,A,False,4.073,550,124,"Seçenek: B
+Açıklama: II. cümle, Hipokrat'ın ""doğal nedenler"" ilkesini vurgularken, diğer cümleler Hipokrat öncesi doğaüstü açıklamalardan bahsederek bir karşılaştırma yapıyor. II. cümle bu akışta uyumsuzdur, çünkü konu Hipokrat'ın kendisi değil, öncesiyle kontrasttır."
+17,mock,,A,False,0.1,10,5,Mock cevap
+
+18,openai_new,,D,False,8.096,478,196,"Seçenek: B  
+Açıklama: Parçada taşra yalnızlığının yazarı kurmacaya yönelttiği, kalem ve kitaplarla dost edip üretimini beslediği söyleniyor."
+18,openai_mini,,D,False,1.399,479,52,"Seçenek: B  
+Açıklama: Yazar, yalnızlığın edebiyat üretiminde hayal gücünü beslediğini vurgulamakta, bu da yalnızlığın yaratıcılığa katkısını destekler."
+18,openai_4o,,D,False,1.719,479,67,"Seçenek: B  
+Açıklama: Parçada, taşra yalnızlığının kurmacayla avantaja dönüştürülmesi ve kişinin kendisiyle baş başa kalmasının faydalı olduğu vurgulanıyor. Bu, yalnızlığın hayal gücünü beslemesiyle örtüşüyor."
+18,claude_old_haiku,,D,True,1.422,684,112,"Seçenek: D
+Açıklama: Metinde, yazarın taşra yalnızlığını kurmacayla avantaja dönüştürmeye çalıştığı ve bu sayede edebiyatla uğraşarak mekânı ve olumsuz duyguları aşabildiği belirtilmektedir. Bu, D şıkkındaki düşünceyi desteklemektedir."
+18,claude_new_haiku,,D,True,3.375,684,139,"Seçenek: D
+
+Açıklama: Yazar, taşra yalnızlığını (olumsuz durum) ve mekânsal sınırlılığı kurmacayla (edebiyatla) avantaja dönüştürdüğünü, böylece sonsuz bir kültür evreni oluşturduğunu belirtmektedir. Bu, edebiyatın mekân ve olumsuz duyguları aşmayı mümkün kıldığını gösterir."
+18,claude_sonnet,,D,True,4.122,684,150,"Seçenek: D
+
+Açıklama: Yazar, taşra yalnızlığını (olumsuz duygu) ve kültürel açıdan cılız bir şehirde (mekân) yaşamayı, edebiyat yoluyla (kalem ve kitaplarla dostluk kurarak) avantaja dönüştürdüğünü ve alternatif bir yaşantı oluşturduğunu belirtiyor. Bu, mekân ve olumsuz duyguları edebiyatla aşmayı ifade eder."
+18,gemini_old_flash,,D,True,0.752,461,35,"Seçenek: D
+Açıklama: Parçada yazar, taşra yalnızlığının olumsuzluklarını edebiyatla aşmaya çalıştığını belirtiyor."
+18,gemini_new_flash,,D,True,0.583,461,40,"Seçenek: D
+Açıklama: Yazar, taşra yalnızlığını ve kültürel cılızlığı edebiyatla aşarak kendine bir alternatif yarattığını belirtiyor."
+18,gemini_pro,,D,True,6.056,461,510,"Seçenek: D
+Açıklama: Parçada yazar, ""taşra"
+18,grok_old,,D,True,6.186,444,55,"Seçenek: D
+Açıklama: Parçada, taşra yalnızlığının edebiyat yoluyla avantaja dönüştürüldüğü ve mekânın sınırlılıklarının aşılabildiği vurgulanıyor. D şıkkı bu düşünceyi destekler."
+18,grok_old_mini,,D,True,9.963,445,1090,"Seçenek: D  
+Açıklama: Parça, taşra yalnızlığı gibi olumsuz duyguları ve mekân sınırlılığını edebiyatla avantaja çevirmeyi vurguladığı için D seçeneği doğrudan destekler."
+18,grok_new,,D,True,4.433,590,508,"Seçenek: D  
+Açıklama: Parçada taşra (mekân) yalnızlığını (olumsuz duygu) kurmacayla avantaja dönüştürmek ve alternatif kültür evreni yaratmak, edebiyatla aşmanın mümkün olduğunu destekler."
+18,deepseek_v3,,D,True,3.732,634,75,"Seçenek: D
+Açıklama: Parçada yazar, taşra yalnızlığını edebiyatla aştığını ve alternatif bir kültür evreni oluşturduğunu belirtiyor. Bu, D seçeneğiyle uyumlu."
+18,deepseek_r1,,D,False,23.75,636,830,"Seçenek: B  
+Açıklama: Parçada yazar, taşra yalnızlığını ""kurmacayla avantaja dönüştürme"" çabasından ve bu durumun onu ""kalem ve kitaplarla dostluğa sevk ettiğinden"" bahseder. B seçeneği, yalnızlığın edebî eser yazma sürecinde hayal gücünü beslediğini belirterek bu düşünceyi doğrudan destekler. Diğer seçeneklerdeki ""kültür yakınlığı"", ""mekânı aşmak"" veya ""kalabalıklara tavır"" gibi unsurlar parçada vurgulanmamıştır."
+18,deepseek_32,,D,True,4.269,635,144,"Seçenek: D
+Açıklama: Parçada yazar, taşra yalnızlığını kurmacayla avantaja dönüştürdüğünü, bu sayede sınırlı mekânda sonsuz bir kültür evreni oluşturduğunu ve merkezdeki yaşantıya alternatif bulduğunu belirtiyor. Bu, mekânın sınırlılığını ve yalnızlığın olumsuzluğunu edebiyat aracılığıyla aştığını gösterir."
+18,mock,,D,False,0.1,10,5,Mock cevap
+
+19,openai_new,,C,True,3.668,472,86,"Seçenek: C  
+Açıklama: Işıkların zemine yansıtılması, telefonuna bakan yayaların da sinyali görüp kurallara uymasını sağlamak içindir."
+19,openai_mini,,C,False,1.656,473,40,"Seçenek: A  
+Açıklama: Sistem, yayaların akıllı telefon kullanırken güvenli bir şekilde karşıdan karşıya geçmelerini sağlamak amacıyla geliştirilmiştir."
+19,openai_4o,,C,True,1.938,473,32,"Seçenek: C  
+Açıklama: Sistem, yayaların telefon kullanırken trafik kurallarını takip etmelerini sağlamak için geliştirilmiştir."
+19,claude_old_haiku,,C,False,1.764,727,75,"Seçenek: B
+Açıklama: Parçada, yayaların karşıdan karşıya geçerken akıllı telefonlarına bakmalarının önüne geçmek için yeni bir sistem geliştirildiği belirtilmektedir."
+19,claude_new_haiku,,C,False,3.643,727,155,"Seçenek: B
+
+Açıklama: Metinde ""insanlar karşıdan karşıya geçerken telefonlarına bakmaya devam ediyor"" sorunu belirtilmiş ve çözüm olarak ""yaya geçiş ışıkları zemine yansıtılıyor"" sisteminin tasarlandığı anlatılmıştır. Bu sistem, yayaların telefonlarına bakmak yerine yere bakarak sinyal görebilmelerini sağlayarak, telefon kullanımının önüne geçmeyi amaçlamaktadır."
+19,claude_sonnet,,C,True,4.543,727,148,"Seçenek: C
+
+Açıklama: Metinde insanlar karşıdan karşıya geçerken telefonlarına bakmaya devam ettiği için yaya geçiş ışıkları zemine yansıtılıyor. Böylece yayalar telefonlarına bakarken bile ışığın rengini görebiliyor ve trafik kurallarını takip edebiliyor. Sistem, telefon kullanımını engellemek yerine, telefon kullanırken de güvenliği sağlamayı amaçlıyor."
+19,gemini_old_flash,,C,True,0.486,459,34,"Seçenek: C
+Açıklama: Metinde, yayaların telefonlarına bakarken de trafik ışıklarını görmelerini sağlamak amaçlanıyor."
+19,gemini_new_flash,,C,True,0.802,459,37,"Seçenek: C
+Açıklama: Sistem, yayaların telefonlarına bakarken bile trafik ışıklarını görmelerini sağlayarak kurallara uymalarını amaçlar."
+19,gemini_pro,,C,True,6.423,459,510,"Seçenek: C
+Açıklama: Parçada, insanların telefonlarına bakarak"
+19,grok_old,,C,True,4.634,441,37,"Seçenek: C
+Açıklama: Sistem, yayaların telefon kullanırken bile trafik ışıklarını zeminden görerek kurallara uymasını sağlamayı amaçlıyor."
+19,grok_old_mini,,C,True,7.823,442,824,"Seçenek: C  
+Açıklama: Sistem, yayaların akıllı telefon kullanırken trafik ışıklarını fark etmelerini sağlayarak kurallara uymalarını hedefliyor."
+19,grok_new,,C,True,6.175,587,471,"Seçenek: C
+Açıklama: Sistem, telefon kullanan yayaların zemindeki ışıklarla kuralları takip etmesini sağlayarak kazaları önlemeyi amaçlar."
+19,deepseek_v3,,C,False,2.843,677,58,"Seçenek: B
+Açıklama: Sistem, yayaların telefonlarına bakarken trafik ışıklarını görmelerini kolaylaştırarak kazaları önlemeyi amaçlıyor."
+19,deepseek_r1,,C,False,25.784,679,822,"**Seçenek: B**  
+**Açıklama:** Sistem, yayaların karşıdan karşıya geçerken telefonlarına bakmaları sonucu artan kazaları önlemek için tasarlanmıştır. Işıkların zemine yansıtılması, telefonla ilgilenen yayaların trafik durumunu kolayca fark etmelerini sağlayarak dikkat dağınıklığını gidermeyi amaçlar. Diğer seçeneklerde akıllı telefon teknolojisinin aktif kullanımı veya bilinçlendirme gibi unsurlar vurgulanmıştır, ancak sistemin temel amacı telefon kullanımı sırasındaki fiziksel riski azaltmaktır."
+19,deepseek_32,,C,False,2.641,678,99,"Seçenek: B
+Açıklama: Sistem, yayaların karşıdan karşıya geçerken telefonlarına bakmaya devam etmeleri nedeniyle artan kazaları önlemek için, ışıkları zemine yansıtarak telefonlarına bakan yayaların da trafik ışığını görmesini sağlamayı amaçlıyor."
+19,mock,,C,False,0.1,10,5,Mock cevap
+
+20,openai_new,,C,True,6.149,460,221,"Seçenek: C  
+Açıklama: “Kendi başlarına anlamı yoktur” yargısını, parçacıkların ancak süreçlerle ilişkileri içinde anlam kazandığı düşüncesi tamamlar; “bağlantılar” vurgusuyla da uyumludur."
+20,openai_mini,,C,True,1.848,461,61,"Seçenek: C  
+Açıklama: Boş bırakılan yere, atom altı parçacıkların anlam kazanmasının gözlemlenebilir süreçlerle ilişkili olduğunu vurgulayan bir ifade gerekmektedir. C seçeneği bu durumu en iyi şekilde ifade etmektedir."
+20,openai_4o,,C,True,1.312,461,41,"Seçenek: C  
+Açıklama: Parçada atom altı parçacıkların kendi başlarına anlam taşımadığı, ancak ilişkiler içinde anlam kazandığı vurgulanıyor."
+20,claude_old_haiku,,C,True,1.287,659,116,"Seçenek: C
+Açıklama: Atom altı parçacıkların kendi başlarına bir anlamı yoktur, ancak gözlemlenebilir ve ölçülebilir süreçlerle olan ilişkileri içinde bir anlam kazanır. Yani atom altı parçacıklar, maddenin varlığını ve işleyişini açıklamak için kullanılan kavramlardır."
+20,claude_new_haiku,,C,True,2.859,659,186,"Seçenek: C
+
+Açıklama: Metinde ""atom altı parçacıkların kendi başlarına hiçbir anlamı yoktur"" denildikten sonra boş bırakılan yere, bu parçacıkların ""ne zaman anlam kazandığını"" açıklayan bir cümle gelmelidir. C seçeneği, parçacıkların ""gözlemlenebilir ve ölçülebilir nitelikteki süreçlerle olan ilişkileri içinde bir anlam kazanır"" diyerek bu boşluğu mantıklı şekilde tamamlar ve ardından gelen ""Çünkü..."" cümlesiyle uyumludur."
+20,claude_sonnet,,C,True,8.767,659,408,"Metni analiz edeyim:
+
+1. Boşluktan önceki cümle: ""atom altı parçacıkların kendi başlarına hiçbir anlamı yoktur""
+2. Boşluktan sonraki cümle: ""Çünkü atom altı parçacıklar 'şeyler' değil 'şeyler arasındaki bağlantılar'dır""
+
+Boşluğa gelecek cümle:
+- ""Kendi başlarına anlamsız"" ifadesini açıklamalı
+- ""Bağlantılar"" vurgusunu desteklemeli
+- Mantıksal akışı sağlamalı
+
+C seçeneği: ""Ancak gözlemlenebilir ve ölçülebilir nitelikteki süreçlerle olan ilişkileri içinde bir anlam kazanır""
+
+Bu seçenek:
+- ""Kendi başlarına anlamsız"" → ""ANCAK ilişkileri içinde anlam kazanır"" şeklinde karşıtlık kuruyor
+- ""İlişkileri içinde anlam kazanır"" ifadesi, sonraki cümledeki ""bağlantılar"" vurgusunu destekliyor
+- Mantıksal akış tutarlı
+
+Seçenek: C
+Açıklama: ""Kendi başlarına anlamsız"" ifadesine ""ancak ilişkileri içinde anlam kazanır"" karşıtlığı getiriyor ve ""bağlantılar"" vurgusunu destekliyor."
+20,gemini_old_flash,,C,True,1.047,445,83,"Seçenek: C
+Açıklama: Parçada atom altı parçacıkların kendi başlarına anlamı olmadığı, ancak ""şeyler arasındaki bağlantılar"" olduğu vurgulanıyor. Bu, C seçeneğindeki ""gözlemlenebilir ve ölçülebilir nitelikteki süreçlerle olan ilişkileri içinde bir anlam kazanır"" ifadesiyle en iyi şekilde örtüşüyor."
+20,gemini_new_flash,,C,True,0.972,445,81,"Seçenek: C
+Açıklama: Parçacıkların kendi başlarına anlamı olmadığı belirtildikten sonra, anlam kazanma koşulu açıklanmalıdır. C seçeneği, parçacıkların ""ilişkileri içinde bir anlam kazandığını"" belirterek bu boşluğu doldurur ve sonraki cümleyle (şeyler arasındaki bağlantılar) uyum sağlar."
+20,gemini_pro,,C,True,6.45,445,510,"Seçenek: C
+Açıklama: Parçada atom altı parçacıkların"
+20,grok_old,,C,True,6.101,430,74,"Seçenek: C
+Açıklama: Parçada atom altı parçacıkların kendi başlarına anlamı olmadığı ve bağlantılar içinde anlam kazandığı vurgulanıyor. C şıkkı, bu parçacıkların gözlemlenebilir süreçlerle ilişkileri içinde anlam kazandığını ifade ederek metnin akışına uygun bir tamamlayıcı oluyor."
+20,grok_old_mini,,C,True,6.713,431,714,"Seçenek: C  
+Açıklama: Paragraf, atom altı parçacıkların kendi başlarına anlamı olmadığını ve bağlantılar olduğunu vurguluyor; C seçeneği, bu fikri ilişkiler içindeki anlam kazanımıyla mantıklı bir şekilde tamamlıyor."
+20,grok_new,,C,True,5.051,576,562,"Seçenek: C
+Açıklama: Paragraf, parçacıkların kendi başlarına anlamını yadsır; C şıkkı bunu ""ilişkiler içinde anlam kazanır"" diye tamamlar ve ""bağlantılar"" vurgusuyla uyumlu hale getirir."
+20,deepseek_v3,,C,True,3.418,623,63,"Seçenek: C
+Açıklama: Parçada atom altı parçacıkların bağlantılar içinde anlam kazandığı vurgulanıyor. C seçeneği bu bağlamı en iyi tamamlıyor."
+20,deepseek_r1,,C,True,27.91,625,749,"Seçenek: C  
+Açıklama: Paragraf, atom altı parçacıkların bağımsız anlamı olmadığını, anlamlarının diğer şeylerle olan **bağlantılarından** kaynaklandığını vurgular. C seçeneği, bu parçacıkların anlam kazanmasını ""gözlemlenebilir süreçlerle ilişkileri""ne bağlayarak, ""şeyler arasındaki bağlantılar"" fikriyle doğrudan uyumludur. Diğer seçeneklerdeki ""özel işlevler"" (A), ""evrenin bütünlüğü"" (B), ""zamandan bağımsızlık"" (D) veya ""somutlaştırma"" (E) vurguları paragrafın temel argümanıyla örtüşmez."
+20,deepseek_32,,C,True,3.596,624,175,"Seçenek: C
+Açıklama: Boşluktan sonraki cümle ""Çünkü atom altı parçacıklar 'şeyler' değil 'şeyler arasındaki bağlantılar'dır."" şeklinde devam ediyor. Bu, parçacıkların ancak diğer süreçlerle ilişkileri içinde anlam kazandığını vurguluyor. C seçeneği de ""gözlemlenebilir ve ölçülebilir nitelikteki süreçlerle olan ilişkileri içinde bir anlam kazanır"" diyerek aynı fikri tamamlıyor."
+20,mock,,C,False,0.1,10,5,Mock cevap
+
+21,openai_new,,E,True,7.419,531,251,"Seçenek: E  
+Açıklama: Parçada söz oyunları, başlık seçimi, 11 öyküde kullanımı ve okuru sözcük/harflere dikkat etmeye çağırması var; yerel kültürü yansıtan anlatı kalıplarından bahsedilmiyor."
+21,openai_mini,,E,True,0.955,532,37,"Seçenek: E  
+Açıklama: Metinde yerel kültürü yansıtan sözel anlatı kalıplarına dair bir bilgi verilmemiştir."
+21,openai_4o,,E,True,2.121,532,43,"Seçenek: E  
+Açıklama: Parçada yazarın yerel kültürü yansıtan sözel anlatı kalıpları kullandığına dair bir bilgi verilmemiştir."
+21,claude_old_haiku,,E,True,0.928,731,63,"Seçenek: E
+Açıklama: Metinde yazarın öykülerinde yerel kültürü yansıtan sözel anlatı kalıpları kullandığına dair bir bilgi verilmemiştir."
+21,claude_new_haiku,,E,True,2.352,731,107,"Seçenek: E
+
+Açıklama: Metinde yazarın kelime oyunları, söz oyunları, başlık seçimi ve okuru dikkatli okumaya davet etmesi açıkça belirtilmiştir. Ancak yerel kültürü yansıtan sözel anlatı kalıpları kullanması hakkında hiçbir bilgi verilmemiştir."
+21,claude_sonnet,,E,True,5.85,731,270,"Metni inceleyerek her seçeneği kontrol ediyorum:
+
+A) Söz oyunlarının kullanımı - Bahsedilmiş (kelime oyunları, harf değiştirme)
+B) İlgi çekici başlık - Bahsedilmiş (Sherlock Homeless başlığı)
+C) Tek öyküyle sınırlamama - Bahsedilmiş (on bir öyküsünde)
+D) Dikkatle odaklanmaya davet - Bahsedilmiş (uyanık ve özenli ikinci bakış bekliyor)
+E) Yerel kültür ve sözel anlatı kalıpları - Bahsedilmemiş (Metinde yerel kültür veya sözel anlatı kalıplarından söz edilmiyor)
+
+Seçenek: E
+Açıklama: Metinde yazarın yerel kültürü yansıtan sözel anlatı kalıpları kullandığına dair hiçbir bilgi yok."
+21,gemini_old_flash,,E,True,0.661,521,38,"Seçenek: E
+Açıklama: Metinde yerel kültürü yansıtan sözel anlatı kalıpları kullandığına dair bir bilgi bulunmamaktadır."
+21,gemini_new_flash,,E,True,0.811,521,41,"Seçenek: E
+Açıklama: Metinde yazarın yerel kültürü yansıtan sözel anlatı kalıpları kullandığına dair bir bilgi bulunmamaktadır."
+21,gemini_pro,,E,True,6.139,521,510,"Seçenek: E
+Açıklama: Metinde yazarın kelime oyun"
+21,grok_old,,E,True,2.965,499,55,"Seçenek: E
+Açıklama: Parçada yazarın öykülerinde yerel kültürü yansıtan sözel anlatı kalıpları kullandığına dair herhangi bir bilgi verilmemiştir. Diğer seçenekler metinde açıkça belirtilmiştir."
+21,grok_old_mini,,E,True,7.645,500,792,"Seçenek: E  
+Açıklama: Metin, yazarın kelime oyunlarını ve okur etkileşimini vurgular ama yerel kültürü yansıtan anlatı kalıplarına değinmez."
+21,grok_new,,E,True,4.404,645,476,"Seçenek: E
+Açıklama: Parçada kelime oyunları, başlık ve okuru dikkatli okumaya davet etmek belirtilmiş; ancak yerel kültür veya sözel anlatı kalıplarından söz edilmemiştir."
+21,deepseek_v3,,E,True,3.631,684,73,"Seçenek: E
+Açıklama: Parçada, yazarın yerel kültürü yansıtan sözel anlatımlar kullandığına dair bir ifade geçmiyor. Diğer seçeneklerin hepsinden bahsedilmiştir."
+21,deepseek_r1,,E,True,24.093,686,788,"Seçenek: E  
+Açıklama: Parçada ""yerel kültürü yansıtan sözel anlatı kalıpları"" kullanımına dair hiçbir atıf yok. Örnekler (""İs bırakanlar unutulmaz"" vb.) genel dil oyunlarıdır, kültürel özgünlük vurgulanmamıştır. Diğer seçenekler parçada açıkça desteklenmektedir."
+21,deepseek_32,,E,False,4.944,684,52,"Seçenek: D  
+Açıklama: The text describes a process where words are transformed by changing one letter at a time (like in a word ladder puzzle), which matches option D's description of words being altered letter by letter."
+21,mock,,E,False,0.1,10,5,Mock cevap
+
+22,openai_new,,B,True,3.813,408,103,"Seçenek: B  
+Açıklama: Zeuxis, başarının ölçütünü doğayı/gerçeği daha iyi yansıtmak olarak görüyor; üzüm gerçekçi olmuş ama çocuk yeterince gerçekçi olmadığı için eksik buluyor."
+22,openai_mini,,B,True,1.655,409,49,"Seçenek: B  
+Açıklama: Zeuxis'in ifadesi, sanatçının doğayı ne kadar gerçekçi yansıttığına vurgu yaparak, gerçekçilik açısından başarısını sorguladığını gösterir."
+22,openai_4o,,B,True,1.433,409,33,"Seçenek: B  
+Açıklama: Zeuxis'in üzülmesi, doğayı daha gerçekçi yansıtma isteğini gösteriyor."
+22,claude_old_haiku,,B,True,1.225,604,85,"Seçenek: B
+Açıklama: Metinde, Zeuxis'in üzümleri o kadar gerçekçi resmettiği belirtilmektedir. Bu da sanatçının doğayı gerçekçi bir biçimde yansıtabildiğini göstermektedir."
+22,claude_new_haiku,,B,False,3.146,604,132,"Seçenek: D
+
+Açıklama: Zeuxis, üzümleri çok gerçekçi çizdikçe övülmüş, ancak çocuğu daha iyi çizebilseydi (işleyiş biçimini geliştirse) daha başarılı olacağını söylemiştir. Bu, sanatçının özgünlüğünün konuyu işleyiş biçimiyle değerlendirildiğini gösterir."
+22,claude_sonnet,,B,True,4.498,604,121,"Seçenek: B
+
+Açıklama: Zeuxis, üzümleri o kadar gerçekçi çizmiş ki kuşlar aldanmış, ancak çocuğu yeterince gerçekçi çizemediği için kuşlar ondan korkmamış. Bu, sanatçının başarısının doğayı ne kadar gerçekçi yansıttığıyla ölçüldüğünü gösterir."
+22,gemini_old_flash,,B,True,1.147,401,55,"Seçenek: B
+Açıklama: Zeuxis'in üzümleri gerçekçi yapması ve çocuğun resmini daha iyi yapamamış olmasından duyduğu üzüntü, gerçekçiliğin başarı ölçütü olduğunu gösterir."
+22,gemini_new_flash,,B,False,0.929,401,75,"Seçenek: D
+Açıklama: Zeuxis, üzümlerin gerçekçiliğinden çok, çocuğun resmini daha iyi yapamadığı için üzülerek kendi sanatındaki eksikliği vurgulamıştır. Bu durum, sanatçının konuyu işleyiş biçimindeki özgünlüğün ve mükemmelliğin önemini gösterir."
+22,gemini_pro,,B,True,7.261,401,510,"Seçenek: B
+Açıklama: Zeuxis,"
+22,grok_old,,B,True,5.241,387,64,"Seçenek: B
+Açıklama: Parçada Zeuxis’in üzümleri gerçekçi çizmesi övülürken, çocuğun resmini daha iyi yapamadığı için üzülmesi, sanatçının başarısının doğayı gerçekçi yansıtmasıyla ölçüldüğünü gösteriyor."
+22,grok_old_mini,,B,True,8.214,388,747,"Seçenek: B  
+Açıklama: Zeuxis'in üzümleri gerçekçi yapmayı başarması ve çocuğu daha gerçekçi yapsaydı kuşların korkacağını belirtmesi, sanatçının başarısını gerçekçiliğe bağladığı için B seçeneğini destekler."
+22,grok_new,,B,True,3.361,533,406,"Seçenek: B  
+Açıklama: Zeuxis, üzümleri gerçekçi yapıp kuşları kandırdığını ama çocuğu yetersiz kıldığından kuşların korkmadığını belirterek, başarının doğayı gerçekçi yansıtmakta olduğunu vurgular."
+22,deepseek_v3,,B,False,2.25,545,93,"Seçenek: A
+Açıklama: Zeuxis, üzümlerin gerçekçiliğiyle övülürken çocuğun resminin daha iyi olması gerektiğini vurguluyor. Bu, sanat eserinin doğayı benzersiz kılması gerektiği düşüncesini destekler."
+22,deepseek_r1,,B,False,22.262,547,670,"Seçenek: D  
+Açıklama: Zeuxis'in üzümlerin gerçekçiliğiyle övülmesine rağmen çocuğun yeterince etkileyici tasvir edilememesinden duyduğu üzüntü, sanatçının başarısının temel aldığı konuyu (insan figürü) işleyiş biçimiyle değerlendirildiğini gösterir. D seçeneği bu vurguyla uyumludur."
+22,deepseek_32,,B,False,10.855,545,82,"Seçenek: C  
+Açıklama: The passage describes a situation where a person (MÖ V) is trying to solve a problem but is stuck because the solution requires a specific condition or insight that they haven’t realized yet. Option C captures this by stating that the solution exists, but the person hasn’t yet seen the key insight or condition needed to unlock it."
+22,mock,,B,False,0.1,10,5,Mock cevap
+
+23,openai_new,,E,True,7.17,471,201,"Seçenek: E  
+Açıklama: Parçada yapay zekânın eğitimde etkisinin artmasıyla “geleneksel yöntemlerin büyük ölçüde farklılaştığı” belirtilerek alışılmış anlayışları değiştirdiğine değiniliyor."
+23,openai_mini,,E,True,1.233,472,33,"Seçenek: E  
+Açıklama: Parçada yapay zekânın eğitimde geleneksel yöntemleri değiştirdiği vurgulanmaktadır."
+23,openai_4o,,E,True,1.122,472,35,"Seçenek: E  
+Açıklama: Parçada yapay zekânın eğitimde geleneksel yöntemleri büyük ölçüde farklılaştırdığı belirtilmiştir."
+23,claude_old_haiku,,E,True,1.07,710,64,"Seçenek: E
+Açıklama: Metin, yapay zekânın eğitimde alışılagelmiş anlayışlarda değişikliğe yol açtığını vurgulamaktadır."
+23,claude_new_haiku,,E,True,1.626,710,120,"Seçenek: E
+
+Açıklama: Metinde ""geleneksel yöntemler büyük ölçüde farklılaşıyor"" ve ""eğitimin şeklini ve geleceğini değiştiren yapay zekâ"" ifadeleri, yapay zekânın eğitimde alışılagelmiş anlayışlarda değişikliğe yol açtığını açıkça göstermektedir."
+23,claude_sonnet,,E,True,3.272,710,118,"Seçenek: E
+
+Açıklama: Metinde ""geleneksel yöntemler büyük ölçüde farklılaşıyor"" ve ""eğitimin şeklini ve geleceğini değiştiren yapay zekâ"" ifadeleri açıkça yapay zekânın eğitimde alışılagelmiş anlayışlarda değişikliğe yol açtığını belirtiyor."
+23,gemini_old_flash,,E,True,0.492,457,31,"Seçenek: E
+Açıklama: Parçada yapay zekanın eğitimde geleneksel yöntemleri değiştirdiği belirtiliyor."
+23,gemini_new_flash,,E,True,0.581,457,40,"Seçenek: E
+Açıklama: Metinde yapay zekânın eğitimde geleneksel yöntemleri farklılaştırdığı ve eğitimin şeklini değiştirdiği belirtilmiştir."
+23,gemini_pro,,E,True,6.621,457,510,"Seçenek: E
+Açıklama: Parçada, yap"
+23,grok_old,,E,True,2.872,432,41,"Seçenek: E
+Açıklama: Parçada yapay zekânın eğitimde geleneksel yöntemleri değiştirdiği ve alışılagelmiş anlayışlarda farklılık yarattığı belirtiliyor."
+23,grok_old_mini,,E,True,6.903,433,629,"Seçenek: E  
+Açıklama: Metin, yapay zekânın eğitimde geleneksel yöntemleri ve anlayışları değiştirdiğini doğrudan ifade eder."
+23,grok_new,,E,True,5.627,578,570,"Seçenek: E  
+Açıklama: Parçada yapay zekânın eğitimi değiştirerek geleneksel yöntemleri farklılaştırdığı ve oyunun kurallarını belirlediği belirtiliyor."
+23,deepseek_v3,,E,True,2.664,659,65,"Seçenek: E
+Açıklama: Parçada yapay zekânın geleneksel eğitim yöntemlerini değiştirdiği ve eğitimin geleceğini şekillendirdiği vurgulanmıştır."
+23,deepseek_r1,,E,False,17.066,661,512,ERROR: No response
+23,deepseek_32,,E,False,7.313,659,74,"Seçenek: C  
+Açıklama: The text discusses how different methods (e.g., ""Eğitimciler, psikologlar, ebeveynler"") are used for various tasks, implying that the choice of method depends on the specific problem or data, which matches option C about selecting methods based on the situation."
+23,mock,,E,True,0.101,10,5,Mock cevap
+
+24,openai_new,,A,True,6.396,375,168,"Seçenek: A  
+Açıklama: Seyirciyi filmin içine çekerek karakterlerin yanında konumlandırdığı için seyircinin karakterlerle özdeşim kurmasını amaçlar."
+24,openai_mini,,A,True,1.38,376,40,"Seçenek: A  
+Açıklama: Parçada, yönetmenin seyirciyi karakterlerin yanında yer almasına davet ederek özdeşim kurmasını sağladığı belirtiliyor."
+24,openai_4o,,A,True,1.271,376,34,"Seçenek: A  
+Açıklama: Yönetmen, seyirciyi filmin içine davet ederek karakterlerle özdeşim kurmasını sağlıyor."
+24,claude_old_haiku,,A,True,0.952,565,57,"Seçenek: A
+Açıklama: Parçada, yönetmenin filmlerinde seyircinin karakterlerle özdeşim kurmasını amaçladığı belirtilmektedir."
+24,claude_new_haiku,,A,True,2.422,565,113,"Seçenek: A
+
+Açıklama: Metinde ""seyircinin filmi uzaktan izlemesine müsaade etmeyerek onu filmin içine davet eder"" ve ""karakterlerin yanında seyircinin yer almasını sağlar"" ifadeleri, yönetmenin seyircinin karakterlerle özdeşim kurmasını amaçladığını açıkça göstermektedir."
+24,claude_sonnet,,A,True,2.513,565,119,"Seçenek: A
+
+Açıklama: Metinde ""Seyircinin, filmi uzaktan izlemesine müsaade etmeyerek onu filmin içine davet eder"" ve ""başına gelecekleri bilmeyen karakterlerin yanında seyircinin yer almasını sağlar"" ifadeleri, seyircinin karakterlerle özdeşim kurmasının amaçlandığını açıkça göstermektedir."
+24,gemini_old_flash,,A,True,0.516,371,43,"Seçenek: A
+Açıklama: Metinde seyircinin filmin içine davet edilmesi ve karakterlerin yanında yer almasının sağlanması, özdeşim kurma amacını gösterir."
+24,gemini_new_flash,,A,True,0.831,371,44,"Seçenek: A
+Açıklama: Seyirciyi filmin içine davet etmesi ve karakterlerin yanında yer almasını sağlaması, özdeşim kurma amacı taşıdığını gösterir."
+24,gemini_pro,,A,True,5.459,371,510,"Seçenek: A
+Açıklama: Parçada, yönetmenin seyir"
+24,grok_old,,A,True,3.494,358,53,"Seçenek: A  
+Açıklama: Parçada, yönetmenin seyircinin karakterlerle birlikte olay örgüsünün içine çekilmesini sağladığı belirtiliyor; bu, seyircinin karakterlerle özdeşim kurmasını amaçladığını gösterir."
+24,grok_old_mini,,A,False,9.122,359,934,"Seçenek: D  
+Açıklama: Metin, gerilim unsurlarını karakterler üzerinden inşa ederek olay örgüsünün onların etrafında geliştiğini belirttiği için kurgunun karakter çatışmalarından alındığını gösterir."
+24,grok_new,,A,True,8.693,504,665,"Seçenek: A  
+Açıklama: Parça, seyirciyi karakterlerin yanına yerleştirerek olay örgüsünün girdabına kaptırmasını sağladığını belirtir; bu, seyircinin karakterlerle özdeşim kurmasını doğrudan ifade eder."
+24,deepseek_v3,,A,True,2.286,502,48,"Seçenek: A
+Açıklama: Yönetmen, seyircinin karakterlerle özdeşim kurmasını ve filmin içine çekilmesini sağlar."
+24,deepseek_r1,,A,True,41.505,504,764,"Seçenek: A
+Açıklama: Parçada seyircinin karakterlerin yanında konumlandırılıp olayların içine çekilmesi vurgulanır; bu da özdeşim kurmayı hedeflediğini gösterir."
+24,deepseek_32,,A,True,2.455,503,92,"Seçenek: A
+Açıklama: Parçada, seyircinin filmin içine davet edilmesi, karakterlerin yanında yer alması ve olay örgüsünün girdabına kapılması vurgulanıyor; bu da seyircinin karakterlerle özdeşim kurmasını amaçladığını gösterir."
+24,mock,,A,True,0.101,10,5,Mock cevap
+
+25,openai_new,,B,False,8.438,455,260,"Seçenek: D  
+Açıklama: Anlatıcı, karakterlerin tüm zihinsel durumlarını bilen “hâkim/ilahi bakış”la onların bilinmeyen yönlerini okura açıklar."
+25,openai_mini,,B,True,1.485,456,41,"Seçenek: B  
+Açıklama: Parçada anlatıcının karakterlerin zihinsel durumlarını ve duygularını kapsayıcı bir bakış açısıyla aktardığı belirtiliyor."
+25,openai_4o,,B,False,1.221,456,39,"Seçenek: D  
+Açıklama: Anlatıcı, karakterlerin zihinsel durumlarını ve yönelimlerini bilerek, kişilerin bilinmeyen yönlerini ortaya çıkarır."
+25,claude_old_haiku,,B,True,1.409,682,114,"Seçenek: B
+Açıklama: Metinde anlatıcının kapsayıcı bakış açısıyla esere dâhil olarak anlatıyı okura aktardığı belirtilmektedir. Anlatıcı, karakterlerin zihinsel durumlarını, yaşadıklarını ve yönelimlerini okura aktararak geniş bir bakış açısı sunmaktadır."
+25,claude_new_haiku,,B,True,2.292,682,121,"Seçenek: B
+
+Açıklama: Metinde anlatıcının ""karakterlerin bütün zihinsel durumlarını bilmekte"", ""hâkim bir bakış sunmakta"" ve ""her yönüyle"" eseri aktarmakta olduğu vurgulanmıştır. Bu, kapsayıcı (geniş ve kapsayan) bir bakış açısıyla anlatıyı okura aktarmasını tanımlar."
+25,claude_sonnet,,B,True,3.538,682,133,"Seçenek: B
+
+Açıklama: Metinde anlatıcının ""her yönüyle hâkim bir bakış"" sunduğu, karakterlerin zihinsel durumlarını bildiği ve ""duygu ve düşüncelerini karakterlerin de okurun da yüzüne açıkça dile getirebildiği"" belirtiliyor. Bu, kapsayıcı bakış açısıyla esere dâhil olarak anlatıyı aktardığını gösterir."
+25,gemini_old_flash,,B,True,0.991,454,48,"Seçenek: B
+Açıklama: Parçada anlatıcının karakterlerin zihinsel durumlarını bilmesi ve okura aktarması, kapsayıcı bir bakış açısıyla esere dahil olduğunu gösterir."
+25,gemini_new_flash,,B,True,0.621,454,47,"Seçenek: B
+Açıklama: Metinde anlatıcının karakterlerin her şeyini bildiği ve okura aktardığı belirtilerek kapsayıcı bir bakış açısına sahip olduğu vurgulanmıştır."
+25,gemini_pro,,B,True,6.571,454,510,"Seçenek: B
+Açıklama: Parçada anlatıcının karakterlerin"
+25,grok_old,,B,True,4.688,432,41,"Seçenek: B  
+Açıklama: Parçada anlatıcının kapsayıcı bir bakış açısıyla karakterlerin zihinsel durumlarını ve hayatlarını okura aktardığı vurgulanıyor."
+25,grok_old_mini,,B,True,8.557,433,816,"Seçenek: B  
+Açıklama: Parça, anlatıcının kapsayıcı bakış açısıyla karakterlerin tüm yönlerini okura aktardığını belirtir."
+25,grok_new,,B,True,8.366,578,827,"Seçenek: B
+Açıklama: Parça, anlatıcının karakterlerin zihinsel durumlarını kapsayıcı (hâkim) bakışla bilip okura aktardığını belirtir; bu, B şıkkını doğrudan yansıtır."
+25,deepseek_v3,,B,True,3.83,618,59,"Seçenek: B
+Açıklama: Parçada anlatıcının kapsayıcı bakış açısıyla karakterlerin her yönünü bildiği ve okura aktardığı vurgulanmıştır."
+25,deepseek_r1,,B,True,25.856,620,793,"**Seçenek: B**  
+**Açıklama:** Parçada anlatıcının karakterlerin tüm zihinsel durumlarını bilen, geçmiş-şimdi-geleceği kapsayan ve ""hâkim bir bakış"" sunan yapısı vurgulanır. Bu, ""kapsayıcı bakış açısıyla esere dâhil olma"" tanımıyla doğrudan örtüşür. Diğer seçeneklerdeki müdahale, iç çatışma veya karakterleri arka plana atma gibi unsurlar metinde desteklenmez."
+25,deepseek_32,,B,True,3.558,619,88,"Seçenek: B  
+Açıklama: Metinde anlatıcının karakterlerin zihinsel durumlarını, geçmiş-gelecek bilgisini aktardığı ve her yönüyle hâkim bir bakış sunduğu vurgulanıyor; bu da kapsayıcı bakış açısıyla örtüşür."
+25,mock,,B,False,0.101,10,5,Mock cevap
+
+26,openai_new,,B,True,9.56,556,328,"Seçenek: B  
+Açıklama: Metinde, nüfusun ve ticaret hacminin artmasının fabrikalaşmaya yönelik adımları (pamuk fabrikası, boyahane, basmahane) beraberinde getirdiği belirtilir."
+26,openai_mini,,B,True,1.835,557,40,"Seçenek: B  
+Açıklama: Metinde şehir nüfusunun artması ve ticaret hacminin büyümesi ile fabrikalaşmaya geçişin olduğu belirtilmiştir."
+26,openai_4o,,B,True,1.103,557,40,"Seçenek: B  
+Açıklama: Metinde, şehir nüfusunun artması ve ticaret hacminin genişlemesiyle fabrikasyon üretime geçildiği belirtilmiştir."
+26,claude_old_haiku,,B,True,1.1,803,60,"Seçenek: B
+Açıklama: Metinde, şehir nüfusunun artmasıyla birlikte fabrikasyon üretime geçiş sağlandığı belirtilmektedir."
+26,claude_new_haiku,,B,True,2.909,803,134,"Seçenek: B
+
+Açıklama: Metinde ""Zamanla şehrin kalabalıklaşması ve ticaret hacminin artması, seri üretimin yapıldığı fabrikalaşmaya doğru ilk adımların atılmasını da beraberinde getirmiştir"" ifadesi açıkça belirtilmektedir. Şehir nüfusunun artması fabrikasyon üretime geçişin sebebi olarak gösterilmiştir."
+26,claude_sonnet,,B,True,3.199,803,122,"Seçenek: B
+
+Açıklama: Metinde ""Zamanla şehrin kalabalıklaşması ve ticaret hacminin artması, seri üretimin yapıldığı fabrikalaşmaya doğru ilk adımların atılmasını da beraberinde getirmiştir"" ifadesi açıkça şehir nüfusunun artmasıyla fabrikasyon üretime geçişi göstermektedir."
+26,gemini_old_flash,,B,True,0.786,535,37,"Seçenek: B
+Açıklama: Metinde şehrin kalabalıklaşması ve ticaret hacminin artmasıyla fabrikalaşmaya geçildiği belirtiliyor."
+26,gemini_new_flash,,B,True,6.009,535,36,"Seçenek: B
+Açıklama: Metinde şehrin kalabalıklaşması ve ticaret hacminin artmasıyla fabrikalaşmaya geçildiği belirtilmiştir."
+26,gemini_pro,,B,True,5.515,535,510,"Seçenek: B
+Açıklama: Parçada, şehrin kalabalıklaşması"
+26,grok_old,,B,True,6.758,520,37,"Seçenek: B
+Açıklama: Parçada, şehir nüfusunun artması ve ticaret hacminin büyümesiyle fabrikasyon üretime geçiş yapıldığı belirtiliyor."
+26,grok_old_mini,,B,True,9.86,521,1109,"Seçenek: B  
+Açıklama: Metin, şehrin kalabalıklaşması (nüfus artışı) ve ticaret hacminin büyümesiyle fabrikalaşmaya geçiş yapıldığını doğrudan ifade eder."
+26,grok_new,,B,True,11.494,666,937,"Seçenek: B  
+Açıklama: Parçada şehrin kalabalıklaşması (nüfus artışı) ve ticaret hacminin artması fabrikalaşmaya (pamuk fabrikası, boyahane vb.) yol açtığı belirtilmiştir."
+26,deepseek_v3,,B,True,1.376,752,62,"Seçenek: B
+Açıklama: Metinde şehir nüfusunun artması ve ticaret hacminin büyümesiyle fabrikalaşmaya geçiş yapıldığı belirtiliyor."
+26,deepseek_r1,,B,False,13.053,754,512,ERROR: No response
+26,deepseek_32,,B,False,6.134,753,87,"Seçenek: C  
+Açıklama: Parçada, Boyahane Deresi etrafında kümelenmiş yapılardan ve tekstil boyamacılığının burada yaygın olduğundan bahsedilerek dokuma üretiminin belli bir bölgede yoğunlaştığı vurgulanmıştır."
+26,mock,,B,False,0.1,10,5,Mock cevap
+
+27,openai_new,,E,True,5.924,452,150,"Seçenek: E  
+Açıklama: Parçada özgünlüğün insanı “olduğu gibi kalmaya” itip başka fikirleri görmezden getirerek değişime kapalı hâle getirebileceği söyleniyor."
+27,openai_mini,,E,True,1.351,453,34,"Seçenek: E  
+Açıklama: Parçada özgünlüğün insanları değişime kapalı hale getirebileceği vurgulanmaktadır."
+27,openai_4o,,E,True,1.194,453,35,"Seçenek: E  
+Açıklama: Parçada, özgünlüğün insanları değişime kapalı hale getirebileceği vurgulanıyor."
+27,claude_old_haiku,,E,True,1.403,681,90,"Seçenek: E
+Açıklama: Metin, özgünlüğün insanı değişime kapalı hale getirebileceğini vurguluyor. Yani insanın özgün olma uğruna yaptıkları, onu değişime kapalı bir hale getirebilir."
+27,claude_new_haiku,,E,True,3.557,681,129,"Seçenek: E
+
+Açıklama: Metin, özgünlüğe aşırı bağlılığın insanları ""olduğu gibi kalmaya"" ve ""başka perspektiflerden fikirleri görmezden gelmeye"" ittiğini, dolayısıyla değişime kapalı hale getirdiğini açıkça ifade etmektedir. E seçeneği bu ana fikri doğru şekilde yansıtır."
+27,claude_sonnet,,E,True,2.651,681,104,"Seçenek: E
+
+Açıklama: Metinde ""özgünlük de insanları olduğu gibi kalmaya ve başka perspektiflerden fikirleri görmezden gelmeye itebilir"" ifadesi, özgün olma çabasının insanı değişime kapalı hale getirebileceğini doğrudan belirtmektedir."
+27,gemini_old_flash,,E,True,0.823,444,38,"Seçenek: E
+Açıklama: Parçada özgünlüğün değişimi engelleyebileceği ve insanı olduğu gibi kalmaya itebileceği belirtiliyor."
+27,gemini_new_flash,,E,True,0.641,444,39,"Seçenek: E
+Açıklama: Metinde özgünlüğün değişimi engelleyebileceği ve insanı olduğu gibi kalmaya itebileceği vurgulanmaktadır."
+27,gemini_pro,,E,True,5.747,444,510,"Seçenek: E
+Açıklama: Parçada özgünlüğün,"
+27,grok_old,,E,True,3.851,421,53,"Seçenek: E
+Açıklama: Parçada özgünlüğün değişimi engelleyebileceği ve insanı olduğu hâlde kalmaya itebileceği vurgulanmış, bu da E seçeneğiyle örtüşüyor."
+27,grok_old_mini,,E,True,5.906,422,574,"Seçenek: E  
+Açıklama: Metin, özgünlüğün insanları değişime kapalı hale getirdiğini doğrudan belirttiği için bu sonuca ulaşılabilir."
+27,grok_new,,E,True,6.795,567,729,"Seçenek: E
+Açıklama: Paragraf, özgünlüğün değişimi engelleyerek insanları ""olduğu gibi kalmaya"" ve ""dönüşebileceği şeylerden soyutlamaya"" ittiğini vurgular."
+27,deepseek_v3,,E,True,1.855,634,68,"Seçenek: E
+Açıklama: Parçada özgünlüğün insanları değişime kapalı hâle getirebileceği vurgulanmıştır. Bu, E seçeneğiyle örtüşmektedir."
+27,deepseek_r1,,E,True,25.473,636,654,"**Seçenek: E**  
+**Açıklama:** Parçada, özgünlüğün insanları değişime kapalı hâle getirip farklı perspektifleri görmezden gelmeye itebileceği ve bunun ""dönüşebileceği her şeyden soyutlanma"" ile eş değer olduğu vurgulanır. E seçeneği bu doğrudan çıkarıma uyar."
+27,deepseek_32,,E,True,2.167,635,98,"Seçenek: E
+Açıklama: Parçada özgünlüğün insanı değişime kapalı hale getirebileceği, başka fikirleri görmezden gelmeye itebileceği ve dönüşümden soyutlayabileceği vurgulanıyor. E seçeneği bu fikri doğrudan yansıtıyor."
+27,mock,,E,True,0.1,10,5,Mock cevap
+
+28,openai_new,,D,False,8.854,516,351,"Seçenek: A  
+Açıklama: Parçada terimlerin kullanımla yeni anlam kazanmadığı, yalnızca terim dışındaki sözcüklerin değişime açık olduğu söylenir; A ise tüm sözcükler için genelleme yapar."
+28,openai_mini,,D,False,2.08,517,38,"Seçenek: C  
+Açıklama: Parçada bilimsel kavramların anlam genişlemesi ve yeniden anlamlandırmaya uygun olup olmadığına dair bir bilgi verilmemektedir."
+28,openai_4o,,D,False,1.345,517,38,"Seçenek: C  
+Açıklama: Parçada bilimsel kavramların anlam genişlemesi ve yeniden anlamlandırmaya uygun olmadığına dair bir bilgi verilmemiştir."
+28,claude_old_haiku,,D,False,1.433,740,117,"Seçenek: C
+Açıklama: Metinde, bilimsel kavramların anlam genişlemesi ve yeniden anlamlandırmaya uygun olmadığı belirtilmemiştir. Aksine, metinde terimler olarak adlandırılan sözcüklerin yeni anlamlar kazanmadığı ve algılanmalarının kişiden kişiye değişmediği vurgulanmaktadır."
+28,claude_new_haiku,,D,False,4.998,740,324,"Seçenek: C
+
+Açıklama: Metinde ""terimler"" (bilimsel kavramlar) nesnel ve değişmeyen sözcükler olarak tanımlanırken, diğer sözcüklerin anlam genişlemesine açık olduğu belirtilir. C seçeneği, terimlerin anlam genişlemesine ""uygun değildir"" dediği için metinle tutarlıdır, ancak ""ulaşılamaz"" sorusuna cevap olarak C yanlıştır. Metinde açıkça desteklenmeyen ve çıkarılamayan seçenek A, B, D, E'dir. Tekrar incelendiğinde, C seçeneği metinde desteklenen bir bilgidir. Doğru cevap metinde açıkça yer almayan veya çelişen seçenektir.
+
+Seçenek: A
+
+Açıklama: Metinde ""terimler"" kullanımla yeni anlamlar kazanmayan sözcüklerdir. A seçeneği ""bir dile ait sözcükler yeni anlamlar kazanır"" der ki, bu terimleri hariç tutar. Metinde bu genel ifadeye ulaşılamaz."
+28,claude_sonnet,,D,False,11.362,740,512,"Metni analiz edeyim:
+
+Metinde bahsedilenler:
+- Terimler dışındaki sözcüklerin anlam evreni vardır
+- Terimler nesnel, değişmeyen sözcüklerdir
+- Diğer sözcükler kullanımla yeni anlamlar kazanır (A seçeneği destekleniyor)
+- Sözcükler kişiye özgü duygusal/çağrışımsal anlamlar kazanabilir (B seçeneği destekleniyor)
+- Aynı sözcük farklı kişilerde farklı duygular uyandırabilir (B seçeneği destekleniyor)
+- İzlenimsel anlamlar sözlüklerde yer almaz (E seçeneği destekleniyor)
+- Sözcükler yeni anlamlar yüklenmeye yatkındır (D seçeneği destekleniyor)
+
+A seçeneği: Metinde ""kullanımla yeni anlamlar kazanmayan"" ifadesi terimler için kullanılmış, diğer sözcükler için ""yeni anlamlar yüklenmeye yatkınlıkları vardır"" denmiş. ✓
+
+C seçeneği: Metinde ""terimler"" (bilimsel kavramlar) için ""kullanımla yeni anlamlar kazanmayan"" denmiş ama ""bir dile ait sözcükler"" genellemesi yapılmamış. Metin sadece terimlerin değişmediğini söylüyor, tüm dil sözcüklerinin değiştiğini söylemiyor.
+
+Aslında C seçeneği metinde dolaylı olarak destekleniyor (terimler = bilimsel kavramlar, yeni anlam kazanmaz).
+
+Seçenek: A
+
+Açıklama: Metinde ""terimler dışındaki"" sözcüklerin yeni anlam kazandığı belirtilir, ""bir dile ait tüm sözc"
+28,gemini_old_flash,,D,False,1.088,515,44,"Seçenek: A
+Açıklama: Metinde tüm sözcüklerin yeni anlamlar kazandığına dair bir ifade bulunmamaktadır. Terimlerin bu kapsama girmediği belirtilmiştir."
+28,gemini_new_flash,,D,False,0.744,515,55,"Seçenek: A
+Açıklama: Metinde terimler dışındaki sözcüklerin yeni anlamlar kazanabileceği belirtilirken, tüm dile ait sözcüklerin kullanıldıkça yeni anlamlar kazanacağı genellemesi yapılmamıştır."
+28,gemini_pro,,D,False,6.043,515,510,"Seçenek: A
+Açıklama: Parçada ""terimler""in kullanıml"
+28,grok_old,,D,False,6.628,493,60,"Seçenek: C
+Açıklama: Parçada, bilimsel kavramların anlam genişlemesi ve yeniden anlamlandırmaya uygun olmadığına dair bir ifade bulunmamaktadır; terimlerin sabit anlamlı olduğu belirtilse de bilimsel kavramlar özelinde bir vurgu yoktur."
+28,grok_old_mini,,D,False,13.861,494,1430,"Seçenek: C  
+Açıklama: Metin, terimleri genel olarak tanımlıyor ama bilimsel kavramları özellikle belirtmediği için bu sonuca doğrudan ulaşılamaz."
+28,grok_new,,D,False,21.135,639,1610,"Seçenek: A  
+Açıklama: Parça, terimler dışında sözcüklerin yeni anlam kazandığını belirtir; A şıkkı ise tüm sözcükleri kapsayan genelleme yapar, bu metne uymaz."
+28,deepseek_v3,,D,False,6.36,708,204,"Cevap:  
+Seçenek: E  
+Açıklama: Metinde ""sözcüklerin bu izlenimsel anlamları... sözlüklerde yer almaz"" deniyor, ancak ""imkânsızlık"" vurgusu yok. Diğer seçenekler metinle doğrudan ilişkili.  
+
+(Not: Soru metnindeki şıklar paragraf halinde verilmiş, ancak burada mantıksal çıkarımla en zayıf bağlantılı olan E seçeneği işaretlenmiştir. Çünkü metinde sözlüklerde ""yer almaz"" ifadesi kullanılsa da ""kesinlikle imkânsızdır"" gibi mutlak bir yargı bulunmamaktadır.)"
+28,deepseek_r1,,D,False,18.468,710,512,ERROR: No response
+28,deepseek_32,,D,False,3.37,712,88,"Seçenek: C
+Açıklama: Parçada bilimsel kavramlardan açıkça söz edilmiyor; terimlerin nesnel olduğu belirtilse de, ""anlam genişlemesi ve yeniden anlamlandırmaya uygun değildir"" ifadesi çıkarılamaz."
+28,mock,,D,True,0.101,10,5,Mock cevap
+
+29,openai_new,,C,True,9.395,400,322,"Seçenek: C  
+Açıklama: Metinde yazar girişimlerden kaçındığını değil, başarı/başarısızlık gibi sonuç odaklı kalıpları reddedip üretmeye ve yaşamaya devam ettiğini söylüyor."
+29,openai_mini,,C,True,1.606,401,44,"Seçenek: C  
+Açıklama: Yazar, başarı ve başarısızlığın geçici olduğunu düşündüğü için olumsuz sonuçlardan kaçınmaya çalıştığına dair bir ifade yok."
+29,openai_4o,,C,True,1.631,401,44,"Seçenek: C  
+Açıklama: Yazar, olumsuz sonuçlanabilecek girişimlerden uzak durmaya çalıştığını belirtmiyor, aksine akışına göre yaşamayı tercih ediyor."
+29,claude_old_haiku,,C,True,1.562,585,123,"Seçenek: C
+Açıklama: Yazarın, başarısızlık korkusu nedeniyle olumsuz sonuçlanabilecek girişimlerden uzak durmaya çalıştığına dair bir ifade yoktur. Aksine, yazarın akışına göre yaşamaya çalıştığı ve kalıplara girmeden olduğu gibi yaşamaya özen gösterdiği belirtilmektedir."
+29,claude_new_haiku,,C,True,2.308,585,117,"Seçenek: C
+
+Açıklama: Yazar ""her ne olursa olsun üretme ve hayata devam etme gücümü"" korumaya çalıştığını söyler. Bu, olumsuz sonuçlardan kaçınmak değil, aksine onlara rağmen üretmeye devam etmek anlamına gelir. C seçeneği yazarın tutumuna aykırıdır."
+29,claude_sonnet,,C,True,10.633,585,496,"Metni analiz ediyorum:
+
+Yazar şunları söylüyor:
+- Başarı/başarısızlık ikiliğine mesafeli durur
+- Bunların geçici, durumsal olduğuna inanır
+- Sürekli yarış pisti hissi veren düşünceyi reddeder
+- Üretme ve hayata devam etme gücünü azaltan şeyleri reddeder
+- Akışına göre yaşamaya çalışır
+
+Şıkları kontrol ediyorum:
+
+A) Başkalarının doğrularına göre yaşamaktan kaçınır - DOĞRU (başarı/başarısızlık ikiliğini reddediyor)
+
+B) Kalıplara girmeden yaşamaya özen gösterir - DOĞRU (akışına göre yaşıyor)
+
+C) Olumsuz sonuçlanabilecek girişimlerden uzak durmaya çalışır - YANLIŞ! Yazar başarısızlıktan kaçınmıyor, sadece bu kavramları önemsemiyor. ""Üretme ve hayata devam etme gücü"" vurgusu risk almaktan kaçınmadığını gösterir.
+
+D) Yaşamı koşullara göre şekillenen deneyim olarak görür - DOĞRU (akışına göre yaşama, durumsal anlamlar)
+
+E) İlerlemek için kaygı verici durumlardan kaçınmayı önceler - YANLIŞ ama C daha net çelişiyor.
+
+Seçenek: C
+Açıklama: Yazar başarısızlık riskinden kaçınmıyor, aksine üretmeye ve yaşamaya devam ediyor. Olumsuz sonuçlardan kaçınmak yerine akışına göre yaşıyor."
+29,gemini_old_flash,,C,True,1.212,398,63,"Seçenek: C
+Açıklama: Metinde yazarın başarı/başarısızlık gibi ikilemlere mesafeli durduğu, akışına göre yaşadığı belirtiliyor. Olumsuz sonuçlanabilecek girişimlerden uzak durmaya çalıştığına dair bir ifade bulunmuyor."
+29,gemini_new_flash,,C,True,0.826,398,40,"Seçenek: C
+Açıklama: Metinde olumsuz sonuçlardan kaçınmaktan değil, başarı/başarısızlık ikiliğine mesafeli durmaktan bahsediliyor."
+29,gemini_pro,,C,True,5.625,398,510,"Seçenek: C
+Açıklama: Parçanın yazarı, başarı veya başar"
+29,grok_old,,C,True,2.422,377,44,"Seçenek: C
+Açıklama: Yazar, olumsuz sonuçlardan kaçmak yerine, başarı ve başarısızlığı geçici durumlar olarak görüp akışına göre yaşamayı tercih ettiğini belirtmektedir."
+29,grok_old_mini,,C,True,9.301,378,959,"Seçenek: C  
+Açıklama: Parça, yazarın olumsuz girişimlerden kaçındığını değil, başarı/başarısızlığı geçici görüp akışına göre yaşamayı tercih ettiğini belirtir."
+29,grok_new,,C,True,29.498,523,2682,"Seçenek: C  
+Açıklama: Metin, yazarın başarı-başarısızlık ikilemini reddederek ""her ne olursa olsun üretme ve devam etme"" gücünü koruduğunu belirtir; olumsuz girişimlerden uzak durma ima edilmez, aksine devam edilir."
+29,deepseek_v3,,C,True,2.474,544,63,"Seçenek: C
+Açıklama: Yazar, başarı veya başarısızlığın geçici olduğunu düşünür ve olumsuz sonuçlardan kaçınmaktan bahsetmez."
+29,deepseek_r1,,C,True,16.129,546,523,"Seçenek: C  
+Açıklama: Yazar, başarısızlıktan kaçınmaktan değil, ikili düşünce kalıbını reddederek ""akışa göre yaşamak""tan bahseder. Olumsuz sonuçlardan uzak durma vurgusu metinde yok."
+29,deepseek_32,,C,True,12.067,544,51,"Seçenek: C  
+Açıklama: The text discusses how people's actions and behaviors are shaped by their environment and circumstances, leading to different outcomes and interpretations, which aligns with option C's focus on outcomes and environmental influences."
+29,mock,,C,False,0.1,10,5,Mock cevap
+
+30,openai_new,,E,True,4.14,371,173,"Seçenek: E  
+Açıklama: Parçada eserin kalıcılığı, güncelliği, öncülüğü ve etkisi vurgulanıyor; “tutarlılığı”na dair bir ifade yok."
+30,openai_mini,,E,False,1.497,372,42,"Seçenek: C  
+Açıklama: Parçada eserin güncelliğinden bahsedilmemekte, daha çok kalıcılığı ve etkileyiciliği vurgulanmaktadır."
+30,openai_4o,,E,False,1.011,372,27,"Seçenek: C  
+Açıklama: Parçada eserin güncelliğinden bahsedilmemiştir."
+30,claude_old_haiku,,E,False,1.523,534,115,"Seçenek: D
+Açıklama: Metinde, eserin ""âdeta kendisinden sonraki edebiyat ve eleştiri araştırmalarının programını hazırlamış gibi"" olduğu belirtilmektedir. Bu, eserin öncülüğünü göstermektedir. Dolayısıyla, eserin öncülüğü parçada vurgulanan özelliklerden biridir."
+30,claude_new_haiku,,E,True,2.102,534,124,"Seçenek: E
+
+Açıklama: Metinde Poetika'nın etkileyiciliği (""yüzyıllarca benimsenmiş""), kalıcılığı (""günümüz dünyasında bile""), güncelliği (""araştırmacılar için hareket noktası""), öncülüğü (""ilk eser"") açıkça vurgulanmıştır. Ancak eserin tutarlılığından söz edilmemiştir."
+30,claude_sonnet,,E,True,5.63,534,278,"Metni inceliyorum:
+
+- **Etkileyiciliği (A)**: ""yüzyıllarca benimsenmiş"", ""hareket noktası oluşturmakta"" - Var
+- **Kalıcılığı (B)**: ""yüzyıllarca benimsenmiş"", ""günümüz dünyasında bile"" - Var
+- **Güncelliği (C)**: ""günümüz dünyasında bile araştırmacılar için hareket noktası"" - Var
+- **Öncülüğü (D)**: ""ilk eser"", ""temelleri atılmıştır"", ""kendisinden sonraki...programını hazırlamış"" - Var
+- **Tutarlılığı (E)**: Metinde eserin kendi içindeki tutarlılığından bahsedilmiyor
+
+Seçenek: E
+Açıklama: Metinde eserin tutarlılığı hakkında hiçbir bilgi verilmemiş, diğer tüm özellikler açıkça belirtilmiş."
+30,gemini_old_flash,,E,True,0.651,356,24,"Seçenek: E
+Açıklama: Metinde tutarlılıkla ilgili bir bilgi bulunmamaktadır."
+30,gemini_new_flash,,E,True,1.11,356,48,"Seçenek: E
+Açıklama: Metinde eserin etkileyiciliği, kalıcılığı, güncelliği ve öncülüğü vurgulanırken, tutarlılığına dair bir bilgi verilmemiştir."
+30,gemini_pro,,E,True,6.116,356,510,"Seçenek: E
+Açıklama: Parçada eserin öncü (ilk eser),"
+30,grok_old,,E,True,3.224,345,58,"Seçenek: E
+Açıklama: Parçada eserin tutarlılığı hakkında herhangi bir bilgi veya vurgu yapılmamaktadır; diğer özellikler (etkileyicilik, kalıcılık, güncellik, öncülük) ise açıkça belirtilmiştir."
+30,grok_old_mini,,E,True,6.574,346,693,"Seçenek: E  
+Açıklama: Parçada eserin fikirlerinin tutarlı olduğu belirtilmemiş, sadece diğer özellikler (etkileyicilik, kalıcılık, güncellik ve öncülük) vurgulanmış."
+30,grok_new,,E,True,6.011,491,297,"Seçenek: E  
+Açıklama: Metin, eserin öncülüğünü, kalıcılığını, güncelliğini ve etkileyiciliğini vurgular; tutarlılığına dair ifade yoktur."
+30,deepseek_v3,,E,True,4.787,493,63,"Seçenek: E  
+Açıklama: Metinde eserin ""tutarlılığından"" bahsedilmemektedir, diğer seçenekler metinde doğrudan veya dolaylı olarak vurgulanmıştır."
+30,deepseek_r1,,E,False,19.436,495,512,ERROR: No response
+30,deepseek_32,,E,True,2.799,494,74,"Seçenek: E  
+Açıklama: Parçada eserin etkileyiciliği, kalıcılığı, güncelliği ve öncülüğünden söz edilmiş, ancak tutarlılığına dair bir vurgu yapılmamıştır."
+30,mock,,E,False,0.101,10,5,Mock cevap
+
+31,openai_new,,C,True,3.43,455,115,"Seçenek: C  
+Açıklama: Parçada dondurmanın yapılışı, satıldığı yerler, teknolojik gelişmeler ve kültürdeki yeri anlatılıyor; ekonomik olarak kolay erişilebilir olduğuna dair bilgi yok."
+31,openai_mini,,C,True,1.292,456,34,"Seçenek: C  
+Açıklama: Parçada dondurmanın ekonomik olarak erişilmesinin kolay olduğuna dair bir bilgi verilmemiştir."
+31,openai_4o,,C,True,6.801,456,29,"Seçenek: C  
+Açıklama: Metinde dondurmanın ekonomik erişilebilirliği hakkında bilgi verilmemiştir."
+31,claude_old_haiku,,C,True,1.168,659,53,"Seçenek: C
+Açıklama: Metinde dondurmanın ekonomik olarak erişilmesinin kolay olduğuna dair bir bilgi verilmemiştir."
+31,claude_new_haiku,,C,True,2.86,659,131,"Seçenek: C
+
+Açıklama: Metinde dondurmanın içeriği (süt, meyve), satış yerleri (seyyar satıcılar, muhallebiciler, pastaneler), teknolojik gelişmeler (elektrikli aletler) ve kültürdeki yeri bahsedilmiştir. Ancak dondurmanın ekonomik olarak erişilmesinin kolay olduğu hiçbir yerde belirtilmemiştir."
+31,claude_sonnet,,C,True,6.377,659,314,"Metni seçeneklerle karşılaştıralım:
+
+A) İçerik malzemeleri: ""süt ve meyvenin karıştırılmasıyla"" - **Değinilmiş**
+
+B) Teknolojik gelişmeler: ""sanayileşmenin etkisiyle dondurma yapımında elektrikli aletler kullanılır"" - **Değinilmiş**
+
+C) Ekonomik erişim/fiyat: Metinde dondurmanın ucuz veya pahalı olduğuna, ekonomik erişilebilirliğine dair hiçbir bilgi yok - **Değinilmemiş**
+
+D) Farklı mekânlarda satış: ""seyyar satıcılar"", ""muhallebiciler"", ""pastaneler"" - **Değinilmiş**
+
+E) Yemek kültüründeki yeri: ""Türk mutfağındaki değerini korur"" - **Değinilmiş**
+
+Seçenek: C
+Açıklama: Metinde dondurmanın fiyatı veya ekonomik erişilebilirliği hakkında hiçbir bilgi verilmemiş."
+31,gemini_old_flash,,C,True,0.54,444,29,"Seçenek: C
+Açıklama: Metinde dondurmanın ekonomik erişilebilirliğine dair bir bilgi bulunmamaktadır."
+31,gemini_new_flash,,C,True,0.494,444,28,"Seçenek: C
+Açıklama: Metinde dondurmanın ekonomik erişilebilirliği hakkında bilgi verilmemiştir."
+31,gemini_pro,,C,True,6.37,444,510,"Seçenek: C
+Açıklama: Parçada dondurmanın içeriğinden"
+31,grok_old,,C,True,2.594,422,41,"Seçenek: C
+Açıklama: Parçada dondurmanın ekonomik olarak erişilebilirliği hakkında herhangi bir bilgi verilmemiştir. Diğer şıklar metinde yer almaktadır."
+31,grok_old_mini,,C,True,8.076,423,822,"Seçenek: C  
+Açıklama: Metinde dondurmanın ekonomik erişilebilirliği (ucuzluk veya fiyat) hakkında bilgi verilmezken, diğer konulara değinilmiştir."
+31,grok_new,,C,True,3.906,568,413,"Seçenek: C
+Açıklama: Parçada dondurmanın ekonomik erişilebilirliği belirtilmemiş; diğer şıklardaki unsurlar (malzeme, teknoloji, satış yerleri, kültürel yer) doğrudan yer alıyor."
+31,deepseek_v3,,C,True,2.923,616,41,"Seçenek: C
+Açıklama: Parçada dondurmanın ekonomik olarak erişilebilirliğinden bahsedilmemiştir."
+31,deepseek_r1,,C,True,17.242,618,512,"Seçenek: C  
+Açıklama: Parçada dondurmanın ekonomik erişilebilirliği (ucuzluğu, satın alım kolaylığı) hakkında hiçbir bilgi verilmemiştir. Diğer seçeneklerdeki bilgiler (içerik, teknolojik gelişme,"
+31,deepseek_32,,C,False,7.005,616,51,"Seçenek: D  
+Açıklama: The passage discusses how different methods were used in different periods (e.g., 1800s, 1930s), which matches option D's focus on varying approaches across eras."
+31,mock,,C,True,0.1,10,5,Mock cevap
+
+32,openai_new,,A,True,6.779,415,267,"Seçenek: A  
+Açıklama: Parçada günlüklerin “gizemli” yönleriyle dikkat çektiği söylenmiyor; daha çok mahrem, gerçekçi ve içten oluşu vurgulanıyor."
+32,openai_mini,,A,False,1.114,416,43,"Seçenek: E  
+Açıklama: Parçada günlüklerin romanla benzer özellikler taşıdığı belirtilmiyor, aksine günlüklerin kurgusal atmosferden uzak olduğu vurgulanıyor."
+32,openai_4o,,A,False,1.107,416,29,"Seçenek: E  
+Açıklama: Günlükler, roman gibi kurgusal değil, gerçek hayatı yansıtır."
+32,claude_old_haiku,,A,False,1.777,591,88,"Seçenek: E
+Açıklama: Günlükler, gerçek hayatı yansıttığı için roman türünden farklıdır. Parçada da belirtildiği gibi, günlükler ""kurgusal atmosferinden uzak"" olduğu için kendine has bir tarz sahiptir."
+32,claude_new_haiku,,A,False,2.395,591,133,"Seçenek: E
+
+Açıklama: Metinde ""günlük, romanı andırsa da onun kurgusal atmosferinden uzak olduğu için kendine has tarza sahip edebî türdür"" denilmektedir. Bu, günlüklerin roman gibi kurgusal değil, gerçek ve samimi olduğunu vurgular. E seçeneği günlüklerin roman gibi benzer bilgiler taşıdığını söyler ki bu metinle çelişir."
+32,claude_sonnet,,A,True,8.599,591,431,"Metni inceliyorum:
+
+Parçada günlükler hakkında söylenenler:
+- Mahrem ve saygın kayıtlar
+- Bir yaşamın bir kısmını veya tamamını içerir
+- Gerçekçi hayat sunar
+- Sahicilik ve içtenlik içerir
+- Yazarla empati kurulabilir
+- Romanı andırır ama kurgusal değildir
+- Kendine has tarza sahip
+
+Şıkları kontrol ediyorum:
+
+A) ""Gizemli yönleriyle insanların dikkatini çeker"" - Metinde günlüklerin ""gizemli"" olduğundan bahsedilmiyor.
+
+B) ""Hayatı samimi biçimde ve doğrudan yansıtır"" - Evet, ""sahicilik ve içtenlik"" ifadesiyle destekleniyor.
+
+C) ""Yazarın özel hayatından kesitleri özgün bir üslupla aktarır"" - Evet, ""kendine has tarz"" ve ""hayat kesitleri"" ifadeleriyle destekleniyor.
+
+D) ""Okurun yazarla etkileşim kurmasını sağlar"" - Evet, ""empati kurmanız"" ifadesiyle destekleniyor.
+
+E) ""Roman türüyle benzer özellikler taşır"" - Evet, ""romanı andırsa da"" ifadesiyle destekleniyor.
+
+Seçenek: A
+Açıklama: Metinde günlüklerin ""gizemli"" yönlerinden bahsedilmiyor, aksine mahrem ve içten olduğu vurgulanıyor."
+32,gemini_old_flash,,A,True,1.104,403,27,"Seçenek: A
+Açıklama: Metinde günlüklerin gizemli yönlerine dair bir ifade bulunmamaktadır."
+32,gemini_new_flash,,A,True,0.877,403,45,"Seçenek: A
+Açıklama: Metinde günlüklerin ""mahrem ve saygın"" olduğu belirtilse de ""gizemli yönleriyle dikkat çektiği""ne dair bir ifade bulunmamaktadır."
+32,gemini_pro,,A,True,6.034,403,510,"Seçenek: A
+Açıklama: Parçada günlüklerin ""mahrem"" (ö"
+32,grok_old,,A,False,4.612,388,42,"Seçenek: E
+Açıklama: Parçada günlüklerin romandan farklı olduğu, kurgusal atmosferden uzak olduğu belirtiliyor; bu nedenle romanla benzer özellik taşıdığı söylenemez."
+32,grok_old_mini,,A,True,10.615,389,957,"Seçenek: A  
+Açıklama: Parçada günlüklerin gizemli yönünden bahsedilmediği için, bu özellik söylenemez."
+32,grok_new,,A,True,5.209,534,513,"Seçenek: A
+Açıklama: Parçada günlüklerin gizemli yönünden bahsedilmez; mahremiyet ve sahicilik vurgulanır."
+32,deepseek_v3,,A,True,3.374,554,52,"Seçenek: A
+Açıklama: Parçada günlüklerin gizemli yönlerinden bahsedilmiyor, samimiyet ve gerçekçilik vurgulanıyor."
+32,deepseek_r1,,A,False,13.701,556,512,ERROR: No response
+32,deepseek_32,,A,True,8.816,555,80,"Seçenek: A
+Açıklama: Parçada günlüklerin ""gizemli yönleri"" veya ""dikkat çekme"" gibi bir özelliğinden bahsedilmiyor; mahrem, saygın, gerçekçi ve samimi olmaları vurgulanıyor."
+32,mock,,A,False,0.1,10,5,Mock cevap
+
+33,openai_new,,A,True,9.578,525,207,"Seçenek: A  
+Açıklama: Parça 1980’lerdeki ev içi mekân kullanımını ve nedenlerini anlatıyor; Türk sinema tarihinde mekân anlayışının **nasıl dönüştüğüne** dair bir süreç/karşılaştırma yok."
+33,openai_mini,,A,True,0.889,526,33,"Seçenek: A  
+Açıklama: Parçada Türk sinemasında mekân anlayışının dönüşümüne dair bir bilgi verilmemiştir."
+33,openai_4o,,A,True,1.255,526,35,"Seçenek: A  
+Açıklama: Parçada Türk sinema tarihinde mekân anlayışının nasıl dönüştüğüne dair bir bilgi verilmemiştir."
+33,claude_old_haiku,,A,True,1.92,751,102,"Seçenek: A
+Açıklama: Metin, Türk sinema tarihinde mekân anlayışının nasıl dönüştüğüne değinmemiştir. Metin, 1980'lerdeki Türk filmlerindeki ev ve ev içi mekân tasvirlerinin özelliklerini ve nedenlerini açıklamaktadır."
+33,claude_new_haiku,,A,True,3.249,751,129,"Seçenek: A
+
+Açıklama: Metinde 1980'lerdeki ev tasvirlerinin özellikleri ve nedenleri anlatılmıştır, ancak Türk sinema tarihinde mekân anlayışının **nasıl dönüştüğü** (geçmiş dönemlerle karşılaştırma) hiç değinilmemiştir. Diğer seçeneklerin tümü metinde açıkça yer almaktadır."
+33,claude_sonnet,,A,True,7.32,751,305,"Parçayı analiz ediyorum:
+
+Metinde bahsedilenler:
+- 1980'lerde Türk filmlerinde ev içi mekânların nasıl tasarlandığı (C) ✓
+- Bu görüntülerin yapaylığı, doğallıktan yoksunluğu (D) ✓
+- Dönemin mahremiyetini görünür kılma ihtiyacına cevap vermesi (B) ✓
+- Estetik duygusu oluşturmak için sembolizm çabası (E) ✓
+
+Metinde bahsedilmeyen:
+- Mekân anlayışının nasıl dönüştüğü, yani öncesi ve sonrasıyla bir karşılaştırma yapılmamış. Sadece 1980'lerdeki durum anlatılmış (A) ✗
+
+Seçenek: A
+Açıklama: Metinde sadece 1980'lerdeki mekân kullanımı anlatılıyor, öncesi veya sonrasıyla karşılaştırma yapılarak bir dönüşümden bahsedilmiyor."
+33,gemini_old_flash,,A,True,0.767,510,34,"Seçenek: A
+Açıklama: Metinde Türk sinemasında mekân anlayışının nasıl dönüştüğüne dair bir bilgi bulunmamaktadır."
+33,gemini_new_flash,,A,True,0.788,510,49,"Seçenek: A
+Açıklama: Metinde 1980'lerdeki mekân anlayışı anlatılmış, ancak Türk sinema tarihinde mekân anlayışının genel dönüşümüne değinilmemiştir."
+33,gemini_pro,,A,True,5.796,510,510,"Seçenek: A
+Açıklama: Parçada sadece 1980'"
+33,grok_old,,A,True,3.525,497,50,"Seçenek: A
+Açıklama: Parçada, Türk sinema tarihinde mekân anlayışının nasıl dönüştüğüne dair bir bilgi veya süreç anlatımı bulunmamaktadır; sadece 1980’lerdeki duruma odaklanılmıştır."
+33,grok_old_mini,,A,True,9.61,498,958,"Seçenek: A  
+Açıklama: Metin, Türk sinema tarihinde mekân anlayışının genel dönüşümünü değil, sadece 1980'lerdeki durumu ve nedenlerini ele alır."
+33,grok_new,,A,True,6.219,643,581,"Seçenek: A
+Açıklama: Parça sadece 1980'ler dönemine odaklanır, mekân anlayışının tarihsel dönüşümüne değinmez; diğer şıklarda belirtilen unsurlar (tasarım, yapaylık, estetik, dönem anlayışı) doğrudan üç nedende yer alır."
+33,deepseek_v3,,A,True,2.191,698,72,"Seçenek: A
+Açıklama: Parçada Türk sinema tarihinde mekân anlayışının nasıl dönüştüğüne değinilmemiştir. Diğer seçeneklerdeki konulara ise değinilmiştir."
+33,deepseek_r1,,A,True,16.157,700,512,"Seçenek: A  
+Açıklama: Parçada mekân anlayışının dönüşümünden değil, 1980'lerdeki belirli özellikler ve nedenlerden bahsedilir; tarihsel bir dönüşüm analizi yapılmamıştır. Diğer seçenekler (B, C"
+33,deepseek_32,,A,False,38.46,698,107,"Seçenek: C  
+Açıklama: The paragraph discusses how Turkish cinema in the 1980s used ""ev"" (likely ""art"" or ""artistic"" elements) and ""ev içine"" (perhaps ""artistic cinema"") as a means to create a new artistic cinema, and how these artistic elements were used to convey meaning and create a new artistic cinema. Option C captures this by stating it is about how Turkish cinema used artistic cinema as a means to create a new artistic cinema."
+33,mock,,A,False,0.1,10,5,Mock cevap
+
+34,openai_new,,D,True,7.137,522,245,"Seçenek: D  
+Açıklama: Metinde bahçenin kelebek şeklinde olduğu söylenir; ancak bu özelliğiyle yurt dışındaki benzerlerinden ayrıldığına dair bir bilgi yoktur."
+34,openai_mini,,D,True,1.033,523,36,"Seçenek: D  
+Açıklama: Metinde, mimarinin yurt dışındaki benzerlerinden nasıl ayrıldığına dair bir bilgi verilmemiştir."
+34,openai_4o,,D,True,1.009,523,35,"Seçenek: D  
+Açıklama: Metinde kelebek mimarisiyle yurt dışındaki benzerlerinden ayrıldığına dair bir bilgi yok."
+34,claude_old_haiku,,D,True,1.973,773,91,"Seçenek: D
+Açıklama: Konya Tropikal Kelebek Bahçesi'nin kelebek mimarisiyle yurt dışındaki benzerlerinden ayrıldığı belirtilmiştir. Diğer şıklarda yer alan bilgiler metin içinde doğrulanmaktadır."
+34,claude_new_haiku,,D,True,2.549,773,104,"Seçenek: D
+
+Açıklama: Metinde ""Avrupa'nın en büyük tropikal kelebek bahçesi"" olduğu belirtilir, ancak yurt dışındaki benzerlerinden mimarisiyle ayrıldığı söylenmez. Kelebek şeklindeki mimarisi sadece şehrin sembolü olarak tanımlanır."
+34,claude_sonnet,,D,True,6.542,773,347,"Metni dikkatlice inceleyerek her seçeneği kontrol ediyorum:
+
+A) ""şehrin sembol ziyaret mekânlarından"" - Doğru, metinde var.
+
+B) ""bilim insanları tarafından yapılan mantar, kuş ve böcek incelemeleri"" ve ""boyama ve el işi etkinlikleri"" - Doğru, metinde var.
+
+C) ""Yaz kış 26 derece sıcaklık ve yüzde 80 nem koşullarının sağlandığı"" - Doğru, metinde var.
+
+D) ""Kelebek şeklindeki mimarisiyle"" denmiş ama bunun ""yurt dışındaki benzerlerinden ayrıldığı"" söylenmemiş. Sadece ""Avrupa'nın en büyük tropikal kelebek bahçesi"" denmiş.
+
+E) ""Kelebeklerin larvadan kelebek hâline gelişindeki tüm evrelerinin adım adım izlenebildiği"" - Doğru, metinde var.
+
+Seçenek: D
+Açıklama: Metinde kelebek mimarisinden bahsedilmiş ancak bunun yurt dışındaki benzerlerinden ayırt edici özellik olduğu belirtilmemiş."
+34,gemini_old_flash,,D,True,0.757,525,34,"Seçenek: D
+Açıklama: Metinde kelebek mimarisinin yurt dışındaki benzerlerinden ayrıldığına dair bir bilgi bulunmamaktadır."
+34,gemini_new_flash,,D,True,1.025,525,35,"Seçenek: D
+Açıklama: Metinde kelebek mimarisiyle yurt dışındaki benzerlerinden ayrıldığına dair bir bilgi bulunmamaktadır."
+34,gemini_pro,,D,True,5.935,525,510,"Seçenek: D
+Açıklama: Metinde, bahçenin kelebek şeklinde"
+34,grok_old,,D,True,3.465,496,43,"Seçenek: D
+Açıklama: Parçada kelebek şeklindeki mimariden bahsedilse de, yurt dışındaki benzerlerinden ayrıldığına dair bir bilgi verilmemektedir."
+34,grok_old_mini,,D,True,7.921,497,768,"Seçenek: D  
+Açıklama: Metin, bahçenin kelebek şeklindeki mimarisini belirtir ancak yurt dışındaki benzerlerinden ayrıldığını söylemez."
+34,grok_new,,D,True,8.9,642,459,"Seçenek: D
+Açıklama: Metin kelebek mimarisini belirtir ancak yurt dışındaki benzerlerinden bu mimariyle ayrıldığını söylemez; sadece Avrupa'nın en büyüğü olduğunu vurgular."
+34,deepseek_v3,,D,True,2.93,712,48,"Seçenek: D
+Açıklama: Metinde kelebek mimarisiyle yurt dışındaki benzerlerinden ayrıldığına dair bir bilgi yok."
+34,deepseek_r1,,D,False,10.555,714,512,ERROR: No response
+34,deepseek_32,,D,True,78.135,713,70,"Seçenek: D
+Açıklama: Parçada kelebek şeklindeki mimariden bahsedilir ancak yurt dışındaki benzerlerinden ayrıldığına dair bir karşılaştırma yapılmamıştır."
+34,mock,,D,False,0.1,10,5,Mock cevap
+
+35,openai_new,,E,True,4.595,561,114,"Seçenek: E  
+Açıklama: Parçada blues’un dünya çapında tanındığı söyleniyor; ancak bestelerinin hangi milletlere ilham verdiği belirtilmiyor."
+35,openai_mini,,E,True,4.655,562,34,"Seçenek: E  
+Açıklama: Parçada blues müziğinin bestelerinin ilham verdiği milletlere dair bir bilgi verilmemiştir."
+35,openai_4o,,E,True,1.208,562,30,"Seçenek: E  
+Açıklama: Parçada blues müziğinin ilham verdiği milletlerden bahsedilmemiştir."
+35,claude_old_haiku,,E,True,1.279,805,123,"Seçenek: E
+Açıklama: Parçada blues müziğinin ilham verdiği milletler hakkında bilgi verilmemiştir. Parça, blues müziğinin Afrika kökenli olduğunu ve Afrikalı kölelerin getirdiği müzik tarzı olduğunu anlatmaktadır, ancak diğer milletlerin blues müziğinden etkilendiğine dair bir bilgi içermemektedir."
+35,claude_new_haiku,,E,True,2.486,805,92,"Seçenek: E
+
+Açıklama: Metinde blues müziğinin hangi milletleri etkilediği veya ilham verdiği konusunda bilgi verilmemiştir. Caz müziğinden bahsedilse de, blues bestelerinin hangi milletleri etkilediği açıklanmamıştır."
+35,claude_sonnet,,E,True,7.642,805,332,"Metni seçeneklere göre kontrol edeyim:
+
+A) Tarih içerisinde gösterdiği gelişime - ✓ (1865'ten 1920'lere kadar gelişim anlatılmış)
+
+B) Ortaya çıkış zamanının belirsizliğine - ✓ (""ne zaman ortaya çıktığı tam olarak bilinmiyor"")
+
+C) Temsil ettiği duyguların çeşitliliğine - ✓ (özgürlük özlemi, acılar, aşk, gündelik sıkıntılar)
+
+D) İcra edilmesinde kullanılan aletlere - ✓ (banço, mandolin, gitar)
+
+E) Bestelerinin ilham verdiği milletlere - ✗ (Metinde ""blues müziğinden etkilenen caz"" ve ""tüm dünyada tanındı"" denmiş ama hangi milletlere ilham verdiğinden bahsedilmemiş)
+
+Seçenek: E
+Açıklama: Metinde blues'un hangi milletlere ilham verdiğinden bahsedilmemiş, sadece cazı etkilediği ve dünyada tanındığı belirtilmiş."
+35,gemini_old_flash,,E,True,0.431,550,30,"Seçenek: E
+Açıklama: Metinde blues'un bestelerinin ilham verdiği milletlere değinilmemiştir."
+35,gemini_new_flash,,E,True,0.581,550,39,"Seçenek: E
+Açıklama: Metinde blues'un cazı etkilediği belirtilse de, bestelerinin ilham verdiği milletlere dair bir bilgi yoktur."
+35,gemini_pro,,E,True,7.178,550,510,"Seçenek: E
+Açıklama: Parçada blues müziğinin İrlandalı"
+35,grok_old,,E,True,6.46,528,58,"Seçenek: E
+Açıklama: Parçada blues müziğinin gelişimi, ortaya çıkış zamanının belirsizliği, temsil ettiği duygular ve kullanılan enstrümanlar hakkında bilgi verilmiş, ancak bestelerinin ilham verdiği milletlerden bahsedilmemiştir."
+35,grok_old_mini,,E,True,13.712,529,885,"Seçenek: E  
+Açıklama: Parçada blues'un bestelerinin belirli milletlere ilham verdiği belirtilmemiştir, sadece genel olarak dünya çapında tanındığı vurgulanır."
+35,grok_new,,E,True,6.858,674,517,"Seçenek: E
+Açıklama: Parçada blues'un cazı etkilediği belirtilse de, bestelerinin ilham verdiği milletlere değinilmemiştir; diğer şıklar doğrudan metinde yer alır."
+35,deepseek_v3,,E,True,2.998,760,75,"Seçenek: E
+Açıklama: Parçada blues'un ilham verdiği milletlerden bahsedilmemiştir, sadece İrlandalı ve İskoç göçmenlerin etkisiyle enstrümanlara katkılarından söz edilmiştir."
+35,deepseek_r1,,E,True,22.42,762,777,"Seçenek: E  
+Açıklama: Parçada blues'un İrlandalı ve İskoç göçmenlerin enstrüman etkisinden bahsedilir, ancak bestelerinin belirli milletlere ilham verdiğine dair bir bilgi yoktur. Diğer seçenekler (gelişim, zaman belirsizliği, duygular, enstrümanlar) açıkça vurgulanmıştır."
+35,deepseek_32,,E,False,47.663,760,95,"Seçenek: C  
+Açıklama: The passage discusses how blues (likely referring to blue‑colored stars or objects) have been studied over time, with their properties and classifications evolving. Option C mentions ""Temsil ettiği duyguların çeşitliliğine,"" which seems to refer to ""temporal changes in classification"" – aligning with the historical development of blue‑star categorization described in the text."
+35,mock,,E,True,0.1,10,5,Mock cevap
+
+36,openai_new,,A,True,8.976,622,237,"Seçenek: A  
+Açıklama: Blues, kökeninde Afrika’nın dokusunu taşıyarak zamanla tüm dünyada tanınan bir müzik türü olmuştur."
+36,openai_mini,,A,True,3.887,623,45,"Seçenek: A  
+Açıklama: Parçada blues müziğinin Afrika kökenli olduğu ve bu kültürden etkilendiği belirtiliyor, ayrıca tüm dünyada tanındığı ifade ediliyor."
+36,openai_4o,,A,True,0.942,623,35,"Seçenek: A  
+Açıklama: Parçada, blues müziğinin Afrika kökenli olduğu ve zamanla tüm dünyada tanındığı belirtilmiştir."
+36,claude_old_haiku,,A,True,1.278,893,55,"Seçenek: A
+Açıklama: Parçada, blues müziğinin Afrika kültüründen etkilendiği ve dünyaya yayıldığı belirtilmektedir."
+36,claude_new_haiku,,A,True,1.882,893,108,"Seçenek: A
+
+Açıklama: Metinde ""bu şarkıların ezgisi, sonuna kadar Afrika'nın dokusunu bünyesinde taşımaya devam etti"" ve blues'ın tüm dünyada tanındığı belirtilmiştir. Afrika kökenli bir müzik türü olarak dünyaya yayıldığı açıkça ifade edilmektedir."
+36,claude_sonnet,,A,True,3.625,893,124,"Seçenek: A
+
+Açıklama: Metinde blues'un Afrika kökenli kölelerin müziği olarak başladığı, ""ezgisinin sonuna kadar Afrika'nın dokusunu taşımaya devam ettiği"" ve 1920'lerden sonra ""tüm dünyada tanındığı"" belirtiliyor. Bu, Afrika kültüründen etkilenen bir müzik türü olarak dünyaya yayıldığını gösterir."
+36,gemini_old_flash,,A,True,0.603,612,31,"Seçenek: A
+Açıklama: Parçada blues'un Afrika kökenli olduğu ve dünyaya yayıldığı belirtiliyor."
+36,gemini_new_flash,,A,True,0.559,612,37,"Seçenek: A
+Açıklama: Metinde blues'un Afrika kökenli olduğu ve ezgisinin Afrika dokusunu taşımaya devam ettiği belirtiliyor."
+36,gemini_pro,,A,True,6.092,612,510,"Seçenek: A
+Açıklama: Parçada blues müziğinin Afrika'dan"
+36,grok_old,,A,True,2.236,584,29,"Seçenek: A  
+Açıklama: Parçada blues müziğinin Afrika kökenli olduğu ve dünyaya yayıldığı belirtiliyor."
+36,grok_old_mini,,A,True,7.235,585,691,"Seçenek: A  
+Açıklama: Parça, blues'un Afrika kökenli olduğunu ve bu etkiyle dünyaya yayıldığını doğrudan ifade ediyor."
+36,grok_new,,A,True,6.254,730,565,"Seçenek: A  
+Açıklama: Parça, blues'un Afrika kölelerinin ezgisiyle kökenlendiğini ve dünyaya yayıldığını belirtir; diğer şıklar metne uymaz."
+36,deepseek_v3,,A,True,2.497,845,60,"Seçenek: A  
+Açıklama: Parçada blues müziğinin Afrika'dan gelen kölelerin kültüründen etkilendiği ve zamanla dünyaya yayıldığı vurgulanmıştır."
+36,deepseek_r1,,A,True,41.007,847,1331,"Seçenek: A  
+Açıklama: Parçada blues'un Afrika'dan gelen kölelerin kültürüyle şekillendiği ve ezgisinin Afrika dokusunu koruyarak dünyaya yayıldığı belirtilmiştir."
+36,deepseek_32,,A,True,3.36,846,72,"Seçenek: A
+Açıklama: Paragrafta blues'un Afrika'dan getirilen kölelerin şarkılarından doğduğu, Afrika'nın dokusunu taşıdığı ve zamanla tüm dünyada tanındığı ifade ediliyor."
+36,mock,,A,False,0.1,10,5,Mock cevap
+
+37,openai_new,,D,True,11.487,673,328,"Seçenek: D  
+Açıklama: Parçada dokunmayla biyokimyasal sinyallerin iç basıncı değiştirip yaprağın şekil değiştirdiği anlatılır; dış kuvvetin kimyasal yapıyı **kalıcı** değiştirdiği söylenmez."
+37,openai_mini,,D,True,1.647,674,58,"Seçenek: D  
+Açıklama: Metinde, yapraklara uygulanan dışsal kuvvetin kimyasal yapıyı kalıcı olarak değiştirdiğine dair bir bilgi verilmemektedir; sadece hücrelerin iç basıncının değiştiği belirtilmiştir."
+37,openai_4o,,D,True,1.246,674,42,"Seçenek: D  
+Açıklama: Parçada, yapraklara uygulanan dışsal kuvvetin kimyasal yapıyı kalıcı olarak değiştirdiğine dair bir bilgi yoktur."
+37,claude_old_haiku,,D,True,1.666,949,110,"Seçenek: D
+Açıklama: Metinde, güneş gülünün yapraklarına uygulanan dışsal kuvvetin onun kimyasal yapısını kalıcı olarak değiştirmediği belirtilmiştir. Yaprakların şekil değiştirmesi, hücrelerin iç basıncındaki değişime bağlıdır ve geçicidir."
+37,claude_new_haiku,,D,True,2.912,949,103,"Seçenek: D
+
+Açıklama: Metinde yaprakların basınç değişimine göre şekil değiştirdiği belirtilir, ancak kimyasal yapısının kalıcı olarak değiştiğinden bahsedilmez. Şekil değişimi geçicidir ve hücre basıncının değişmesinden kaynaklanır."
+37,claude_sonnet,,D,True,9.536,949,320,"Metni dikkatlice inceleyerek her seçeneği kontrol ediyorum:
+
+A) Böcekler yapraklara dokunduğunda biyokimyasal sinyaller tetiklenir - DOĞRU
+B) Üst hücreler yuvarlak, alt hücreler uzun; bu yapısal fark hareketi sağlar - DOĞRU
+C) Tüyler yapışkan madde içerir ve böcekleri yakalar, hareket algılama ile ilgili bilgi yok - Metinde tüylerin hareketi algıladığı belirtilmiyor
+D) Metinde basınç değişimi geçicidir, kalıcı kimyasal yapı değişiminden bahsedilmiyor - YANLIŞ
+E) Yapışkan madde böceklerin saplanıp kalmasını sağlar - DOĞRU
+
+Seçenek: D
+Açıklama: Metinde yapraklara uygulanan kuvvetin kimyasal yapıyı kalıcı olarak değiştirdiği belirtilmiyor; sadece hücrelerin iç basıncının değiştiği ve geçici şekil değişimi olduğu söyleniyor."
+37,gemini_old_flash,,D,True,0.805,656,34,"Seçenek: D
+Açıklama: Parçada yaprakların kimyasal yapısının kalıcı olarak değiştiğine dair bir bilgi bulunmamaktadır."
+37,gemini_new_flash,,D,True,0.588,656,33,"Seçenek: D
+Açıklama: Metinde dışsal kuvvetin kimyasal yapıyı kalıcı olarak değiştirdiğine dair bir bilgi yoktur."
+37,gemini_pro,,D,True,6.108,656,510,"Seçenek: D
+Açıklama: Parçada, yapraklara dokunul"
+37,grok_old,,D,True,6.361,627,55,"Seçenek: D
+Açıklama: Parçada, güneş gülünün yapraklarına uygulanan dışsal kuvvetin kimyasal yapısını kalıcı olarak değiştirdiğine dair bir bilgi bulunmamaktadır. Diğer seçenekler metinde açıkça belirtilmiştir."
+37,grok_old_mini,,D,True,7.583,628,787,"Seçenek: D  
+Açıklama: Metin, dışsal kuvvetin yapraklardaki kimyasal yapıyı kalıcı olarak değiştirdiğini belirtmez; sadece geçici bir tepki ve şekil değişikliğinden bahseder."
+37,grok_new,,D,True,9.948,773,774,"Seçenek: D  
+Açıklama: Parçada hücre basıncının değişimi geçici olarak belirtilir; kimyasal yapının kalıcı değişimi söylenmez."
+37,deepseek_v3,,D,True,2.932,908,64,"Seçenek: D
+Açıklama: Parçada yaprakların yapısının değişmesi geçici bir basınç etkisiyle açıklanmıştır, kalıcı değişimden bahsedilmez."
+37,deepseek_r1,,D,True,28.939,910,899,"Seçenek: D  
+Açıklama: Parçada dış kuvvetin (dokunma) hücrelerin iç basıncını geçici olarak değiştirdiği belirtilirken, kimyasal yapının kalıcı değişimine dair hiçbir ifade yoktur."
+37,deepseek_32,,D,True,3.242,909,96,"Seçenek: D  
+Açıklama: Parçada yapraklara uygulanan dış kuvvetin hücre iç basıncını değiştirerek geçici şekil değişikliğine yol açtığı belirtilir, ancak kimyasal yapının kalıcı olarak değiştiğine dair bir ifade yoktur."
+37,mock,,D,True,0.1,10,5,Mock cevap
+
+38,openai_new,,E,True,2.688,651,89,"Seçenek: E  
+Açıklama: Parçada, doğadan esinlenilen tasarımın nasıl çalışacağının önceden bilinebildiği ve bu yüzden test süresinin kısaldığı söyleniyor; bu da işleyişi öngörülebilir ürünler tasarladıklarını gösterir."
+38,openai_mini,,E,True,1.097,652,42,"Seçenek: E  
+Açıklama: Parçada, doğadan esinlenerek tasarlanan mühendislik uygulamalarının işleyişinin öngörülebilir olduğu belirtiliyor."
+38,openai_4o,,E,True,1.872,652,54,"Seçenek: E  
+Açıklama: Parçada, doğadan esinlenilen mühendislik uygulamalarının işleyişinin öngörülebilir olduğu ve bu sayede prototip test süresinin kısaldığı belirtilmiştir."
+38,claude_old_haiku,,E,True,1.317,929,103,"Seçenek: E
+Açıklama: Metin, doğadan esinlenerek tasarlanan mühendislik uygulamalarının işleyişinin öngörülebilir olduğunu belirtmektedir. Bu sayede ürün prototiplerinin test edilme süresi kısalmakta ve teknolojik gelişme hız kazanmaktadır."
+38,claude_new_haiku,,E,True,3.132,929,133,"Seçenek: E
+
+Açıklama: Parçada ""tasarımın nasıl çalışacağını önceden bilmek mümkün olduğundan"" ifadesi, doğadan esinlenen mühendislik uygulamasının işleyişinin öngörülebilir olduğunu gösterir. Güneş gülünün mekanizması bilindiği için robot parmakları da önceden tasarlanabilir ve test süresi kısalır."
+38,claude_sonnet,,E,True,3.426,929,112,"Seçenek: E
+
+Açıklama: Parçanın son cümlesinde ""Doğadan esinlenilen bu mühendislik uygulamasında tasarımın nasıl çalışacağını önceden bilmek mümkün"" ifadesi, doğadan hareketle işleyişi öngörülebilir ürünler tasarlandığını açıkça belirtmektedir."
+38,gemini_old_flash,,E,True,0.695,641,32,"Seçenek: E
+Açıklama: Parçada, tasarımın nasıl çalışacağının önceden bilinebildiği belirtiliyor."
+38,gemini_new_flash,,E,True,0.623,641,43,"Seçenek: E
+Açıklama: Metinde, doğadan esinlenilen mühendislik uygulamasında tasarımın nasıl çalışacağının önceden bilinebildiği belirtilmiştir."
+38,gemini_pro,,E,True,5.664,641,510,"Seçenek: E
+Açıklama: Parçanın sonunda, doğadan esin"
+38,grok_old,,E,True,3.194,609,81,"Seçenek: E
+Açıklama: Parçada, doğadan esinlenilen mühendislik uygulamalarının işleyişinin önceden bilinebildiği ve bu sayede ürün prototiplerinin test süresinin kısaldığı belirtiliyor. Bu, E seçeneğindeki ""işleyişi öngörülebilir ürünler tasarlar"" ifadesiyle uyumludur."
+38,grok_old_mini,,E,True,6.834,610,737,"Seçenek: E  
+Açıklama: Parça, doğadan esinlenerek ürünlerin işleyişini önceden bilmeyi ve test süresini kısaltmayı vurguluyor."
+38,grok_new,,E,True,13.301,755,526,"Seçenek: E  
+Açıklama: Parça, doğadan (güneş gülü) esinlenerek tasarımın işleyişinin önceden bilinebildiğini ve prototip test süresinin kısaldığını belirtir."
+38,deepseek_v3,,E,True,1.916,879,66,"Seçenek: E
+Açıklama: Parçada, doğadan esinlenerek işleyişi öngörülebilir ürünler tasarlandığı ve bu sayede test süresinin kısaldığı belirtiliyor."
+38,deepseek_r1,,E,True,23.292,881,691,"Seçenek: E  
+Açıklama: Parçanın son cümlelerinde, doğadan esinlenen bu mühendislik uygulamasında ""tasarımın nasıl çalışacağını önceden bilmek mümkün olduğundan"" ve ""ürün prototipinin test süresinin kısaldığı"" vurgulanıyor. Bu da işleyişi öngörülebilir ürünler tasarlandığını doğrudan destekler. Diğer seçeneklerdeki ""kabul görme"", ""çevre koşullarına uyarlama"", ""temel yaklaşımlar"" veya ""çevre bilinci"" gibi unsurlar parçada belirtilmemiştir."
+38,deepseek_32,,E,True,3.01,880,69,"Seçenek: E
+Açıklama: Paragrafta, doğadan esinlenilen tasarımın işleyişinin öngörülebilir olduğu ve bu sayede test süresinin kısaldığı vurgulanmaktadır."
+38,mock,,E,False,0.1,10,5,Mock cevap
+
+39,openai_new,,B,True,4.575,516,192,"Seçenek: B  
+Açıklama: Okumayı hayatın yerine koyup “gerçek hayatı” yaşamadan sadece kitaplarla dünyayı tanıyacağını sanan okur tipi eleştiriliyor."
+39,openai_mini,,B,True,1.5,517,60,"Seçenek: B  
+Açıklama: Parçada, Flaubert'in okurların hayatı kitaplarla sınırlı tutmalarını eleştirdiği ve gerçek hayatı deneyimlemeden sadece kitaplarla bilgi edinmeye çalıştıklarını vurguladığı belirtiliyor."
+39,openai_4o,,B,True,1.342,517,47,"Seçenek: B  
+Açıklama: Parçada, Flaubert'in eleştirdiği okur tipi, hayatı kitaplarla sınırlandıran ve gerçek hayatı deneyimlemeyen kişilerdir."
+39,claude_old_haiku,,B,True,1.856,749,118,"Seçenek: B
+Açıklama: Parçada, Flaubert'in eleştirdiği okur tipi hayatı kitaplarla sınırlandıran okurdur. Metinde, Flaubert'in ""evlerinden dışarı çıkmayan bu iki tip, hiçbir zaman gerçek hayatın nasıl olduğunu bilemeyecektir"" ifadesi bunu desteklemektedir."
+39,claude_new_haiku,,B,True,2.79,749,116,"Seçenek: B
+
+Açıklama: Altı çizili söz ""Yaşamak için oku!"" Flaubert'in okurdan hayatı yaşamasını, kitaplarla sınırlandırmamasını istediğini gösterir. Parçada da evlerinden çıkmayan, sadece kitaplardan dünya bilgisi edinmeye çalışan okur tipi eleştirilmektedir."
+39,claude_sonnet,,B,True,2.296,749,104,"Seçenek: B
+
+Açıklama: ""Evlerinden dışarı çıkmayan bu iki tip, hiçbir zaman gerçek hayatın nasıl olduğunu bilemeyecektir"" ifadesi ve ""Yaşamak için oku!"" öğüdü, hayatı kitaplarla sınırlandıran okur tipini eleştirmektedir."
+39,gemini_old_flash,,B,True,1.073,510,49,"Seçenek: B
+Açıklama: Altı çizili kısımda evden çıkmayan ve hayatı bilemeyen okurlardan bahsediliyor. Bu, hayatı kitaplarla sınırlayan okur tipini işaret eder."
+39,gemini_new_flash,,B,True,0.956,510,58,"Seçenek: B
+Açıklama: Altı çizili ifade, evlerinden dışarı çıkmayan ve dünya bilgisini sadece okuyarak edineceklerine inanan iki karakteri anlatır. Bu durum, hayatı kitaplarla sınırlandırma eleştirisidir."
+39,gemini_pro,,B,True,6.483,510,510,"Seçenek: B
+Açıklama: Altı çizili sözle betimlenen"
+39,grok_old,,B,True,3.893,488,50,"Seçenek: B
+Açıklama: Altı çizili “evlerinden dışarı çıkmayan bu iki tip” ifadesi, hayatı kitaplarla sınırlandıran ve gerçek dünyadan kopan okur tipini eleştiriyor."
+39,grok_old_mini,,B,False,10.061,489,895,"Seçenek: D  
+Açıklama: Metinde, okumayı zar zor sökmüş ve sadece başlıklarına bakarak kitap toplayan sahaf karakteri, kitapları okumadan istifleyen okur tipini eleştirir."
+39,grok_new,,B,True,7.37,634,622,"Seçenek: B  
+Açıklama: ""Evlerinden dışarı çıkmayan bu iki tip"" ifadesi, gerçek hayatı kitaplarla sınırlayan, dışarı çıkmayıp sadece okuyan okur tipini eleştirir."
+39,deepseek_v3,,B,True,1.858,698,53,"Seçenek: B
+Açıklama: Parçada Flaubert, kitaplarla sınırlı kalan ve gerçek hayatı deneyimlemeyen okur tipini eleştiriyor."
+39,deepseek_r1,,B,False,15.976,700,512,ERROR: No response
+39,deepseek_32,,B,True,2.45,699,91,"Seçenek: B
+Açıklama: Parçada ""evlerinden dışarı çıkmayan bu iki tip, hiçbir zaman gerçek hayatın nasıl olduğunu bilemeyecektir"" ifadesi, hayatı kitaplarla sınırlandıran ve gerçek hayattan kopuk okur tipini eleştirmektedir."
+39,mock,,B,False,0.1,10,5,Mock cevap
+
+40,openai_new,,A,True,7.272,561,209,"Seçenek: A  
+Açıklama: Karakterleri aracılığıyla okurun nasıl olmaması gerektiğini eleştirel biçimde göstererek okurluk üzerine düşündürür."
+40,openai_mini,,A,False,1.256,562,36,"Seçenek: C  
+Açıklama: Flaubert, eserlerinde farklı okur tiplerini karakterler aracılığıyla ele alarak bunları karşılaştırmıştır."
+40,openai_4o,,A,True,1.418,562,38,"Seçenek: A  
+Açıklama: Flaubert, karakterleri aracılığıyla okurluk konusunu eleştirel bir şekilde düşündürmeye çalışmıştır."
+40,claude_old_haiku,,A,True,1.321,850,81,"Seçenek: A
+Açıklama: Parçada Gustave Flaubert'in eserlerindeki karakterler aracılığıyla okurların nasıl olmaması gerektiğini eleştirel bir dille anlatmaya çalıştığı belirtilmektedir."
+40,claude_new_haiku,,A,True,2.638,850,147,"Seçenek: A
+
+Açıklama: Parçada Flaubert'in karakterleri aracılığıyla ""bir okurun nasıl olmaması gerektiğini"" anlatmaya çalıştığı ve okumaya ilişkin farklı tutumları (takıntılı okuma, özdeşleştirme, ayrımsız okuma) eleştirel dille ele aldığı belirtilmektedir. Bu, okurluk konusunu karakterler üzerinden düşündürmeye çalışmasını gösterir."
+40,claude_sonnet,,A,True,3.986,850,152,"Seçenek: A
+
+Açıklama: Parçada Flaubert'in eserlerindeki karakterler (Bibliyo-manyak'taki sahaf, Emma Bovary, Bilirbilmezler'deki iki karakter) aracılığıyla ""bir okurun nasıl olmaması gerektiğini eleştirel bir dille okura anlatmanın peşinde"" olduğu açıkça belirtiliyor. Bu, okurluk konusunu karakterleri üzerinden düşündürmeye çalıştığını gösterir."
+40,gemini_old_flash,,A,True,0.812,559,43,"Seçenek: A
+Açıklama: Parçada Flaubert'in karakterleri üzerinden okurluk konusunu eleştirel bir dille düşündürmeye çalıştığı belirtiliyor."
+40,gemini_new_flash,,A,True,2.095,559,50,"Seçenek: A
+Açıklama: Flaubert, eserlerindeki karakterler aracılığıyla okurun nasıl olmaması gerektiğini eleştirel bir dille anlatarak okurluk üzerine düşündürmeyi amaçlamıştır."
+40,gemini_pro,,A,True,7.728,559,510,"Seçenek: A
+Açıklama: Parçada Flaubert'in,"
+40,grok_old,,A,True,3.719,530,38,"Seçenek: A
+Açıklama: Parçada Flaubert'in okurluk konusunu karakterleri üzerinden eleştirel bir şekilde düşündürmeye çalıştığı belirtiliyor."
+40,grok_old_mini,,A,True,8.986,531,883,"Seçenek: A  
+Açıklama: Parça, Flaubert'in karakterler aracılığıyla okurluk konusunu eleştirel bir şekilde düşündürmeye odaklandığını açıkça belirtir."
+40,grok_new,,A,True,8.664,676,601,"Seçenek: A  
+Açıklama: Metin, Flaubert'in eserlerinde karakterler aracılığıyla okurun nasıl olmaması gerektiğini eleştirel biçimde düşündürdüğünü açıkça belirtir."
+40,deepseek_v3,,A,True,4.913,781,144,"Seçenek: A
+Açıklama: Paragrafta Flaubert'in eserlerindeki karakterler aracılığıyla okurun nasıl olmaması gerektiğini eleştirel bir dille anlattığı vurgulanıyor. Bu da A seçeneğindeki ""Okurluk konusunu karakterleri üzerinden düşündürmeye çalışmıştır."" ifadesiyle örtüşüyor. Diğer seçenekler (B, C, D, E) paragrafta doğrudan desteklenmiyor."
+40,deepseek_r1,,A,False,13.035,783,512,ERROR: No response
+40,deepseek_32,,A,False,8.873,781,41,"Seçenek: C  
+Açıklama: The passage describes how the characters in the story are fictional and created by the author, which matches option C about fictional characters being fictional."
+40,mock,,A,False,0.101,10,5,Mock cevap
+
+
+
+===============================================================================================
+📄 ANALİZ EDİLEN DOSYA: tyt_yks_2024.pdf
+                              MODEL PERFORMANS VE MALİYET RAPORU                               
+===============================================================================================
+Model                | Doğruluk   | Süre (s)   | Girdi Tok.   | Maliyet ($) 
+-----------------------------------------------------------------------------------------------
+claude_new_haiku     |     70.00% |     2.819s | 25993        | $    0.00000
+claude_old_haiku     |     67.50% |     1.545s | 25993        | $    0.01153
+claude_sonnet        |     82.50% |     5.944s | 25993        | $    0.00000
+deepseek_32          |     50.00% |    12.389s | 24094        | $    0.00810
+deepseek_r1          |     55.00% |    28.370s | 24135        | $    0.00000
+deepseek_v3          |     72.50% |     3.265s | 24055        | $    0.00000
+gemini_new_flash     |     80.00% |     1.145s | 17574        | $    0.01005
+gemini_old_flash     |     72.50% |     0.821s | 17574        | $    0.00182
+gemini_pro           |     90.00% |     6.176s | 17574        | $    0.22597
+grok_new             |     82.50% |    13.746s | 22711        | $    0.02805
+grok_old             |     75.00% |     4.335s | 16871        | $    0.00609
+grok_old_mini        |     75.00% |    10.137s | 16911        | $    0.02507
+mock                 |     20.00% |     0.100s | 400          | $    0.00000
+openai_4o            |     70.00% |     1.620s | 17977        | $    0.06209
+openai_mini          |     62.50% |     1.812s | 17977        | $    0.00381
+openai_new           |     80.00% |     7.341s | 17937        | $    0.16723
+===============================================================================================
+
+=== ÖZET SIRALAMA ===
+gemini_pro          : %90.00
+claude_sonnet       : %82.50
+grok_new            : %82.50
+gemini_new_flash    : %80.00
+openai_new          : %80.00
+grok_old            : %75.00
+grok_old_mini       : %75.00
+deepseek_v3         : %72.50
+gemini_old_flash    : %72.50
+openai_4o           : %70.00
+claude_new_haiku    : %70.00
+claude_old_haiku    : %67.50
+openai_mini         : %62.50
+deepseek_r1         : %55.00
+deepseek_32         : %50.00
+mock                : %20.00
+====================
