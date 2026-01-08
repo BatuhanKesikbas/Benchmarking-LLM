@@ -6,7 +6,6 @@ from tqdm import tqdm
 from typing import List, Dict, Any
 import os
 
-# Utils ve API importları
 from utils import (
     load_dataset, format_prompt, save_results, normalize_letter_response, 
     extract_mcq_from_pdf, write_llm_sent_questions_log
@@ -50,14 +49,13 @@ MODEL_MAP = {
 
     "mock": mock_model  # Mock (Random şık seçiyor)
 }
-
 def evaluate(dataset_path: str,
              model_keys: List[str],
              out_path: str = "results.csv",
              per_example_sleep: float = 1.0, 
              pdf_path: str = None) -> List[Dict[str, Any]]:
     source_name = os.path.basename(pdf_path) if pdf_path else os.path.basename(dataset_path)
-    # 1. Veri Yükleme
+    # Veri Yükleme
     if pdf_path:
         print(f"📄 PDF işleniyor: {pdf_path}")
         df = extract_mcq_from_pdf(pdf_path)
@@ -86,7 +84,7 @@ def evaluate(dataset_path: str,
         for mk in model_keys:
             mk_lower = mk.strip().lower()
             
-            # Model eşleştirme (Partial match)
+            # Model eşleştirme
             fn = MODEL_MAP.get(mk_lower)
             if not fn:
                 for base_key, func in MODEL_MAP.items():
@@ -106,7 +104,6 @@ def evaluate(dataset_path: str,
                     explanation = "ERROR: No response"
                     
             except ValueError:
-                # Eski tip API fonksiyonu varsa (3 değer dönüyorsa)
                 try:
                     pred_letter, latency, explanation = fn(prompt)
                     usage = {"input": 0, "output": 0}

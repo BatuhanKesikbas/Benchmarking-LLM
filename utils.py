@@ -12,9 +12,32 @@ try:
 except ImportError:
     plt = None
     sns = None
-# ==============================================================================
-# 1. TEMEL YARDIMCI FONKSİYONLAR
-# ==============================================================================
+
+
+MODEL_REGISTRY = {
+    "openai_new":       {"name": "GPT-5.2",           "match": "gpt-5.2"},
+    "openai_mini":      {"name": "GPT-4o Mini",       "match": "gpt-4o-mini"},
+    "openai_4o":        {"name": "GPT-4o",            "match": "gpt-4o"},
+
+    "claude_old_haiku": {"name": "Claude 3 Haiku",    "match": "claude-3-haiku"},
+    "claude_new_haiku": {"name": "Claude 4.5 Haiku",  "match": "claude-4.5-haiku"},
+    "claude_sonnet":    {"name": "Claude 4.5 Sonnet", "match": "claude-4.5-sonnet"},
+
+    "gemini_old_flash": {"name": "Gemini 2.0 Flash",  "match": "gemini-2.0-flash"},
+    "gemini_new_flash": {"name": "Gemini 2.5 Flash",  "match": "gemini-2.5-flash"},
+    "gemini_pro":       {"name": "Gemini 2.5 Pro",    "match": "gemini-2.5-pro"},
+
+    "grok_old":         {"name": "Grok 3",            "match": "grok-3"},
+    "grok_old_mini":    {"name": "Grok 3 Mini",       "match": "grok-3-mini"},
+    "grok_new":         {"name": "Grok 4.1 Fast",     "match": "grok-4.1-fast"},
+
+    "deepseek_v3":      {"name": "DeepSeek V3",       "match": "deepseek-v3"},
+    "deepseek_r1":      {"name": "DeepSeek R1",       "match": "deepseek-r1"},
+    "deepseek_32":      {"name": "DeepSeek V3.2",     "match": "deepseek-v3.2"},
+
+    "mock":             {"name": "Mock Model",        "match": "mock"}
+}
+# 1. FONKSİYONLAR
 
 def load_dataset(path: str = "dataset.csv") -> pd.DataFrame:
     try:
@@ -81,9 +104,7 @@ def write_llm_sent_questions_log(results: List[Dict], source_filename: str="Bili
     except Exception as e:
         print(f"Log yazma hatası: {e}")
 
-# ==============================================================================
-# 2. OTOMATİK FİYAT ÇEKME (OPENROUTER API) 💰
-# ==============================================================================
+# 2. OTOMATİK FİYAT ÇEKME (OPENROUTER API) 
 def fetch_openrouter_pricing():
     print("🌍 OpenRouter güncel fiyat listesi indiriliyor...")
     url = "https://openrouter.ai/api/v1/models"
@@ -113,25 +134,24 @@ def fetch_openrouter_pricing():
         
     return pricing_map
 
-# ==============================================================================
-# 3. GRAFİK OLUŞTURUCU (YENİ EKLENDİ) 📊
-# ==============================================================================
+# 3. GRAFİK OLUŞTURUCU
 def create_performance_chart(summary_df, output_path):
     if plt is None or sns is None:
         print("⚠️ Grafik çizilemedi: matplotlib veya seaborn yüklü değil.")
         return
 
     try:
-        # Veriyi sırala (Başarılı olan en üstte)
         df_sorted = summary_df.sort_values(by="accuracy", ascending=True)
-        
+
+        new_index = [MODEL_REGISTRY.get(idx, {}).get("name", idx) for idx in df_sorted.index]
+        df_sorted.index = new_index
+
         plt.figure(figsize=(10, 6))
         sns.set_theme(style="whitegrid")
         
-        # Renk paleti oluştur
         colors = sns.color_palette("viridis", len(df_sorted))
         
-        # Bar plot çiz
+        
         bars = plt.barh(df_sorted.index, df_sorted["accuracy"], color=colors)
         
         plt.title("Model Doğruluk Oranları (%)", fontsize=14, fontweight='bold')
@@ -139,7 +159,6 @@ def create_performance_chart(summary_df, output_path):
         plt.ylabel("Modeller")
         plt.xlim(0, 100)
         
-        # Değerleri barların ucuna yaz
         for bar in bars:
             width = bar.get_width()
             plt.text(width + 1, 
@@ -150,31 +169,26 @@ def create_performance_chart(summary_df, output_path):
         plt.tight_layout()
         plt.savefig(output_path, dpi=300)
         print(f"📊 Grafik oluşturuldu: {output_path}")
-        plt.close() # Hafızadan sil
+        plt.close() 
     except Exception as e:
         print(f"⚠️ Grafik oluşturulurken hata: {e}")
 
-# ==============================================================================
-# 3. SONUÇ KAYDETME VE RAPORLAMA (DÜZELTİLDİ) ✅
-# ==============================================================================
+# 4. SONUÇ KAYDETME VE RAPORLAMA
 def save_results(results: list, out_path: str = "results.csv", source_filename: str = "Bilinmiyor") -> str:
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     save_path = out_path.replace(".csv", f"_{ts}.csv")
-    chart_path = out_path.replace(".csv", f"_{ts}_chart.png") # Grafik dosya yolu
+    chart_path = out_path.replace(".csv", f"_{ts}_chart.png")
     
     df = pd.DataFrame(results)
 
-    # --- KRİTİK DÜZELTME BAŞLANGICI ---
 
     if not df.empty and "usage" in df.columns:
-        # Eğer usage sütunu varsa ve içi doluysa parçala
         df["input_tokens"] = df["usage"].apply(lambda x: x.get("input", 0) if isinstance(x, dict) else 0)
         df["output_tokens"] = df["usage"].apply(lambda x: x.get("output", 0) if isinstance(x, dict) else 0)
     else:
         df["input_tokens"] = 0
         df["output_tokens"] = 0
     
-    # 1. CSV YAZ (Standart)
     fieldnames = ["id", "model", "predicted", "correct_choice", "is_correct", "latency_sec", "input_tokens", "output_tokens", "explanation"]
     
     with open(save_path, "w", encoding="utf-8-sig", newline="") as f:
@@ -196,7 +210,6 @@ def save_results(results: list, out_path: str = "results.csv", source_filename: 
 
     print(f"\n✅ Sonuçlar kaydedildi: {save_path}")
     
-    # 2. RAPOR OLUŞTUR
     if not df.empty and "is_correct" in df.columns:
         LIVE_PRICING = fetch_openrouter_pricing()
         
@@ -209,8 +222,7 @@ def save_results(results: list, out_path: str = "results.csv", source_filename: 
         )
         summary["accuracy"] = (summary["correct"] / summary["total"] * 100).round(2)
         
-        create_performance_chart(summary, chart_path)
-
+        create_performance_chart(summary, chart_path,)
         lines = []
         lines.append("\n" + "="*95)
         lines.append(f"📄 ANALİZ EDİLEN DOSYA: {source_filename}")
@@ -219,55 +231,32 @@ def save_results(results: list, out_path: str = "results.csv", source_filename: 
         lines.append(f"{'Model':<20} | {'Doğruluk':<10} | {'Süre (s)':<10} | {'Girdi Tok.':<12} | {'Maliyet ($)':<12}")
         lines.append("-" * 95)
         
-        MODEL_MATCH_HINTS = {
-            # OpenAI
-            "openai_new": "gpt-5.2", 
-            "openai_4o": "gpt-4o", 
-            "openai_mini": "gpt-4o-mini",
-            
-            # Anthropic
-            "claude_sonnet": "claude-4.5-sonnet", 
-            "claude_new_haiku": "claude-4.5-haiku", 
-            "claude_old_haiku": "claude-3-haiku",
-            
-            # Gemini
-            "gemini_pro": "gemini-2.5-pro", 
-            "gemini_new_flash": "gemini-2.5-flash", 
-            "gemini_old_flash": "gemini-2.0-flash",
-            
-            # Grok
-            "grok_old": "grok-3", 
-            "grok_old_mini": "grok-3-mini", 
-            "grok_new": "grok-4.1-fast",
-            
-            # DeepSeek
-            "deepseek_v3": "deepseek-v3", 
-            "deepseek_r1": "deepseek-r1", 
-            "deepseek_32": "deepseek-v3.2"
-        }
-
         for model_key, row in summary.iterrows():
             price_in, price_out = 0.0, 0.0
+
+            model_info = MODEL_REGISTRY.get(model_key, {})
+            display_name = model_info.get("name", model_key)
+            match_term = model_info.get("match", model_key)
             
             if "free" in model_key or "mock" in model_key:
                 price_in, price_out = 0.0, 0.0
             else:
-                search_term = MODEL_MATCH_HINTS.get(model_key, model_key)
                 for api_id, prices in LIVE_PRICING.items():
-                    if search_term in api_id:
+                    if match_term in api_id:
                         price_in = prices['in']
                         price_out = prices['out']
                         break
             
             cost = ((row['sum_input'] * price_in) + (row['sum_output'] * price_out)) / 1_000_000
             
-            lines.append(f"{model_key:<20} | {row['accuracy']:>9.2f}% | {row['avg_latency']:>9.3f}s | {int(row['sum_input']):<12} | ${cost:>11.5f}")
+            lines.append(f"{display_name:<20} | {row['accuracy']:>9.2f}% | {row['avg_latency']:>9.3f}s | {int(row['sum_input']):<12} | ${cost:>11.5f}")
             
         lines.append("="*95 + "\n")
         
         lines.append("=== ÖZET SIRALAMA ===")
         sorted_acc = summary.sort_values(by="accuracy", ascending=False)
         for m, r in sorted_acc.iterrows():
+            d_name = MODEL_REGISTRY.get(m, m) if MODEL_REGISTRY else m
             lines.append(f"{m:<20}: %{r['accuracy']:.2f}")
         lines.append("====================\n")
         
@@ -281,14 +270,12 @@ def save_results(results: list, out_path: str = "results.csv", source_filename: 
 
     return save_path
 
-# ==============================================================================
-# 4. GELİŞMİŞ PDF AYIKLAMA (GÜNCELLENMİŞ MARJİNLER)
-# ==============================================================================
+# 5. PDF AYIKLAMA
 
 def clean_text_block(text: str) -> str:
     """Metin içindeki gürültüleri temizler."""
     noise_patterns = [
-        r"^\d+\s*$",                        # Sayfa numarası
+        r"^\d+\s*$",                
         r"Diğer sayfaya geçiniz",
         r"Sınavda uyulacak kurallar",
         r"Ö\s*S\s*Y\s*M",
@@ -311,21 +298,17 @@ def get_sorted_blocks(page):
     
     valid_blocks = []
     for b in blocks:
-        if b[6] == 0: # Sadece metin blokları
+        if b[6] == 0: 
             txt = clean_text_block(b[4])
             if txt:
-                # (x0, y0, text)
                 valid_blocks.append((b[0], b[1], txt))
     
-    # Sol ve Sağ sütun ayrımı
     left_col = [b for b in valid_blocks if b[0] < mid_x]
     right_col = [b for b in valid_blocks if b[0] >= mid_x]
     
-    # Yukarıdan aşağıya sırala (y0 koordinatına göre)
     left_col.sort(key=lambda x: x[1])
     right_col.sort(key=lambda x: x[1])
     
-    # Listeleri birleştir
     return [b[2] for b in left_col + right_col]
 
 def extract_answer_key(doc) -> Dict[int, str]:
@@ -351,16 +334,13 @@ def extract_mcq_from_pdf(pdf_path: str) -> pd.DataFrame:
     
     extracted_questions = []
     
-    # --- DEĞİŞKENLER ---
     current_qid = None
     current_text_parts = []
     
-    # --- ORTAK PARAGRAF YÖNETİMİ ---
     shared_buffer = []             
     active_range = (0, 0)          
     collecting_mode = False         
     
-    # --- REGEXLER ---
     re_q_start = re.compile(r'^(\d+)\s*[\.\-\)]\s*(.*)', re.DOTALL)
     
   
@@ -372,7 +352,6 @@ def extract_mcq_from_pdf(pdf_path: str) -> pd.DataFrame:
         blocks = get_sorted_blocks(page) 
         
         for text in blocks:
-            # 1. BÖLÜM KONTROLÜ
             if "TÜRKÇE TESTİ" in text:
                 in_turkish_section = True
                 continue
@@ -382,10 +361,8 @@ def extract_mcq_from_pdf(pdf_path: str) -> pd.DataFrame:
                 continue
             if not in_turkish_section: continue
 
-            # 2. ORTAK SORU YÖNERGESİ (TRIGGER)
             range_match = re_range_trigger.search(text)
             if range_match:
-                # Eğer önceki soru hala açıksa kapat
                 if current_qid is not None:
                     extracted_questions.append({
                         "id": current_qid,
@@ -396,22 +373,18 @@ def extract_mcq_from_pdf(pdf_path: str) -> pd.DataFrame:
                     current_qid = None
                     current_text_parts = []
 
-                # Yeni modu aç
                 s_q, e_q = int(range_match.group(1)), int(range_match.group(2))
                 active_range = (s_q, e_q)
                 
-                # Bufferı başlat (Yönerge metnini de ekle)
                 shared_buffer = [text]
                 collecting_mode = True 
                 continue
 
-            # 3. YENİ SORU BAŞLANGICI
             match = re_q_start.match(text)
             if match:
                 new_id = int(match.group(1))
                 
                 if 1 <= new_id <= 40:
-                    # Eski Soruyu Kaydet
                     if current_qid is not None:
                         extracted_questions.append({
                             "id": current_qid,
@@ -420,43 +393,33 @@ def extract_mcq_from_pdf(pdf_path: str) -> pd.DataFrame:
                             "correct_choice": answer_key.get(current_qid, "")
                         })
 
-                    # Yeni Soruya Geç
                     current_qid = new_id
                     q_body = match.group(2)
                     
-                    # Soru numarası geldiği için toplama modu biter
                     collecting_mode = False 
                     
-                    # Eğer bu soru, aktif aralıktaysa
                     if active_range[0] <= new_id <= active_range[1]:
-                        # Tamponu birleştir ve sorunun BAŞINA ekle
                         full_context = "\n".join(shared_buffer)
                         current_text_parts = [full_context, q_body]
                     else:
-                        # Normal soru
                         current_text_parts = [q_body]
                         
-                        # Aralık dışına çıktıysak bufferı artık temizle
                         if new_id > active_range[1]:
                             shared_buffer = []
                             active_range = (0, 0)
                 else:
-                    # Soru numarası değil (örn: I. II. maddeler)
                     if collecting_mode:
                         shared_buffer.append(text)
                     elif current_qid is not None:
                         current_text_parts.append(text)
             
-            # 4. NUMARA YOK (DÜZ METİN)
             else:
                 if collecting_mode:
                     shared_buffer.append(text)
                 
                 elif current_qid is not None:
-                    # Mevcut sorunun devamı
                     current_text_parts.append(text)
     
-    # SON SORUYU KAYDET
     if current_qid is not None:
         extracted_questions.append({
             "id": current_qid,
@@ -465,7 +428,6 @@ def extract_mcq_from_pdf(pdf_path: str) -> pd.DataFrame:
             "correct_choice": answer_key.get(current_qid, "")
         })
 
-    # DataFrame Dönüşü
     df = pd.DataFrame(extracted_questions)
     final_data = []
     
